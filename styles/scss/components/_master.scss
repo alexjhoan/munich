@@ -50,120 +50,38 @@ section {
     color: $white;
     margin-bottom: 19px;
   }
-  div#whatsappBtn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: auto;
-    padding: 0;
-    z-index: 10;
-    a {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      text-decoration: none;
-      button {
-        -webkit-border-radius: 100%;
-        border-radius: 100%;
-        padding: 0px;
-        border: none;
-        position: relative;
-        z-index: 1;
-        -webkit-animation: brickBtn 6s infinite;
-        animation: brickBtn 6s infinite;
-        img {
-          width: 50px;
-        }
-      }
-      span {
-        background: #DAD7D0;
-        padding: 4px 10px;
-        font-size: 14px;
-        margin-top: -3px;
-      }
-    }
-     button:focus {
-      outline: none;
-    }
-  }
-  div#whatsappBtn a:hover {
-    text-decoration: none;
-    color: var(--text);
-  }
-  @keyframes brickBtn {
-    0% {
-      transform: translate(0, 0) rotate(0deg);
-    }
-    90% {
-      transform: translate(1px, 1px) rotate(0deg);
-    }
-    91% {
-      transform: translate(-1px, -2px) rotate(-1deg);
-    }
-    92% {
-      transform: translate(-3px, 0) rotate(1deg);
-    }
-    93% {
-      transform: translate(3px, 2px) rotate(0deg);
-    }
-    94% {
-      transform: translate(1px, -1px) rotate(1deg);
-    }
-    95% {
-      transform: translate(-1px, 2px) rotate(-1deg);
-    }
-    96% {
-      transform: translate(-3px, 1px) rotate(0deg);
-    }
-    97% {
-      transform: translate(3px, 1px) rotate(-1deg);
-    }
-    98% {
-      transform: translate(-1px, -1px) rotate(1deg);
-    }
-    99% {
-      transform: translate(1px, 2px) rotate(0deg);
-    }
-    100% {
-      transform: translate(1px, -2px) rotate(-1deg);
-    }
-  }
 }
 #description{
   background-image: url(../../assets/images/fondo-d.png);
-  padding-top: 170px;
-  padding-bottom: 74px;
-  padding-right: 280px;
-  padding-left: 600px;
+  padding-top: 12%;
+  padding-bottom: 5%;
+  padding-right: 8%;
+  padding-left: 30%;
   .dwallpaper{
     background-color: $white;
-    padding:40px 100px;
     position: relative;
-    .col-2{
-      img.col-left {
-        position: absolute;
-        left: 0%;
-        bottom: 4%;
+    width: 60vw;
+    .dleft{
+      position: absolute;
+      width: 100%;
+      bottom: -3%;
+      right: 57%;
+      img.imgleft {
         width: 80%;
       }
     }
-    .col-10 {
-      margin-right: 0;
-      margin-left: auto;
+
+    .dright {
+      padding-left: 30%;
+      padding-right: 6%;
+      padding-top: 5%;
+      padding-bottom: 1%;
+      img.imgleft {
+        position: absolute;
+        left: -45%;
+        width: 70%;
+        bottom: -3%;
+      }
       .logo-munich{
         width: 40%;
         margin-bottom: 34px;
@@ -180,7 +98,7 @@ section {
       .table{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        column-gap: 60px;
         .line{
           background-color: #d6d6d6;
           height: 1px;
@@ -232,7 +150,7 @@ section {
 
 @media (max-width: 1199.98px) {}
 
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
   #b-header{
     background-image: url(../../assets/images/header/header-mobile.jpg);
   }
