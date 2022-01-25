@@ -27,7 +27,7 @@ section {
   border-radius: 48px;
   padding: 8px 40px;
   color: $white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -35,7 +35,6 @@ section {
   background-color: $btn-hover!important;
   border-color: $btn-hover!important;
   box-shadow: none!important;
-  color: $white;
 }
 
 /*---------------HEADER---------------*/
@@ -44,72 +43,187 @@ section {
   background-size: cover;
   height: 100vh;
   background-position: center;
+  padding-top: 150px;
   h1.display-4{
     font-size: 4rem;
     font-weight: 700;
     color: $white;
     margin-bottom: 19px;
   }
-  button#myBtn {
+  div#whatsappBtn {
     position: fixed;
     bottom: 20px;
-    right: 25px;
-    z-index: 99000;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background: none;
-    width: 4%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    span{
-      background-color: #DAD7D0;
-      padding: 6px 10px;
+    right: 20px;
+    width: auto;
+    padding: 0;
+    z-index: 10;
+    a {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-decoration: none;
+      button {
+        -webkit-border-radius: 100%;
+        border-radius: 100%;
+        padding: 0px;
+        border: none;
+        position: relative;
+        z-index: 1;
+        -webkit-animation: brickBtn 6s infinite;
+        animation: brickBtn 6s infinite;
+        img {
+          width: 50px;
+        }
+      }
+      span {
+        background: #DAD7D0;
+        padding: 4px 10px;
+        font-size: 14px;
+        margin-top: -3px;
+      }
+    }
+     button:focus {
+      outline: none;
+    }
+  }
+  div#whatsappBtn a:hover {
+    text-decoration: none;
+    color: var(--text);
+  }
+  @keyframes brickBtn {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    90% {
+      transform: translate(1px, 1px) rotate(0deg);
+    }
+    91% {
+      transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    92% {
+      transform: translate(-3px, 0) rotate(1deg);
+    }
+    93% {
+      transform: translate(3px, 2px) rotate(0deg);
+    }
+    94% {
+      transform: translate(1px, -1px) rotate(1deg);
+    }
+    95% {
+      transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    96% {
+      transform: translate(-3px, 1px) rotate(0deg);
+    }
+    97% {
+      transform: translate(3px, 1px) rotate(-1deg);
+    }
+    98% {
+      transform: translate(-1px, -1px) rotate(1deg);
+    }
+    99% {
+      transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+      transform: translate(1px, -2px) rotate(-1deg);
     }
   }
 }
 #description{
   background-image: url(../../assets/images/fondo-d.png);
+  padding-top: 170px;
+  padding-bottom: 74px;
+  padding-right: 280px;
+  padding-left: 600px;
   .dwallpaper{
     background-color: $white;
-    padding: 30px 50px;
-    .col-3{
+    padding:40px 100px;
+    position: relative;
+    .col-2{
       img.col-left {
         position: absolute;
-        left: 0;
-        top: 0;
-        width: 30%;
+        left: 0%;
+        bottom: 4%;
+        width: 80%;
       }
     }
-    .col-9 {
+    .col-10 {
       margin-right: 0;
       margin-left: auto;
       .logo-munich{
-        width: 30%;
+        width: 40%;
         margin-bottom: 34px;
       }
-    }
-    p{
+       p{
       color: #494846;
-    }
-    .text1{
-      font-weight: 400;
-    }
-    .text2{
-      font-weight: 700;
-    }
-    .table{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      .line{
-        background-color: #d6d6d6;
-        height: 1px;
-        width: 110%;
-        margin-bottom: 1rem;
+      }
+      .text1{
+        font-weight: 400;
+      }
+      .text2{
+        font-weight: 700;
+      }
+      .table{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .line{
+          background-color: #d6d6d6;
+          height: 1px;
+          width: 110%;
+          margin-bottom: 1rem;
+        }
+      }
+      .btn.btn-primary {
+        background-color: #005170;
+        border-color: #005170;
+        border-radius: 48px;
+        padding: 8px 40px;
+        color: $white;
+        font-size: 1rem;
+        font-weight: 700;
+      }
+      .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
+        background-color: #002938!important;
+        border-color: #002938!important;
+        box-shadow: none!important;
+      }
+      .l-text{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        margin-top: 40px;
+        .text{
+          font-size: 1.125rem;
+          color:$black;
+        }
+      }
+      .logos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        .log img{
+          width: 80%;
+        }
       }
     }
+
   }
 }
 /*----------------------------Queries-------------------------------*/
