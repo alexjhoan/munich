@@ -22,17 +22,34 @@ section {
 }
 
 .btn.btn-primary {
-  background-color: $primary;
-  border-color: $primary;
-  border-radius: 0;
-  padding: 10px 100px;
+  background-color: $btn;
+  border-color: $btn;
+  border-radius: 48px;
+  padding: 10px 70px;
   color: $white;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
   background-color: $btn-hover!important;
   border-color: $btn-hover!important;
   box-shadow: none!important;
+  color: $white;
+}
+
+/*---------------HEADER---------------*/
+#b-header{
+  background-image: url(../../assets/images/header/header-desktop.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  h1.display-4{
+    font-size: 4rem;
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 19px;
+  }
 }
 /*----------------------------Queries-------------------------------*/
 
@@ -40,7 +57,11 @@ section {
 
 @media (max-width: 1199.98px) {}
 
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+  #b-header{
+    background-image: url(../../assets/images/header/header-mobile.jpg);
+  }
+}
 
 @media (max-width: 767.98px) {}
 
