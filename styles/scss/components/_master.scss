@@ -69,6 +69,49 @@ section {
     }
   }
 }
+#description{
+  background-image: url(../../assets/images/fondo-d.png);
+  .dwallpaper{
+    background-color: $white;
+    padding: 30px 50px;
+    .col-3{
+      img.col-left {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 30%;
+      }
+    }
+    .col-9 {
+      margin-right: 0;
+      margin-left: auto;
+      .logo-munich{
+        width: 30%;
+        margin-bottom: 34px;
+      }
+    }
+    p{
+      color: #494846;
+    }
+    .text1{
+      font-weight: 400;
+    }
+    .text2{
+      font-weight: 700;
+    }
+    .table{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      .line{
+        background-color: #d6d6d6;
+        height: 1px;
+        width: 110%;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
 /*----------------------------Queries-------------------------------*/
 
 @media (max-width: 1399.98px) {}
