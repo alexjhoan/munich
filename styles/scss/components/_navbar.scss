@@ -11,8 +11,8 @@ header {
   }
   .navbar{
     .navbar-toggler {
-      color: #d6d6d6;
-      border-color: #d6d6d6;
+      color: $white;
+      border-color: $white;
       .line_m {
         display: flex;
         flex-direction: column;
@@ -29,6 +29,7 @@ header {
     }
    .navbar-collapse {
       justify-content: end;
+      background-color: white;
       .navbar-nav{
         .nav-item{
           a{
@@ -52,9 +53,20 @@ header {
   header{
     .navbar{
       .navbar-collapse {
+        background-color: white;
+        margin: 0;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
         .navbar-nav {
           align-items: center;
           padding-top: 20px;
+          li.nav-item:not(:last-child){
+            border-bottom: 1px solid black;
+            width: 100%;
+            text-align: center;
+          }
         }
       }
      }

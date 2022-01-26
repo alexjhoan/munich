@@ -60,7 +60,11 @@ section {
   .dwallpaper{
     background-color: $white;
     position: relative;
-    width: 60vw;
+
+    padding-left: 30%;
+      padding-right: 6%;
+      padding-top: 5%;
+      padding-bottom: 1%;
     .dleft{
       position: absolute;
       width: 100%;
@@ -70,12 +74,6 @@ section {
         width: 80%;
       }
     }
-
-    .dright {
-      padding-left: 30%;
-      padding-right: 6%;
-      padding-top: 5%;
-      padding-bottom: 1%;
       img.imgleft {
         position: absolute;
         left: -45%;
@@ -140,8 +138,6 @@ section {
           width: 80%;
         }
       }
-    }
-
   }
 }
 /*----------------------------Queries-------------------------------*/
@@ -153,6 +149,39 @@ section {
 @media (max-width: 992px) {
   #b-header{
     background-image: url(../../assets/images/header/header-mobile.jpg);
+  }
+  #description {
+    background-image: none;
+    background-color: white;
+    padding: 8vh 0;
+    .dwallpaper {
+      background-color: #fff;
+      padding: 0;
+      img.imgleft {
+        display: none;
+      }
+      .table {
+        display: flex;
+        flex-direction: column;
+        padding-top: 9px;
+        background-color: #F7F7F7;
+        padding-bottom: 13px;
+        text-align: center;
+        .line {
+          background-color: #d6d6d6;
+          width: 100%;
+        }
+      }
+      .button {
+        text-align: center;
+      }
+      .l-text {
+        justify-content: space-evenly;
+      }
+      .logos {
+        justify-content: space-evenly;
+      }
+    }
   }
 }
 
