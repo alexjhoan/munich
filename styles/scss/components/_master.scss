@@ -53,38 +53,25 @@ section {
 }
 #description{
   background-image: url(../../assets/images/fondo-d.png);
-  padding-top: 12%;
-  padding-bottom: 5%;
-  padding-right: 8%;
-  padding-left: 30%;
-  .dwallpaper{
-    background-color: $white;
-    position: relative;
-
-    padding-left: 30%;
-      padding-right: 6%;
-      padding-top: 5%;
-      padding-bottom: 1%;
-    .dleft{
-      position: absolute;
-      width: 100%;
-      bottom: -3%;
-      right: 57%;
-      img.imgleft {
-        width: 80%;
-      }
-    }
-      img.imgleft {
-        position: absolute;
-        left: -45%;
-        width: 70%;
-        bottom: -3%;
-      }
+  padding: 12% 10%;
+  z-index: -1;
+  margin-top: -10px;
+  .col-lg-5 {
+        top: 0;
+    bottom: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+    transform: scale3d(1.3, 1.42, 1);
+}
+  .col-lg-7.col-12 {
+    padding-top: 30px;
+    padding-left: 10%;
+}
       .logo-munich{
         width: 40%;
         margin-bottom: 34px;
       }
-       p{
+      p{
       color: #494846;
       }
       .text1{
@@ -139,6 +126,15 @@ section {
         }
       }
   }
+
+section#description:before {
+    position: absolute;
+    content: "";
+    background-color: white;
+    height: 133vh;
+    width: 65%;
+    left: 31%;
+    z-index: -1;
 }
 /*----------------------------Queries-------------------------------*/
 
