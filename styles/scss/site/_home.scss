@@ -84,7 +84,7 @@
   .titleII{
     font-weight: 700;
   }
-  h3{
+  h3, h4{
     color: #494846;
     font-weight: 400;
   }
@@ -100,7 +100,7 @@
       align-items: center;
       margin-bottom: 50px;
       img {
-        width: 8%;
+        width: 12%;
         padding-right: 20px;
       }
     }
@@ -119,7 +119,48 @@
   }
 
 }
-
+#unitsI{
+  margin: 10vh 0;
+  .wunits{
+    // background-image: url(../../assets/images/unidades/fondo-udesktop.png);
+    // padding-top: 10vh;
+    position: relative;
+  }
+  .wunits:after{
+    position:absolute;
+    content: "";
+    width: 98vw;
+    height: 65vh;
+    top: 0;
+    z-index: -1;
+    background-image: url(../../assets/images/unidades/fondo-udesktop.png);
+  }
+  .col-xxl-5{
+    padding: 0;
+    padding-top: 6%;
+    transform: scale3d(1, 1.2, 1);
+}
+.col-xxl-7 {
+    // padding-top: 7%;
+    padding-left: calc(10% - 30px);
+}
+  h1, h3{
+    color: $white;
+  }
+  .display-4{
+    font-weight: 700;
+    padding-top: 100px;
+  }
+  h3{
+    font-weight: 400px;
+  }
+  img.uright {
+    // position: absolute;
+    // width: 45%;
+    // right: 0;
+    // top: 8px;
+  }
+}
 @media (min-width:1200px) {
   .dwallpaper {
     &_image {
@@ -143,6 +184,26 @@
         left: -20%;
         top: 0;
       }
+    }
+  }
+  #unitsI{
+    .wunits:after {
+      position: absolute;
+      content: "";
+      width: 99vw;
+      height: 35vh;
+      top: 0;
+      z-index: -1;
+      background-image: url(../../assets/images/unidades/fondo-udesktop.png);
+    }
+    // .display-4 {
+    //   padding-top: 100px;
+    // }
+    .col-xxl-5 {
+      padding: 0;
+      padding-top: 0%;
+      margin-left: 10%;
+      transform: scale(0.8);
     }
   }
 }
@@ -191,6 +252,15 @@
       }
     }
   }
+
+  #unitsI {
+    img.uright {
+      // position: absolute;
+      // width: 58%;
+      // right: 0;
+      // top: 5px;
+    }
+  }
 }
 @media (min-width:1600px) {
   .dwallpaper {
@@ -234,12 +304,43 @@
       justify-content: space-evenly;
     }
   }
-
+    #unitsI {
+    margin: 0;
+    .wunits:after {
+      width: 100vw;
+      height: 35vh;
+      background-image: url(../../assets/images/unidades/fondo-umobile.png);
+    }
+    .col-xxl-7 {
+      padding-left: calc(70px - 30px);
+    }
+    .col-xxl-5 {
+      padding: 0;
+      padding-top: 0%;
+      margin-left: 10%;
+      transform: scale(0.8);
+    }
+  }
 }
 
 @media (max-width: 992px) {
-  #location .mlocation {
-    transform: scale3d(1.1, 1.3, 1);
+  #location {
+    .ulist .list img {
+      width: 8%;
+      padding-right: 20px;
+    }
+    .mlocation {
+      transform: scale3d(1.1, 1.3, 1);
+      padding: 0;
+    }
   }
 
+}
+
+@media (max-width: 376px) {
+  #unitsI {
+    .wunits:after {
+      height: 43vh;
+    }
+  }
 }
