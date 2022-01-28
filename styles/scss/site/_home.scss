@@ -135,12 +135,12 @@
     z-index: -1;
     background-image: url(../../assets/images/unidades/fondo-udesktop.png);
   }
-  .col-xxl-5{
+  .col-lg-5{
     padding: 0;
     padding-top: 6%;
     transform: scale3d(1, 1.2, 1);
 }
-.col-xxl-7 {
+.col-lg-7 {
     // padding-top: 7%;
     padding-left: calc(10% - 30px);
 }
@@ -159,6 +159,81 @@
     // width: 45%;
     // right: 0;
     // top: 8px;
+  }
+}
+#unitII{
+  h3{
+    color: #494846;
+    font-weight: 400;
+  }
+  .display-4{
+    font-weight: 700;
+  }
+  .download {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 15px;
+    .down {
+      width: 15px;
+      margin-right: 10px;
+    }
+    .zoom{
+      width: 25px;
+      margin-left: 20px;
+      transform: translateY(-3px);
+    }
+    a{
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #0E436F;
+    }
+  }
+  .footer{
+    text-align: center;
+    .unitf {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      column-gap: 50px;
+      margin-top: 90px;
+      margin-bottom: 30px;
+      .unitp{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        img.porcentage{
+          width: 80px;
+          padding-right: 20px;
+        }
+        .titleFoo {
+          margin-bottom: 0;
+          font-weight: 700;
+          text-align: start;
+        }
+      }
+      .unitText{
+        h3{
+          color: #494846;
+          font-style: italic;
+          text-align: start;
+        }
+        p{
+          font-weight: 700;
+          text-align: start;
+        }
+      }
+    }
+    .btn.btn-primary {
+      background-color: #005170;
+      border-color: #005170;
+    }
+    .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
+      background-color: #022938 !important;
+      border-color: #022938 !important;
+    }
   }
 }
 @media (min-width:1200px) {
@@ -187,24 +262,24 @@
     }
   }
   #unitsI{
-    .wunits:after {
-      position: absolute;
-      content: "";
-      width: 99vw;
-      height: 35vh;
-      top: 0;
-      z-index: -1;
-      background-image: url(../../assets/images/unidades/fondo-udesktop.png);
-    }
+    // .wunits:after {
+    //   position: absolute;
+    //   content: "";
+    //   width: 99vw;
+    //   height: 35vh;
+    //   top: 0;
+    //   z-index: -1;
+    //   background-image: url(../../assets/images/unidades/fondo-udesktop.png);
+    // }
     // .display-4 {
     //   padding-top: 100px;
     // }
-    .col-xxl-5 {
-      padding: 0;
-      padding-top: 0%;
-      margin-left: 10%;
-      transform: scale(0.8);
-    }
+    // .col-xxl-5 {
+    //   padding: 0;
+    //   padding-top: 0%;
+    //   margin-left: 10%;
+    //   transform: scale(0.8);
+    // }
   }
 }
 
