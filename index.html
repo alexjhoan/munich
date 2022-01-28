@@ -10,6 +10,7 @@
   <link rel="preload" href="styles/css/bundle.min.css" as="style"/>
   <link rel="stylesheet" href="assets/lib/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="assets/lib/animate.min.css">
+  <link rel="stylesheet" href="assets/js/fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
   <link rel="stylesheet" href="styles/css/fonts.css" />
   <link rel="stylesheet" href="styles/css/bundle.min.css" />
   <title>Torre Munich</title>
@@ -198,10 +199,10 @@
       </div>
       <div class="row mt-4">
         <div class="col-md-5 col-12">
-          <img src="assets/images/unidades/edificio/subsuelo.svg" alt="Torre Munich">
+          <img src="assets/images/unidades/edificio/subsuelo.svg" alt="Torre Munich" onload="SVGInject(this)">
         </div>
         <div class="col-md-7 col-12">
-          <img src="assets/images/unidades/plantas/subsuelo.png" alt="Torre Munich">
+          <img src="assets/images/unidades/plantas/subsuelo.png" alt="Torre Munich" id="changeImg"/>
           <div class="download">
             <a href="#" target="_blank"><img src="assets/images/unidades/descargar.svg" alt="download" class="down">Descargar planos</a>
             <a id="changeImgUrl" href="assets/images/plantas/pb.png" target="_blank">
@@ -215,6 +216,7 @@
           <div class="unitf">
           <div class="unitp">
             <img src="assets/images/unidades/porcentaje.svg" alt="Torre Munich" class="porcentage">
+            <canvas id="myChart"></canvas>
             <h4 class="titleFoo">25%<br />VENDIDO</h4>
           </div>
             <div class="unitText">
@@ -242,6 +244,7 @@
 <script type="text/javascript" src="assets/lib/jquery.min.js"></script>
 <script type="text/javascript" src="assets/lib/bootstrap/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="assets/lib/wow.min.js"></script>
+<script type="text/javascript" src="assets/js/fancybox/source/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="assets/js/index.js"></script>
 </body>
 </html>
