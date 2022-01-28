@@ -1,6 +1,10 @@
+/*-----------------------Descripcion-----------------------*/
 .dwallpaper {
   background-image: url(../../assets/images/fondo-d.png);
   padding: 12% 10%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   z-index: -1;
   margin-top: -10px;
   &_image {
@@ -71,7 +75,7 @@
     }
   }
 }
-
+/*-----------------------Ubicación-----------------------*/
 #location{
   h2{
     color:#005170;
@@ -107,7 +111,6 @@
   }
   .mlocation{
     margin-bottom: auto;
-    transform: scale3d(1, 1.2, 1);
     position: relative;
     .tmunich{
       position: absolute;
@@ -119,6 +122,7 @@
   }
 
 }
+/*-----------------------Unidades I-----------------------*/
 #unitsI{
   margin: 10vh 0;
   .wunits{
@@ -154,13 +158,8 @@
   h3{
     font-weight: 400px;
   }
-  img.uright {
-    // position: absolute;
-    // width: 45%;
-    // right: 0;
-    // top: 8px;
-  }
 }
+/*-----------------------Unidades II-----------------------*/
 #unitII{
   h3{
     color: #494846;
@@ -241,6 +240,40 @@
     }
   }
 }
+/*-----------------------Tipologias-----------------------*/
+#typology{
+  background-image: url(../../assets/images/tipologias/monoambiente.jpg);
+  background-size: cover;
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .display-5{
+    font-weight: 500;
+    color: $white;
+  }
+  .display-4{
+    color: $white;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+}
+#typology:after{
+  position:absolute;
+  content: "";
+  background-image: url(../../assets/images/tipologias/ft-desktop.png);
+  width: 100%;
+  height: 90vh;
+  z-index: -1;
+  left: -50%;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 @media (min-width:1200px) {
   .dwallpaper {
     &_image {
@@ -265,26 +298,6 @@
         top: 0;
       }
     }
-  }
-  #unitsI{
-    // .wunits:after {
-    //   position: absolute;
-    //   content: "";
-    //   width: 99vw;
-    //   height: 35vh;
-    //   top: 0;
-    //   z-index: -1;
-    //   background-image: url(../../assets/images/unidades/fondo-udesktop.png);
-    // }
-    // .display-4 {
-    //   padding-top: 100px;
-    // }
-    // .col-xxl-5 {
-    //   padding: 0;
-    //   padding-top: 0%;
-    //   margin-left: 10%;
-    //   transform: scale(0.8);
-    // }
   }
 }
 
@@ -330,15 +343,6 @@
       &:before {
         width: 100%;
       }
-    }
-  }
-
-  #unitsI {
-    img.uright {
-      // position: absolute;
-      // width: 58%;
-      // right: 0;
-      // top: 5px;
     }
   }
 }
@@ -391,10 +395,10 @@
       height: 35vh;
       background-image: url(../../assets/images/unidades/fondo-umobile.png);
     }
-    .col-xxl-7 {
+    .col-lg-7 {
       padding-left: calc(70px - 30px);
     }
-    .col-xxl-5 {
+    .col-lg-5 {
       padding: 0;
       padding-top: 0%;
       margin-left: 10%;

@@ -32,3 +32,8 @@ $(document).ready(function() {
     }
   });
 })
+
+// ------------------------------img-edf-units----------------------------
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
