@@ -460,6 +460,21 @@
     }
 
 }
+/*----------------------Amenities-I (text-inferior)--------------------------------*/
+#stext{
+  padding-top: 0;
+  .atext{
+    margin-left: auto;
+  }
+}
+/*----------------------Amenities-II (imagen)--------------------------------*/
+#bamenities{
+  background-image: url(../../assets/images/galeria/gal1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
 @media (min-width:1024px){
    #amenitiesI {
 
@@ -635,6 +650,7 @@
       position: absolute;
       z-index: -1;
       height: 580px;
+      width: 100%;
     }
     .aleft{
       display: none;
@@ -649,6 +665,10 @@
       right: 0;
     }
   }
+  section#stext {
+    padding-top: 14vh;
+  }
+
 }
 @media (max-width: 1023px) {
 
