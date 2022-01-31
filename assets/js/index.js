@@ -90,3 +90,12 @@ const galleryTop = new Swiper('.gallery-top', {
     swiper: galleryThumbs
   }
 });
+
+// fancyBox
+
+$('[data-fancybox="gallery"]').fancybox({
+  animationEffect: "fade",
+  arrows: true,
+  infobar: false,
+  buttons: ["zoom", "close"]
+});
