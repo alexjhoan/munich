@@ -617,28 +617,27 @@
     </div>
     </div>
     <div class="cswiper d-block d-lg-none">
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="assets/images/avance/setiembre_2021_1.jpg" class="imgswiper" />
-                <span>Septiembre 2021</span>
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/avance/setiembre_2021_2.jpg" class="imgswiper"/>
-                <span>Septiembre 2021</span>
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/avance/setiembre_2021_3.jpg" class="imgswiper"/>
-                <span>Septiembre 2021</span>
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/avance/setiembre_2021_4.jpg" class="imgswiper"/>
-                <span>Septiembre 2021</span>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/images/avance/setiembre_2021_1.jpg" class="imgswiper" />
+            <span>Septiembre 2021</span>
           </div>
-
+          <div class="swiper-slide">
+            <img src="assets/images/avance/setiembre_2021_2.jpg" class="imgswiper"/>
+            <span>Septiembre 2021</span>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/avance/setiembre_2021_3.jpg" class="imgswiper"/>
+            <span>Septiembre 2021</span>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/avance/setiembre_2021_4.jpg" class="imgswiper"/>
+            <span>Septiembre 2021</span>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
   </section>
   <section id="project">
@@ -656,11 +655,69 @@
     </div>
     <img src="assets/images/tecnologia/psolar.png" alt="Torre Munich" class="psolare">
   </section>
-  <section id="ptecnology">
+    <section id="projectUs">
     <div class="container">
       <div class="row">
         <div class="col-12">
-
+          <h1 class="title">La tecnología al servicio de los buenos negocios <br class="d-none d-lg-block">Desarrollado con Big Data</h1>
+          <div class="logo">
+            <p>Powered by</p>
+            <img src="assets/images/bigdata/logo-infocasas.svg" alt="Torre Munich">
+          </div>
+          <p>Tomando como base el análisis de datos del <a href="https://www.infocasas.com.uy/" target="_blank"><u>Portal InfoCasas</u></a>, el proyecto fue concebido en cada uno de sus detalles según la demanda del <br class="d-none d-lg-block">mercado, abarcando desde la selección del terreno, hasta la composición de unidades y amenities, <span class="strong">para lograr un proyecto innovador, con alta <br class="d-none d-lg-block">rentabilidad y atractivo tanto al público inversor como residencial.</span></p>
+          <div class="footer">
+            <p><span>10 años</span><br />de datos de <br />mercado analizados</p>
+            <p><span>+200.000</span><br />operaciones <br />analizadas por año</p>
+            <p><span>+150.000</span><br />propiedades <br />procesadas por año</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <h1 class="title">Solicitá más información</h1>
+          <form id="contactForm" class="needs-validation" action="javascript:void(0);" novalidate>
+            <div class="form-floating">
+              <input type="text" class="form-control" placeholder="Nombre" name="name" required>
+              <label for="name">Nombre*</label>
+            </div>
+            <div class="form-floating">
+              <input type="email" class="form-control" placeholder="Email" name="email" required>
+              <label for="email">Email*</label>
+            </div>
+            <div class="form-floating">
+              <input type="tel" class="form-control" placeholder="Telefono" name="phone" required>
+              <label for="name">Telefono*</label>
+            </div>
+            <div class="form-floating">
+              <textarea class="form-control" name="consult" style="height: 110px" placeholder="Consulta" required></textarea>
+              <label for="consult">Consulta*</label>
+            </div>
+            <button class="btn btn-primary mt-3" type="submit" onclick="submited()">Enviar</button>
+          </form>
+          <div id="formSending" style="display: none;">
+            <p class="h3 strong">
+              Enviando
+              <span></span>
+              <span></span>
+              <span></span>
+            </p>
+          </div>
+          <div id="formSuccess" style="display: none;">
+            <p class="h3 strong">¡Consulta Enviada!</p>
+          </div>
+          <div id="formError" style="display: none;">
+            <p class="h3 strong">¡Error en el envio de su consulta.<br />Por favor intentar mas tarde!</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-5 formCol2 animate__animated aniRi">
+          <h5>Oficinas para trato personalizado en Argentina, Uruguay y Paraguay</h5>
+          <h5 class="strong fw-bold">Coordiná una reunión virtual</h5>
+          <a href="#" class="whatsapp strong" target="_blank"><img src="assets/icons/whatsapp.png">+598 96 207 460</a>
+          <a href="#" class="whatsapp strong" target="_blank"><img src="assets/icons/instagram.svg">@continentsred</a>
         </div>
       </div>
     </div>
