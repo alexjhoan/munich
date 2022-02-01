@@ -1,3 +1,43 @@
+footer {
+  background-color: #F7F7F7;
+  padding: 50px 0;
+  .col-12 {
+    align-items: center;
+    .icons {
+      display: grid;
+      grid-template-rows: 40% 30%;
+      grid-row-gap: 0;
+      .item1 {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        .subitem1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        img {
+          max-width: 150px;
+          width: 100%;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+      .item2 {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        text-align: center;
+        p {
+          font-size: 0.8rem;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
 
 /*----------------------------Queries-------------------------------*/
 
@@ -5,8 +45,55 @@
 
 @media (max-width: 1199.98px) {}
 
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+  footer {
+    .item img {
+      width: calc(100% - 60px);
+    }
+    .item1 p {
+      font-size: 1rem;
+    }
+  }
+}
 
-@media (max-width: 767.98px) {}
+@media (max-width: 768px) {
+  footer {
+    padding: 45px 0;
+    .col-12 {
+      justify-content: center;
+      .icons {
+        display: grid;
+        grid-template-rows: 65% 30%;
+        grid-row-gap: 0;
+        .item1 {
+          display: block;
+          .subitem1{
+            img {
+              width: 120px;
+            }
+             p {
+              font-size: 0.75rem;
+              margin-bottom: 5px;
+            }
+          }
+          .subitem1:not(:last-child) {
+            margin-bottom: 25px;
+          }
+          .subitem1:not(:first-child) p {
+            margin-bottom: 10px;
+          }
+        }
+        .item2 {
+          margin-top: 10px;
+          text-align: center;
+          p {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+}
 
 @media (max-width: 575.98px) {}
