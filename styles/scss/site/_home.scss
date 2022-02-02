@@ -585,20 +585,14 @@
     }
   }
   #lightgallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 0.5%;
     margin-top: 90px;
     a{
-      // display: none;
       overflow: hidden;
-      margin-top: 2%;
       position: relative;
     }
     a img {
       transition: all .5s ease;
       width: 100%;
-      height: 250px;
     }
     a span {
       left: 15px;
@@ -616,7 +610,14 @@
      a:hover img {
       transform: scale(1.07);
     }
-  }
+    .swiper-wrapper {
+      padding-bottom: 30px;
+    }
+    .swiper-pagination {
+      display: none;
+      bottom: 0;
+    }
+}
 
   .cswiper{
     margin-top: 50px;
@@ -999,7 +1000,6 @@
       padding-right: 20px;
     }
     .mlocation {
-      transform: scale3d(1.1, 1.3, 1);
       padding: 0;
     }
   }
@@ -1063,6 +1063,16 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  #advance {
+    #lightgallery {
+      .swiper-pagination {
+        display: block;
+      }
+    }
+  }
+}
 @media (max-width: 768px) {
   #unitsGallery {
     padding: 0;
@@ -1088,6 +1098,50 @@
     }
     .footer p:not(:last-child) {
       margin-bottom: 30px;
+    }
+  }
+  #advance {
+    h1.title {
+      margin-bottom: 30px;
+    }
+    #lightgallery {
+      margin-top: 30px;
+    }
+    .tline {
+      img {
+        width: 90%;
+      }
+    }
+    .aline {
+      width: 100%;
+      .item {
+        h4 {
+          font-size: .8rem;
+        }
+        img {
+          width: auto;
+          height: 38px;
+          margin: 20px auto 10px;
+        }
+      }
+    }
+  }
+  #unitII {
+    .footer {
+      .unitf {
+        flex-direction: column;
+        .unitp {
+          margin-bottom: 15px;
+          canvas#myChar {
+            display: none;
+          }
+        }
+        .unitText {
+          h3, p {
+            text-align: center;
+          }
+        }
+      }
     }
   }
 }
