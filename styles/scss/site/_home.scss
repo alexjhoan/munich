@@ -123,6 +123,7 @@
     }
   }
   .mlocation{
+    opacity: 1;
     margin-bottom: auto;
     position: relative;
     .img-fluid {
@@ -131,12 +132,34 @@
       right: 0;
       bottom: 0;
     }
-    img.tmunich {
+    .tmunich {
       position: absolute;
       right: 13%;
       bottom: 55vh;
       width: 10%;
     }
+  }
+  .mhlocation{
+    opacity:0;
+    position: relative;
+    .hmapa{
+      width: 60%;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+  .mlocation:hover{
+    opacity: 0;
+    .img-fluid{
+      opacity: 0;
+    }
+    .tmunich{
+      opacity: 0;
+    }
+  }
+  .mhlocation:hover{
+    opacity:1;
   }
 
 }
@@ -570,7 +593,7 @@
   }
 }
 .fancybox-wrap.fancybox-desktop.fancybox-type-image.fancybox-opened {
-  top: 90px !important;
+  top: 80px !important;
 }
 
 /*----------------------------ADVANCE------------------------------*/
