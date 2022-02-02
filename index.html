@@ -9,6 +9,7 @@
   <link rel="preload" href="styles/css/fonts.css" as="style"/>
   <link rel="preload" href="styles/css/bundle.min.css" as="style"/>
   <link rel="stylesheet" href="assets/js/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/lib/lightgallery/css/lightgallery.min.css">
   <link rel="stylesheet" href="assets/js/owl-carousel/owl-carousel.min.css">
   <link rel="stylesheet" href="assets/js/owl-carousel/owl-theme.default.min.css">
   <link rel="stylesheet" href="assets/lib/bootstrap/bootstrap.min.css">
@@ -171,7 +172,7 @@
             <a href="#">VER TODO</a>
         </div>
           <div class="col-lg-8 col-12 mlocation">
-            <img src="assets/images/ubicacion/mapa.png" alt="Torre Munich" class="lmapa">
+            <img src="assets/images/ubicacion/mapa.png" alt="Torre Munich" class="lmapa img-fluid">
             <img src="assets/images/ubicacion/pin-munich.png" alt="Torre Munich" class="tmunich">
           </div>
         </div>
@@ -202,10 +203,11 @@
       </div>
       <div class="row mt-4">
         <div class="col-md-5 col-12">
-          <img src="assets/images/unidades/edificio/subsuelo.svg" alt="Torre Munich" onload="SVGInject(this)">
+          <!--<img src="assets/images/unidades/edificio/subsuelo.svg" alt="Torre Munich" onload="SVGInject(this)">-->
+          <img src="assets/images/unidades/edificio/subsuelo.svg" alt="Torre Munich">
         </div>
         <div class="col-md-7 col-12">
-          <img src="assets/images/unidades/plantas/subsuelo.png" alt="Torre Munich" id="changeImg"/>
+          <img src="assets/images/unidades/plantas/subsuelo.jpg" alt="Torre Munich" id="changeImg"/>
           <div class="download">
             <a href="#" target="_blank"><img src="assets/images/unidades/descargar.svg" alt="download" class="down">Descargar planos</a>
             <a id="changeImgUrl" href="assets/images/plantas/pb.png" target="_blank">
@@ -219,7 +221,6 @@
           <div class="unitf">
           <div class="unitp">
             <img src="assets/images/unidades/porcentaje.svg" alt="Torre Munich" class="porcentage">
-            <!-- <canvas id="myChart"></canvas> -->
             <h4 class="titleFoo">25%<br />VENDIDO</h4>
           </div>
             <div class="unitText">
@@ -534,36 +535,36 @@
           <div class="col-12">
             <div class="fancyImgBox">
               <div class="fancyBox">
-                <a href="assets/images/amenities/beergarden.png" target="_blank" data-fancybox="gallery">
+                <a href="assets/images/amenities/beergarden.jpg" target="_blank" data-fancybox="gallery">
                   <div class="fancyImgItem">
-                    <img src="assets/images/amenities/beergarden.png" class="thumbnail" /> <!-- <button class="btn btn-primary iconImg"><img src="assets/images/icons/search.png" /></button> -->
+                    <img src="assets/images/amenities/beergarden.jpg" class="thumbnail" /> <!-- <button class="btn btn-primary iconImg"><img src="assets/images/icons/search.png" /></button> -->
                   </div>
                 </a>
                 <div class="information">
                   <h4 class="titleFancyBox">BEER GARDEN / GYM</h4>
-                  <div><a href="assets/images/amenities/beergarden.png" target="_blank" class="btn btn-primary">Ampliar</a></div>
+                  <div><a href="assets/images/amenities/beergarden.jpg" target="_blank" class="btn btn-primary">Ampliar</a></div>
                 </div>
               </div>
               <div class="fancyBox">
-                <a href="assets/images/amenities/familyroom.png" target="_blank" data-fancybox="gallery">
+                <a href="assets/images/amenities/familyroom.jpg" target="_blank" data-fancybox="gallery">
                   <div class="fancyImgItem">
-                    <img src="assets/images/amenities/familyroom.png" class="thumbnail" /><!--  <button class="btn btn-primary iconImg"><img src="assets/images/icons/search.png" /></button> -->
+                    <img src="assets/images/amenities/familyroom.jpg" class="thumbnail" /><!--  <button class="btn btn-primary iconImg"><img src="assets/images/icons/search.png" /></button> -->
                   </div>
                 </a>
                 <div class="information">
                   <h4 class="titleFancyBox">TERRAZA / FAMILY ROOM</h4>
-                  <div><a href="assets/images/amenities/familyroom.png" target="_blank" class="btn btn-primary">Ampliar</a></div>
+                  <div><a href="assets/images/amenities/familyroom.jpg" target="_blank" class="btn btn-primary">Ampliar</a></div>
                 </div>
               </div>
               <div class="fancyBox">
-                <a href="assets/images/amenities/localcomercial.png" target="_blank" data-fancybox="gallery">
+                <a href="assets/images/amenities/localcomercial.jpg" target="_blank" data-fancybox="gallery">
                   <div class="fancyImgItem">
-                    <img src="assets/images/amenities/localcomercial.png" class="thumbnail" /> <!-- <button class="btn btn-primary iconImg"><img src="assets/images/icons/search.png" /></button> -->
+                    <img src="assets/images/amenities/localcomercial.jpg" class="thumbnail" /> <!-- <button class="btn btn-primary iconImg"><img src="assets/images/icons/search.png" /></button> -->
                   </div>
                 </a>
                 <div class="information">
                   <h4 class="titleFancyBox">HALL / LOCAL COMERCIAL</h4>
-                  <div><a href="assets/images/amenities/localcomercial.png" target="_blank" class="btn btn-primary">Ampliar</a></div>
+                  <div><a href="assets/images/amenities/localcomercial.jpg" target="_blank" class="btn btn-primary">Ampliar</a></div>
                 </div>
               </div>
             </div>
@@ -596,45 +597,25 @@
         </div>
       </div>
     </div>
-    <div class="gallery d-none d-lg-block">
-    <div id="lightgallery" class="wow slideInUp">
-      <a href="assets/images/avance/setiembre_2021_1.jpg">
-        <img src="assets/images/avance/setiembre_2021_1.jpg" />
-        <span>Septiembre 2021</span>
-      </a>
-      <a href="assets/images/avance/setiembre_2021_2.jpg">
-        <img src="assets/images/avance/setiembre_2021_2.jpg" />
-        <span>Septiembre 2021</span>
-      </a>
-      <a href="assets/images/avance/setiembre_2021_3.jpg">
-        <img src="assets/images/avance/setiembre_2021_3.jpg" />
-        <span>Septiembre 2021</span>
-      </a>
-      <a href="assets/images/avance/setiembre_2021_4.jpg">
-        <img src="assets/images/avance/setiembre_2021_4.jpg" />
-        <span>Septiembre 2021</span>
-      </a>
-    </div>
-    </div>
-    <div class="cswiper d-block d-lg-none">
-      <div class="swiper mySwiper">
+    <div class="gallery ">
+      <div id="lightgallery" class=" swiper-container advanced-gallery">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="assets/images/avance/setiembre_2021_1.jpg" class="imgswiper" />
+          <a href="assets/images/avance/setiembre_2021_1.jpg" class="swiper-slide">
+            <img src="assets/images/avance/setiembre_2021_1.jpg" />
             <span>Septiembre 2021</span>
-          </div>
-          <div class="swiper-slide">
-            <img src="assets/images/avance/setiembre_2021_2.jpg" class="imgswiper"/>
+          </a>
+          <a href="assets/images/avance/setiembre_2021_2.jpg" class="swiper-slide">
+            <img src="assets/images/avance/setiembre_2021_2.jpg" />
             <span>Septiembre 2021</span>
-          </div>
-          <div class="swiper-slide">
-            <img src="assets/images/avance/setiembre_2021_3.jpg" class="imgswiper"/>
+          </a>
+          <a href="assets/images/avance/setiembre_2021_3.jpg" class="swiper-slide">
+            <img src="assets/images/avance/setiembre_2021_3.jpg" />
             <span>Septiembre 2021</span>
-          </div>
-          <div class="swiper-slide">
-            <img src="assets/images/avance/setiembre_2021_4.jpg" class="imgswiper"/>
+          </a>
+          <a href="assets/images/avance/setiembre_2021_4.jpg" class="swiper-slide">
+            <img src="assets/images/avance/setiembre_2021_4.jpg" />
             <span>Septiembre 2021</span>
-          </div>
+          </a>
         </div>
         <div class="swiper-pagination"></div>
       </div>
@@ -653,7 +634,7 @@
         </div>
       </div>
     </div>
-    <img src="assets/images/tecnologia/psolar.png" alt="Torre Munich" class="psolare">
+    <img src="assets/images/tecnologia/psolar.jpg" alt="Torre Munich" class="psolare">
   </section>
     <section id="projectUs">
     <div class="container">
@@ -756,6 +737,7 @@
 <script type="text/javascript" src="assets/js/fancybox/source/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="assets/js/fancybox/source/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="assets/js/owl-carousel/owl-carousel.min.js"></script>
+<script type="text/javascript" src="assets/lib/lightgallery/js/lightgallery.min.js"></script>
 <script type="text/javascript" src="assets/js/index.js"></script>
 </body>
 </html>

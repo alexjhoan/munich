@@ -2,6 +2,10 @@
   font-size: 16px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 p.h1, h1, p.h2, h2, p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
   font-family: Roboto;
   color: $text;
@@ -67,6 +71,10 @@ section#b-header:after {
     z-index: -1;
 }
 
+/*---------------Swipper---------------*/
+.swiper-pagination-bullet, .swiper-pagination-bullet-active {
+  background: #7C7C7C;
+}
 /*----------------------------Queries-------------------------------*/
 
 @media (max-width: 1399.98px) {}

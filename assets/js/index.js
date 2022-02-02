@@ -90,9 +90,23 @@ const galleryTop = new Swiper('.gallery-top', {
     swiper: galleryThumbs
   }
 });
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".advanced-gallery", {
+  slidesPerView: 1,
+  spaceBetween: 25,
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1025: {
+      slidesPerView: 4,
+    },
   },
 });
 
@@ -104,3 +118,10 @@ $('[data-fancybox="gallery"]').fancybox({
   infobar: false,
   buttons: ["zoom", "close"]
 });
+
+
+//$("#lightgallery a").fancybox();
+
+$("#lightgallery .swiper-wrapper").lightGallery();
+
+
