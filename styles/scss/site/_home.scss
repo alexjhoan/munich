@@ -127,7 +127,7 @@
     margin-bottom: auto;
     position: relative;
     .img-fluid {
-      width: 60%;
+      width: 55%;
       position: absolute;
       right: 0;
       bottom: 0;
@@ -135,15 +135,15 @@
     .tmunich {
       position: absolute;
       right: 13%;
-      bottom: 55vh;
-      width: 10%;
+      bottom: 50vh;
+      width: 8%;
     }
   }
   .mhlocation{
     opacity:0;
     position: relative;
     .hmapa{
-      width: 60%;
+      width: 55%;
       position: absolute;
       right: 0;
       bottom: 0;
@@ -153,9 +153,9 @@
     opacity: 0;
 
   }
-    .mhlocation:hover{
-      opacity:1;
-    }
+  .mhlocation:hover{
+    opacity:1;
+  }
 
 
 }
@@ -1103,7 +1103,6 @@
   }
   #stext {
     padding-top: 40vh;
-
     .atext {
       margin-left: initial;
       width: 100%;
