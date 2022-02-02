@@ -112,7 +112,7 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
       h4{
         color: #000000;
       }
@@ -149,18 +149,14 @@
       bottom: 0;
     }
   }
-  .mlocation:hover{
+  .mhlocation:hover ~ .mlocation {
     opacity: 0;
-    .img-fluid{
-      opacity: 0;
-    }
-    .tmunich{
-      opacity: 0;
-    }
+
   }
-  .mhlocation:hover{
-    opacity:1;
-  }
+    .mhlocation:hover{
+      opacity:1;
+    }
+
 
 }
 /*-----------------------Unidades I-----------------------*/
@@ -345,10 +341,10 @@
           grid-template-columns: 40% auto;
           column-gap: 25px;
           .mcol-left{
-            h1, h4{
+            h1, h4, .display-6{
               color: #005170;
             }
-            h1{
+            .display-6{
               font-weight: 900;
             }
             h4{
@@ -482,7 +478,7 @@
   img.aright {
     position: absolute;
     z-index: 0;
-    top: 15px;
+    top: 50px;
     left: -10%;
     width: 50%;
     max-width: 650px;
@@ -599,7 +595,7 @@
 /*----------------------------ADVANCE------------------------------*/
 #advance{
   background-color: #F7F7F7;
-  h1.title{
+  .title{
     text-align: center;
     margin-bottom: 65px;
     color: $text-black;
@@ -676,7 +672,6 @@
       bottom: 0;
     }
 }
-
   .cswiper{
     margin-top: 50px;
     .swiper {
@@ -754,12 +749,13 @@
   background-position: center;
   background-size: cover;
   text-align: center;
-  h1, p, u{
+  p, u{
     color: $white;
   }
   .title{
     font-weight: 900;
     margin-bottom: 30px;
+    color: $white;
   }
 
   .logo {
@@ -1102,13 +1098,15 @@
       top: 70%;
       left: auto;
       right: 0;
-      width: 35%;
+      width: 50%;
     }
   }
-  section#stext {
-    padding-top: 8vh;
+  #stext {
+    padding-top: 40vh;
+
     .atext {
       margin-left: initial;
+      width: 100%;
     }
   }
 
@@ -1244,6 +1242,9 @@
       }
     }
   }
+  #stext {
+    padding-top: 25vh;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -1328,7 +1329,9 @@
       }
     }
   }
-
+  #stext {
+    padding-top: 25vh;
+  }
 }
 @media (max-width: 575.98px) {
   #unitsI {
@@ -1338,7 +1341,7 @@
     display: flex;
     flex-direction: column-reverse;
     .aMleft {
-      height: 50%;
+      height: 70%;
       top: 0;
     }
     img.aright {
