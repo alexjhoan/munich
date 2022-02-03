@@ -168,7 +168,8 @@
 }
 /*-----------------------Unidades I-----------------------*/
 #unitsI{
-  // margin: 8vh 0;
+  background: linear-gradient(to bottom, rgba(250,250,250,0.1) 0%, rgba(248,248,248,0.1) 51%, rgba(248,248,248,1) 53%, rgba(247,247,247,1) 100%);
+  z-index: -1;
   .wunits{
     padding: 60px 0;
     position: relative;
@@ -206,6 +207,7 @@
 }
 /*-----------------------Unidades II-----------------------*/
 #unitII{
+  background-color: #F7F7F7;
   h5{
     color: $text-black;
     font-weight: 400;
@@ -471,23 +473,36 @@
 
 /*----------------------Amenities-I--------------------------------*/
 #amenitiesI{
-  height: 580px;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 0vh;
-  img.aleft {
-    z-index: -1;
-    position: absolute;
-    height: 100%;
+  .camenit{
+    padding: 60px 0;
+    position: relative;
   }
+  .camenit:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 65vh;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+    background-image: url(../../assets/images/amenities/fa-d.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 100%;
+  }
+
+  // img.aleft {
+  //   z-index: -1;
+  //   position: absolute;
+  //   height: 100%;
+  // }
 
   img.aright {
     position: absolute;
     z-index: 0;
-    top: 50px;
-    left: -10%;
-    width: 50%;
+    top: 0;
+    left: 0;
+    width: 30%;
     max-width: 650px;
   }
 
@@ -604,7 +619,7 @@
   background-color: #F7F7F7;
   .title{
     text-align: center;
-    margin-bottom: 65px;
+    margin-bottom: 55px;
     color: $text-black;
     font-weight: 700;
     font-size: 2.5rem;
@@ -629,8 +644,8 @@
       img{
         width: 80px;
         height: 100px;
-        margin-top: 50px;
-        margin-bottom: 25px;
+        margin-top: 25px;
+        margin-bottom: 10px;
       }
     }
     .item.finish {
@@ -948,18 +963,12 @@
     }
   }
   #amenitiesI{
-    .aMleft{
-      display: none;
-    }
-    .aleft{
-      display: block;
-    }
     .aright {
       position: absolute;
       z-index: 0;
-      top: 3%;
+      top: 0%;
       left: 0;
-      width: 49%;
+      width: 30%;
     }
   }
 }
@@ -1089,23 +1098,19 @@
     width: 100%;
   }
   #amenitiesI{
-    height: auto;
-    padding-bottom: 8vh;
-    .aMleft{
-      display: block;
-      position: absolute;
-      z-index: -1;
-      height: 100%;
-      width: 100%;
-    }
-    .aleft{
-      display: none;
+    margin: 0;
+    .camenit:after {
+      width: 100vw;
+      background-size: cover;
+      height: 450px;
+      background-image: url(../../assets/images/amenities/fa-m.png);
     }
     .col-right {
       margin-left: initial;
-      width: 90%;
+      width: 100%;
     }
     img.aright {
+      position: absolute;
       top: 70%;
       left: auto;
       right: 0;
@@ -1251,7 +1256,7 @@
     }
   }
   #stext {
-    padding-top: 430px;
+    padding-top: 500px;
   }
 }
 
@@ -1271,6 +1276,12 @@
   }
   #unitII {
     padding-top: 650px;
+  }
+  #amenitiesI{
+    img.aright {
+      width: 600px;
+      top: 230px;
+    }
   }
 }
 @media (max-width: 768px) {
@@ -1314,9 +1325,6 @@
     .aline {
       width: 100%;
       .item {
-        h4 {
-          font-size: .8rem;
-        }
         img {
           width: auto;
           height: 38px;
@@ -1325,12 +1333,6 @@
       }
     }
   }
-  // #unitI{
-  //   img.uright {
-  //     width: 88vw;
-  //     top: 280px;
-  //   }
-  // }
   #unitII {
     padding-top: 560px;
     .footer {
@@ -1350,33 +1352,29 @@
       }
     }
   }
+  #amenitiesI {
+    img.aright {
+      width: 500px;
+      top: 230px;
+    }
+  }
+
   #stext {
-    padding-top: 25vh;
+    padding-top: 350px;
   }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
   #amenitiesI {
-    display: flex;
-    flex-direction: column-reverse;
-    .aMleft {
-      height: 70%;
-      top: 0;
-    }
     img.aright {
-      top: auto;
-      width: 80%;
-      position: relative;
-      left: 0;
-      right: 0;
-      margin-left: auto;
+      width: 400px;
+      top: 350px;
     }
   }
   section#stext {
-    padding-top: 0;
+    padding-top: 370px;
   }
   #unitsI {
     img.uright {
-      position: absolute;
       right: 0;
       width: 88vw;
       z-index: 0;
@@ -1386,6 +1384,18 @@
   #unitII {
     padding-top: 260px;
   }
+  #advance {
+    .aline {
+      .item {
+        h5 {
+          font-size: .8rem;
+        }
+      }
+    }
+  }
+  #projectUs{
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 376px) {
@@ -1393,8 +1403,6 @@
     padding-top: 200px;
   }
   #amenitiesI {
-    img.aright {
-      top: 90%;
-    }
+
   }
 }
