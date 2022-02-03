@@ -46,6 +46,10 @@ section {
 .strong {
   font-weight: 700;
 }
+:root {
+  --animate-duration: 1s;
+  --animate-delay: 1s;
+}
 
 /*---------------HEADER---------------*/
 #b-header{
