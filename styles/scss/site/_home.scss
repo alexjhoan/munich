@@ -1071,7 +1071,8 @@
     margin: 0;
     .wunits:after {
       width: 100vw;
-      height: 35vh;
+      background-size: cover;
+      height: 450px;
       background-image: url(../../assets/images/unidades/fondo-umobile.png);
     }
     .col-lg-7 {
@@ -1141,9 +1142,6 @@
       bottom: 0;
     }
   }
-  // #unitsI {
-  //   margin-top: 70vh;
-  // }
   #mtypology{
     background-image: url(../../assets/images/tipologias/monoambiente.jpg);
     background-size: cover;
@@ -1198,9 +1196,6 @@
       grid-template-columns: 1fr;
       grid-row-gap: 70px;
     }
-  }
-  #advance {
-
   }
   #project {
     img.psolare {
@@ -1268,6 +1263,15 @@
       }
     }
   }
+  #unitsI{
+    img.uright {
+      width: 88vw;
+      top: 280px;
+    }
+  }
+  #unitII {
+    padding-top: 650px;
+  }
 }
 @media (max-width: 768px) {
   #unitsGallery {
@@ -1279,9 +1283,6 @@
       display: none;
     }
   }
-  // #unitsI {
-  //   margin-top: 50vh;
-  // }
   #projectUs {
     padding: 45px 0;
     .logo {
@@ -1324,7 +1325,14 @@
       }
     }
   }
+  // #unitI{
+  //   img.uright {
+  //     width: 88vw;
+  //     top: 280px;
+  //   }
+  // }
   #unitII {
+    padding-top: 560px;
     .footer {
       .unitf {
         flex-direction: column;
@@ -1347,9 +1355,6 @@
   }
 }
 @media (max-width: 575.98px) {
-  #unitsI {
-    margin-top: 30vh;
-  }
   #amenitiesI {
     display: flex;
     flex-direction: column-reverse;
@@ -1369,13 +1374,23 @@
   section#stext {
     padding-top: 0;
   }
+  #unitsI {
+    img.uright {
+      position: absolute;
+      right: 0;
+      width: 88vw;
+      z-index: 0;
+      top: 340px;
+    }
+  }
+  #unitII {
+    padding-top: 260px;
+  }
 }
 
 @media (max-width: 376px) {
-  #unitsI {
-    .wunits:after {
-      height: 43vh;
-    }
+  #unitII {
+    padding-top: 200px;
   }
   #amenitiesI {
     img.aright {
