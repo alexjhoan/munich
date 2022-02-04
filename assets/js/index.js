@@ -116,26 +116,15 @@ $("#lightgallery .swiper-wrapper").lightGallery();
 
 
 // ------------------------------Hover Location-----------------------------
-$(".list-university").hover(function(){
-  $(".university").css("opacity", "1");
+$(".ulist .list").hover(function(){
+  let type = $(this).data("type")
+  $(`.${type}`).css("opacity", "1");
   }, function(){
-  $(".university").css("opacity", "0");
+  let type = $(this).data("type")
+  $(`.${type}`).css("opacity", "0");
 });
 
-$(".list-public").hover(function(){
-  $(".sites-public").css("opacity", "1");
-  }, function(){
-  $(".sites-public").css("opacity", "0");
-});
-
-$(".list-clubs").hover(function(){
-  $(".clubs").css("opacity", "1");
-  }, function(){
-  $(".clubs").css("opacity", "0");
-});
-
-$(".list-banks").hover(function(){
-  $(".banks").css("opacity", "1");
-  }, function(){
-  $(".banks").css("opacity", "0");
-});
+$(".ulist .list").click(function(){
+  let type = $(this).data("type")
+  $(`.${type}`).css("opacity", "1").siblings().not(img).css("opacity", "0");
+  });
