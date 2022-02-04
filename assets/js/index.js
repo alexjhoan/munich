@@ -133,3 +133,9 @@ $(".list-clubs").hover(function(){
   }, function(){
   $(".clubs").css("opacity", "0");
 });
+
+$(".list-banks").hover(function(){
+  $(".banks").css("opacity", "1");
+  }, function(){
+  $(".banks").css("opacity", "0");
+});
