@@ -113,12 +113,13 @@
   }
   .ulist{
     margin-top: 100px;
+
     .list {
       display: flex;
       flex-direction: row;
       align-items: center;
       margin-bottom: 25px;
-
+      cursor: pointer;
       h4{
         color: #000000;
       }
@@ -136,6 +137,9 @@
     top: 22%;
     max-width: 900px;
     width: 65%;
+    .active{
+      opacity: 1 !important;
+    }
     img {
       right: 0;
       width: 100%;
@@ -1239,18 +1243,23 @@
     }
   }
   #location {
+    margin-bottom: 90%;
     .ulist {
       margin-top: 45px;
+
       .list img {
         width: 8%;
         padding-right: 20px;
       }
     }
-    .img-fluid {
-      width: 100%;
-      height: auto;
+    .mlocation {
+      margin-bottom: auto;
+      position: absolute;
       right: 0;
-      bottom: 0;
+      transition: all .2s ease;
+      top: 100%;
+      max-width: 990px;
+      width: 100%;
     }
   }
   #mtypology{
