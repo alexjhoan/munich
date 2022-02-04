@@ -610,9 +610,6 @@
     }
   }
 }
-.fancybox-wrap.fancybox-desktop.fancybox-type-image.fancybox-opened {
-  top: 80px !important;
-}
 
 /*----------------------------ADVANCE------------------------------*/
 #advance{
@@ -930,12 +927,7 @@
   }
 }
 
-@media (min-width:1024px){
-   #amenitiesI {
-
-  }
-
-}
+@media (min-width:1024px){}
 @media (min-width:1200px) {
   .dwallpaper {
     &_image {
@@ -1040,9 +1032,6 @@
 @media (max-width: 1399.98px) {
   #unitsGallery {
     width: 55%;
-  }
-    #amenitiesI img.aright {
-
   }
 }
 @media (max-width: 1199px){
@@ -1412,8 +1401,5 @@
 @media (max-width: 376px) {
   #unitII {
     padding-top: 200px;
-  }
-  #amenitiesI {
-
   }
 }
