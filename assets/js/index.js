@@ -114,7 +114,6 @@ $('[data-fancybox="gallery"]').fancybox({
 
 $("#lightgallery .swiper-wrapper").lightGallery();
 
-
 // ------------------------------Hover Location-----------------------------
 $(".ulist .list").hover(function(){
   let type = $(this).data("type")
@@ -126,5 +125,5 @@ $(".ulist .list").hover(function(){
 
 $(".ulist .list").click(function(){
   let type = $(this).data("type")
-  $(`.${type}`).css("opacity", "1").siblings().not(img).css("opacity", "0");
+  $(`.${type}`).addClass("active").siblings().removeClass("active")
   });
