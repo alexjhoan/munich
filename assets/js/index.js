@@ -114,7 +114,7 @@ $('[data-fancybox="gallery"]').fancybox({
 
 $("#lightgallery .swiper-wrapper").lightGallery();
 
-// ------------------------------Hover Location-----------------------------
+// ------------------------------Hover, Active Location-----------------------------
 $(".ulist .list").hover(function(){
   let type = $(this).data("type")
   $(`.${type}`).css("opacity", "1");
@@ -127,3 +127,8 @@ $(".ulist .list").click(function(){
   let type = $(this).data("type")
   $(`.${type}`).addClass("active").siblings().removeClass("active")
   });
+
+$(".mybtn").click(function(){
+  $(".mlocation div").addClass("active")
+});
+

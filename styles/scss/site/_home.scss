@@ -82,18 +82,16 @@
     position: relative;
     z-index: 2;
   }
-  h2{
+  h2, .display-6, .titleII {
     color:#005170;
   }
   .display-6{
     font-weight: 900;
     text-align: center;
     margin-bottom: 90px;
-    color: #005170;
   }
   .titleII{
     font-weight: 700;
-    color: #005170;
   }
   h3, h5{
     color: $text-black;
@@ -102,18 +100,21 @@
   h5{
     margin-top: 15px;
   }
-  a{
+  .mybtn{
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: $text-black;
+    background-color: white;
+    border: none;
   }
-  a:hover{
+  .mybtn:hover, .mybtn:active, .mybtn:focus{
     text-decoration: none;
     color: black;
+    border: none;
+    outline: none;
   }
   .ulist{
     margin-top: 100px;
-
     .list {
       display: flex;
       flex-direction: row;
@@ -144,14 +145,8 @@
       right: 0;
       width: 100%;
     }
-  }
-
-  .university{
-    opacity:0;
     span{
-      background-color: #005270;
       color: white;
-      max-width: 120px;
       line-height: 1.25;
       display: inline-block;
       text-align: end;
@@ -159,6 +154,16 @@
       font-weight: 700;
       font-size: 0.7rem;
       position: absolute;
+    }
+    div{
+      opacity: 0;
+    }
+  }
+
+  .university{
+    span{
+      background-color: #005270;
+      max-width: 120px;
       &:first-child{
         bottom: 38%;
         left: 4%;
@@ -194,18 +199,9 @@
     }
   }
   .sites-public{
-    opacity: 0;
     span{
       background-color: #04a9cc;
-      color: white;
       max-width: 90px;
-      line-height: 1.25;
-      display: inline-block;
-      text-align: end;
-      padding: 4px 10px 1px 5px;
-      font-weight: 700;
-      font-size: 0.7rem;
-      position: absolute;
       &:first-child{
         bottom: 16%;
         left: 7%;
@@ -233,17 +229,8 @@
     }
   }
   .clubs{
-    opacity: 0;
     span{
       background-color: #007a96;
-      color: white;
-      line-height: 1.25;
-      display: inline-block;
-      text-align: end;
-      padding: 4px 10px 1px 5px;
-      font-weight: 700;
-      font-size: 0.7rem;
-      position: absolute;
       &:first-child{
         top: 13%;
         right: 45%;
@@ -255,18 +242,9 @@
     }
   }
   .banks{
-    opacity: 0;
     span{
       background-color: #a3dfe9;
-      color: white;
-      line-height: 1.25;
-      display: inline-block;
       max-width: 50px;
-      text-align: end;
-      padding: 4px 10px 1px 5px;
-      font-weight: 700;
-      font-size: 0.7rem;
-      position: absolute;
       &:first-child{
         bottom: 23%;
         left: 17%;
@@ -315,7 +293,8 @@
   img.uright {
     position: absolute;
     right: 0;
-    width: 35vw;
+    width: 100%;
+    max-width: 520px;
     z-index: 0;
     bottom: -39%;
   }
@@ -466,7 +445,7 @@
           grid-template-columns: 40% auto;
           column-gap: 25px;
           .mcol-left{
-            h1, h4, .display-6{
+            h4, .display-6{
               color: #005170;
             }
             .display-6{
@@ -476,7 +455,7 @@
               font-weight: 700;
               margin-bottom: 15px;
             }
-            div.line{
+            .line{
               border-bottom: 1px solid;
               color: #e0dadc;
               width: 70%;
@@ -606,53 +585,37 @@
     background-position: left center;
     background-size: 100%;
   }
-
-  // img.aleft {
-  //   z-index: -1;
-  //   position: absolute;
-  //   height: 100%;
-  // }
-
-  img.aright {
+  .aright {
     position: absolute;
     z-index: 0;
-    top: 0;
+    top: -7%;
     left: 0;
-    width: 30%;
-    max-width: 650px;
+    width: 100%;
+    max-width: 500px;
   }
-
-    .col-right {
-      margin-left: auto;
-      h4, .display-6{
-        color: $white;
-      }
-      .display-6{
-        font-weight: 700;
-      }
-      h4{
-        font-weight: 400;
-      }
-    }
-  // }
-  .atext {
+  .col-right {
     margin-left: auto;
-      h4{
-        color: $text-black;
-        font-weight: 400;
-      }
+    p, .display-6{
+      color: $white;
     }
-
+    .display-6{
+      font-weight: 700;
+    }
+    p{
+      font-weight: 400;
+    }
+  }
 }
 /*----------------------Amenities-I (text-inferior)--------------------------------*/
 #stext{
   padding-top: 0;
   .atext{
     margin-left: auto;
+    h5 {
+      color: $text-black;
+    }
   }
-  h5 {
-    color: $text-black;
-  }
+
 }
 /*----------------------Amenities-II (imagen)--------------------------------*/
 #bamenities{
@@ -674,10 +637,11 @@
       align-items: center;
       justify-content: flex-start;
       img {
-        width: 50%;
+        max-width: 80px;
+        width: 100%;
       }
       h5{
-        color: #000000;
+        color: &black;
         font-weight: 400;
         text-align: center;
         margin-top: 32px;
@@ -708,7 +672,7 @@
         -webkit-transition: ease-in-out 0.5s;
         transition: ease-in-out 0.5s;
       }
-          .information {
+      .information {
         .titleFancyBox{
           color: #000000;
           font-weight: 400;
@@ -1246,7 +1210,6 @@
     margin-bottom: 90%;
     .ulist {
       margin-top: 45px;
-
       .list img {
         width: 8%;
         padding-right: 20px;
@@ -1260,6 +1223,9 @@
       top: 100%;
       max-width: 990px;
       width: 100%;
+      span{
+        font-size: calc(0.4vw + 0.35rem);
+      }
     }
   }
   #mtypology{
