@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="assets/lib/svg-inject.min.js"></script>
   <link rel="preload" href="assets/lib/bootstrap/bootstrap.min.css" as="style">
   <link rel="preload" href="assets/lib/animate.min.css" as="style">
   <link rel="preload" href="styles/css/fonts.css" as="style"/>
@@ -14,7 +15,7 @@
   <link rel="stylesheet" href="assets/js/owl-carousel/owl-theme.default.min.css">
   <link rel="stylesheet" href="assets/lib/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="assets/lib/animate.min.css">
-  <link rel="stylesheet" href="assets/js/fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
+  <link rel="stylesheet" href="assets/js/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="styles/css/fonts.css" />
   <link rel="stylesheet" href="styles/css/bundle.min.css" />
   <title>Torre Munich</title>
@@ -239,14 +240,19 @@
       </div>
       <div class="row mt-4">
         <div class="col-md-5 col-12 wow fadeInLeft">
-          <!--<img src="assets/images/unidades/edificio/subsuelo.svg" alt="Torre Munich" onload="SVGInject(this)">-->
-          <img src="assets/images/unidades/edificio/subsuelo.svg" alt="Torre Munich">
+          <img src="assets/images/unidades/edificio/edificio-01.svg"  onload="SVGInject(this)" alt="Torre Munich">
         </div>
         <div class="col-md-7 col-12 wow fadeInRight">
-          <img src="assets/images/unidades/plantas/subsuelo.jpg" alt="Torre Munich" id="changeImg"/>
+          <a class="edfLevelUrl" href="assets/images/unidades/plantas/subsuelo.jpg">
+            <img src="assets/images/unidades/plantas/subsuelo.jpg" alt="zoom" class="edfImgLevel">
+          </a>
           <div class="download">
-            <a href="#" target="_blank"><img src="assets/images/unidades/descargar.svg" alt="download" class="down">Descargar planos</a>
-            <a id="changeImgUrl" href="assets/images/plantas/pb.png" target="_blank"><img src="assets/images/unidades/lupa.svg" alt="zoom" class="zoom">
+            <a href="assets/Torre Munich.pdf" target="_blank">
+              <img src="assets/images/unidades/descargar.svg" alt="download" class="down">
+              Descargar planos
+            </a>
+            <a class="edfLevelUrl" href="assets/images/unidades/plantas/subsuelo.jpg" >
+              <img src="assets/images/unidades/lupa.svg" alt="zoom" class="zoom">
             </a>
           </div>
         </div>
@@ -268,8 +274,7 @@
       </div>
     </div>
   </section>
-  <section id="mtypology" class="d-lg-none d-block">
-  </section>
+  <section id="mtypology" class="d-lg-none d-block"></section>
   <section id="typology">
     <div class="container">
       <div class="row">
@@ -773,7 +778,6 @@
 <script type="text/javascript" src="assets/lib/bootstrap/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="assets/lib/wow.min.js"></script>
 <script type="text/javascript" src="assets/js/swiper/swiper-bundle.min.js"></script>
-<script type="text/javascript" src="assets/js/fancybox/source/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="assets/js/fancybox/source/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="assets/js/owl-carousel/owl-carousel.min.js"></script>
 <script type="text/javascript" src="assets/lib/lightgallery/js/lightgallery.min.js"></script>

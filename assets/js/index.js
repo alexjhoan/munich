@@ -1,9 +1,15 @@
 $(window).on('load', function () {
   $('body').css('opacity', '1');
+
+  $(".edf-mark").click(function () {
+    const level = $(this).data("level")
+    $(this).addClass('active').siblings().removeClass("active")
+    $(".edfImgLevel").attr("src",`assets/images/unidades/plantas/${level}.jpg`)
+    $(".edfLevelUrl").attr("href",`assets/images/unidades/plantas/${level}.jpg`)
+  })
 });
 
 let offset
-
 if (screen.width > 768){
   offset = 200
 } else {
@@ -12,26 +18,11 @@ if (screen.width > 768){
 
 new WOW({offset:offset, scrollContainer: null}).init()
 
-// ------------------------------img-edf-units----------------------------
-
-function click(id) {
-  $(".activeLevel").removeClass("activeLevel");
-  $(".activeText").removeClass("activeText");
-  setTimeout(() => {
-    $(`#${id}`).addClass("activeLevel");
-    $(`.${id}`).addClass("activeText");
-    $("#changeImg").attr("src",`assets/images/unidades/plantas/${id}.png`)
-    $("#changeImgUrl").attr("href",`assets/images/uniddes/plantas/${id}.png`)
-  },10)
-}
-
-$(document).ready(function() {
-  $("#changeImgUrl").fancybox({
-    overlay : {
-      closeClick : true,
-    }
-  });
-})
+$(".edfLevelUrl").fancybox({
+  overlay : {
+    closeClick : true,
+  }
+});
 
 // ------------------------------img-edf-units----------------------------
 $('#exampleModalCenter').on('shown.bs.modal', function () {
@@ -69,7 +60,6 @@ $('.owl-carousel').owlCarousel({
     items:1,
     margin:10,
     nav:true,
-
 })
 // ------------------------------Carousel-----------------------------
 
@@ -124,6 +114,7 @@ $('[data-fancybox="gallery"]').fancybox({
 
 $("#lightgallery .swiper-wrapper").lightGallery();
 
+
 // ------------------------------Hover Location-----------------------------
 $(".list-university").hover(function(){
   $(".university").css("opacity", "1");
@@ -142,5 +133,3 @@ $(".list-clubs").hover(function(){
   }, function(){
   $(".clubs").css("opacity", "0");
 });
-
-
