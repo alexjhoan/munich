@@ -98,7 +98,7 @@ var swiper = new Swiper(".advanced-gallery", {
       slidesPerView: 4,
     },
   },
-});
+})
 
 // fancyBox
 
@@ -107,10 +107,35 @@ $('[data-fancybox="gallery"]').fancybox({
   arrows: true,
   infobar: false,
   buttons: ["zoom", "close"]
-});
+})
 
 
 //$("#lightgallery a").fancybox();
 
 $("#lightgallery .swiper-wrapper").lightGallery();
 
+
+// ------------------------------Hover Location-----------------------------
+$(".list-university").hover(function(){
+  $(".university").css("opacity", "1");
+  }, function(){
+  $(".university").css("opacity", "0");
+});
+
+$(".list-public").hover(function(){
+  $(".sites-public").css("opacity", "1");
+  }, function(){
+  $(".sites-public").css("opacity", "0");
+});
+
+$(".list-clubs").hover(function(){
+  $(".clubs").css("opacity", "1");
+  }, function(){
+  $(".clubs").css("opacity", "0");
+});
+
+$(".list-banks").hover(function(){
+  $(".banks").css("opacity", "1");
+  }, function(){
+  $(".banks").css("opacity", "0");
+});

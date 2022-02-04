@@ -77,6 +77,7 @@
 }
 /*-----------------------Ubicación-----------------------*/
 #location{
+  margin-bottom: 100px;
   h2{
     color:#005170;
   }
@@ -107,7 +108,7 @@
     color: black;
   }
   .ulist{
-    margin-top: 145px;
+    margin-top: 100px;
     .list {
       display: flex;
       flex-direction: row;
@@ -122,54 +123,167 @@
       }
     }
   }
-  .wrap_map {
-    position: relative;
-  }
   .mlocation{
     opacity: 1;
     margin-bottom: auto;
-    position: relative;
-    width: 100%;
+    position: absolute;
+    width: 52%;
     height: 100%;
-    transform: translateY(-80px);
-    transition: all 0.2s ease;
+    right: 0;
+    transition: all .2s ease;
+    top: 25%;
     .img-fluid {
+      right: 0;
       width: 100%;
     }
     .tmunich {
       position: absolute;
-      right: 26%;
-      top: 30%;
+      right: 38%;
+      top: 29%;
       width: 70px;
     }
   }
-  .mhlocation{
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    transform: translateY(-80px);
-    left: 11px;
-    transition: all 0.2s ease;
-    .hmapa{
-      width: 100%;
-      height: auto;
-      max-width: 856px;
-    }
-    &:hover {
-      opacity: 1;
-      & ~ .mlocation {
-        opacity: 0;
+
+  .university{
+    opacity:0;
+    span{
+      background-color: #005270;
+      color: white;
+      max-width: 120px;
+      line-height: 1.25;
+      display: inline-block;
+      text-align: end;
+      padding: 4px 10px 1px 5px;
+      font-weight: 700;
+      font-size: 0.7rem;
+      position: absolute;
+      &:first-child{
+        bottom: 432px;
+        left: 25px;
+      }
+      &:nth-child(2){
+        top: 155px;
+        left: 322px;
+      }
+      &:nth-child(3){
+        top: 185px;
+        right: 315px;
+      }
+      &:nth-child(4){
+        top: 295px;
+        right: 310px;
+      }
+      &:nth-child(5){
+        bottom: 305px;
+        left: 290px;
+      }
+      &:nth-child(6){
+        top: 115px;
+        right: 175px;
+      }
+      &:nth-child(7){
+        top: 170px;
+        right: 65px;
+      }
+      &:last-child{
+        top: 280px;
+        right: 75px;
       }
     }
   }
-
+  .sites-public{
+    opacity: 0;
+    span{
+      background-color: #04a9cc;
+      color: white;
+      max-width: 90px;
+      line-height: 1.25;
+      display: inline-block;
+      text-align: end;
+      padding: 4px 10px 1px 5px;
+      font-weight: 700;
+      font-size: 0.7rem;
+      position: absolute;
+      &:first-child{
+        bottom: 268px;
+        left: 60px;
+      }
+      &:nth-child(2){
+        bottom: 300px;
+        left: 50px;
+      }
+      &:nth-child(3){
+        bottom:440px;
+        left: 120px;
+      }
+      &:nth-child(4){
+        bottom:454px;
+        right: 242px;
+      }
+      &:nth-child(5){
+        bottom:220px;
+        right: 185px;
+      }
+      &:last-child{
+        bottom:460px;
+        right: 115px;
+      }
+    }
+  }
+  .clubs{
+    opacity: 0;
+    span{
+      background-color: #007a96;
+      color: white;
+      line-height: 1.25;
+      display: inline-block;
+      text-align: end;
+      padding: 4px 10px 1px 5px;
+      font-weight: 700;
+      font-size: 0.7rem;
+      position: absolute;
+      &:first-child{
+        top: 80px;
+        right: 355px;
+      }
+      &:last-child{
+        top: 15px;
+        right: 285px;
+      }
+    }
+  }
+  .banks{
+    opacity: 0;
+    span{
+      background-color: #a3dfe9;
+      color: white;
+      line-height: 1.25;
+      display: inline-block;
+      max-width: 50px;
+      text-align: end;
+      padding: 4px 10px 1px 5px;
+      font-weight: 700;
+      font-size: 0.7rem;
+      position: absolute;
+      &:first-child{
+        bottom: 345px;
+        left: 130px;
+      }
+      &:nth-child(2){
+        bottom: 422px;
+        right: 225px;
+      }
+      &:last-child{
+        top: 179px;
+        right: 5px;
+      }
+    }
+  }
 }
 /*-----------------------Unidades I-----------------------*/
 #unitsI{
   background: linear-gradient(to bottom, rgba(250,250,250,0.1) 0%, rgba(248,248,248,0.1) 51%, rgba(248,248,248,1) 53%, rgba(247,247,247,1) 100%);
-  z-index: -1;
+  z-index: 1;
   .wunits{
     padding: 60px 0;
     position: relative;
@@ -455,7 +569,7 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 12vh;
-  padding-bottom: 25vh;
+  padding-bottom: 10vh;
   .gallery-thumbs {
     margin-top: 30px;
     .swiper-slide:hover {
