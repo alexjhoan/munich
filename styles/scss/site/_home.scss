@@ -126,33 +126,54 @@
     position: relative;
   }
   .mlocation{
+    // opacity: 1;
+    // margin-bottom: auto;
+    // position: relative;
+    // width: 100%;
+    // height: 100%;
+    // transform: translateY(-80px);
+    // transition: all 0.2s ease;
     opacity: 1;
     margin-bottom: auto;
-    position: relative;
-    width: 100%;
+    position: absolute;
+    width: 60%;
     height: 100%;
-    transform: translateY(-80px);
-    transition: all 0.2s ease;
+    right: 0;
+    transition: all .2s ease;
+    top: 15%;
     .img-fluid {
+      // position: absolute;
+      right: 0;
       width: 100%;
     }
     .tmunich {
       position: absolute;
       right: 26%;
-      top: 30%;
+      top: 26%;
       width: 70px;
     }
   }
   .mhlocation{
+    // opacity: 0;
+    // position: absolute;
+    // width: 100%;
+    // height: 100%;
+    // z-index: 1;
+    // transform: translateY(-80px);
+    // left: 11px;
+    // transition: all 0.2s ease;
     opacity: 0;
+    margin-bottom: auto;
     position: absolute;
-    width: 100%;
+    width: 60%;
     height: 100%;
-    z-index: 1;
-    transform: translateY(-80px);
-    left: 11px;
-    transition: all 0.2s ease;
+    right: 0;
+    transition: all .2s ease;
+    top: 15%;
+
     .hmapa{
+      position: absolute;
+      right: 0;
       width: 100%;
       height: auto;
       max-width: 856px;
@@ -169,7 +190,7 @@
 /*-----------------------Unidades I-----------------------*/
 #unitsI{
   background: linear-gradient(to bottom, rgba(250,250,250,0.1) 0%, rgba(248,248,248,0.1) 51%, rgba(248,248,248,1) 53%, rgba(247,247,247,1) 100%);
-  z-index: -1;
+  z-index: 1;
   .wunits{
     padding: 60px 0;
     position: relative;
@@ -455,7 +476,7 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 12vh;
-  padding-bottom: 25vh;
+  padding-bottom: 10vh;
   .gallery-thumbs {
     margin-top: 30px;
     .swiper-slide:hover {
