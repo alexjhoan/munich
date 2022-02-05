@@ -573,8 +573,9 @@
 /*----------------------Amenities-I--------------------------------*/
 #amenitiesI{
   .camenit{
-    padding: 60px 0;
     position: relative;
+    padding-top: 80px;
+    padding-bottom: 200px;
   }
   .camenit:after{
     content: "";
@@ -661,7 +662,6 @@
     margin-bottom: 20px;
     text-align: center;
     .fancyBox{
-
       .fancyImgItem{
         .thumbnail {
           -webkit-transition: ease-in-out 0.5s;
@@ -1126,6 +1126,9 @@
     background-image: none;
     background-color: white;
     padding: 8vh 0;
+    &_text{
+      padding: 0;
+    }
     &_table {
       display: flex;
       flex-direction: column;
@@ -1150,6 +1153,7 @@
     }
     .logos {
       justify-content: space-evenly;
+      margin-bottom: 0;
     }
   }
   #unitsI {
@@ -1190,6 +1194,7 @@
       height: 100%;
       max-height: 450px;
       background-image: url(../../assets/images/amenities/fa-m.png);
+      background-position: bottom;
     }
     .col-right {
       margin-left: initial;
@@ -1225,6 +1230,7 @@
   }
   #location {
     margin-bottom: 90%;
+    padding-top: 0;
     .ulist {
       margin-top: 45px;
       .list img {
@@ -1354,7 +1360,13 @@
     }
   }
   #stext {
-    padding-top: 450px;
+    padding-top: 300px;
+  }
+  .unitII{
+    padding-top: 380px;
+  }
+  #contact .formCol2 {
+    margin-top: 20px;
   }
 }
 
@@ -1432,7 +1444,7 @@
     }
   }
   #unitII {
-    padding-top: 560px;
+    padding-top: 350px;
     .footer {
       .unitf {
         flex-direction: column;
@@ -1456,10 +1468,6 @@
       top: 230px;
     }
   }
-
-  #stext {
-    padding-top: 350px;
-  }
 }
 @media (max-width: 576px) {
   #amenitiesI {
@@ -1468,9 +1476,6 @@
       top: 350px;
     }
   }
-  section#stext {
-    padding-top: 370px;
-  }
   #unitsI {
     img.uright {
       right: 0;
@@ -1478,9 +1483,6 @@
       z-index: 0;
       top: 340px;
     }
-  }
-  #unitII {
-    padding-top: 260px;
   }
   #advance {
     .aline {
