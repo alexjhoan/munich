@@ -1015,13 +1015,6 @@
     margin-top: 50px;
   }
 }
-
-@media (min-width:1024px){
-  #unitsI{
-    margin-top: 0;
-  }
-}
-
 @media (min-width:992px) {
   #amenitiesI{
     .container {
@@ -1138,7 +1131,10 @@
       }
     }
   }
-  section#amenitiesI {
+  #unitsI{
+    margin-top: 300px;
+  }
+  #amenitiesI {
     padding: 14vh 0 8vh;
   }
 }
@@ -1184,6 +1180,9 @@
   }
 }
 @media (max-width: 1024px) {
+  #unitsI{
+    margin-top: 0;
+  }
   #advance {
     #lightgallery {
       .swiper-pagination {
@@ -1193,12 +1192,6 @@
   }
   #unitII {
     padding-top: 0;
-  }
-  #amenitiesI{
-    img.aright {
-      width: 600px;
-      top: 200px;
-    }
   }
 }
 @media (max-width: 991.98px) {
@@ -1265,6 +1258,7 @@
   }
   #unitII{
     text-align: center;
+    padding-top: 300px;
   }
   #amenitiesI{
     margin: 0;
@@ -1400,7 +1394,6 @@
   }
 }
 
-
 @media (max-width: 768px) {
   #unitsI{
     img.uright {
@@ -1408,11 +1401,6 @@
       max-width: 400px;
     }
   }
-  #unitII {
-    padding-top: 350px;
-  }
-}
-@media (max-width: 768px) {
   #unitsGallery {
     padding: 8vh 0;
     .container .col-12 {
@@ -1473,7 +1461,7 @@
         }
         .unitText {
           h3, p {
-            text-align: center;
+          text-align: center;
           }
         }
       }
@@ -1498,7 +1486,7 @@
     }
   }
   #unitII{
-    padding-top: 15%;
+    padding-top: 50%;
   }
   #advance {
     h5 {
@@ -1522,7 +1510,5 @@
 }
 
 @media (max-width: 376px) {
-  #unitII {
-    padding-top: 200px;
-  }
+
 }
