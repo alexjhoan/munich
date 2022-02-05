@@ -277,8 +277,10 @@
   z-index: 1;
   margin-top: 200px;
   .wunits{
-    padding: 60px 0;
     position: relative;
+    .ptext{
+      padding-bottom: 50px;
+    }
   }
   .wunits:after{
     content: "";
@@ -288,7 +290,7 @@
     top: 50%;
     transform: translateY(-50%);
     z-index: -1;
-    background-image: url(../../assets/images/unidades/fondo-udesktop.png);
+    background-image: url(../../assets/images/unidades/fondo-udesktopb.png);
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 100%;
@@ -1023,7 +1025,11 @@
   }
 }
 
-@media (min-width:1024px){}
+@media (min-width:1024px){
+  #unitsI{
+    margin-top: 0;
+  }
+}
 @media (min-width:1200px) {
   .dwallpaper {
     &_image {
@@ -1121,9 +1127,6 @@
     max-width: 100%;
   }
 }
-@media (max-width:1599px) {
-
-}
 @media (max-width: 1399.98px) {
   #unitsGallery {
     width: 55%;
@@ -1164,38 +1167,7 @@
       margin-bottom: 0;
     }
   }
-  #unitsI {
-    margin: 0;
-    padding: 0;
-    .wunits:after {
-      width: 100vw;
-      background-size: cover;
-      background-position: bottom;
-      height: 100%;
-      max-height: 500px;
-      background-image: url(../../assets/images/unidades/fondo-umobile.png);
-    }
-    .wunits{
-      padding-top: 8%;
-      position: relative;
-      padding-bottom: 18%;
-        #unitsI{
-          img.uright {
-          bottom: -60%;
-        }
-  }
-    }
-    .ptext {
-      padding-left: calc(70px - 30px);
-      width: 100%;
-    }
-    // .col-lg-5 {
-    //   padding: 0;
-    //   padding-top: 0%;
-    //   margin-left: 10%;
-    //   transform: scale(0.8);
-    // }
-  }
+
   #unitsGallery {
     width: 100%;
   }
@@ -1237,12 +1209,6 @@
       .swiper-pagination {
         display: block;
       }
-    }
-  }
-  #unitsI{
-    padding-bottom: 35%;
-    .uright {
-      top: 55%;
     }
   }
   #unitII {
@@ -1291,13 +1257,30 @@
       }
     }
   }
-  #unitsI{
-    .wunits {
-      padding-top: 12%;
-      padding-bottom: 25%;
+  #unitsI {
+    margin: 0;
+    padding: 0;
+    .wunits:after {
+      width: 100vw;
+      background-size: cover;
+      background-position: bottom;
+      height: 100%;
+      max-height: 500px;
+      background-image: url(../../assets/images/unidades/fondo-umobile.png);
     }
-    .uright {
-      top: 60%;
+    .wunits{
+      padding-top: 8%;
+      position: relative;
+      padding-bottom: 18%;
+        #unitsI{
+          img.uright {
+            bottom: -60%;
+          }
+        }
+    }
+    .ptext {
+      padding-left: calc(70px - 30px);
+      width: 100%;
     }
   }
   #unitII{
