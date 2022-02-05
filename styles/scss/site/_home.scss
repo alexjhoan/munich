@@ -274,6 +274,7 @@
 #unitsI{
   background: linear-gradient(to bottom, rgba(250,250,250,0.1) 0%, rgba(248,248,248,0.1) 51%, rgba(248,248,248,1) 53%, rgba(247,247,247,1) 100%);
   z-index: 1;
+  margin-top: 200px;
   .wunits{
     padding: 60px 0;
     position: relative;
@@ -306,13 +307,14 @@
     width: 100%;
     max-width: 520px;
     z-index: 0;
-    bottom: -39%;
+    bottom: -53%;
   }
 
 }
 /*-----------------------Unidades II-----------------------*/
 #unitII{
   background-color: #F7F7F7;
+  padding-top: 250px;
   h5{
     color: $text-black;
     font-weight: 400;
@@ -1132,7 +1134,7 @@
     background-color: white;
     padding: 8vh 0;
     &_text{
-      padding: 0;
+      padding: 0 15px;
     }
     &_table {
       display: flex;
@@ -1390,7 +1392,7 @@
     }
   }
   #unitII {
-    padding-top: 450px;
+    padding-top: 350px;
   }
   #amenitiesI{
     img.aright {

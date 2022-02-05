@@ -10,6 +10,7 @@ header {
     width: 60%;
   }
   .navbar{
+    flex-wrap: nowrap;
     .navbar-toggler {
       color: $white;
       border-color: $white;
