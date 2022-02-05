@@ -47,6 +47,22 @@ section {
   box-shadow: none!important;
 }
 
+.btn.btn-secondary {
+  background-color: $bluetitle;
+  border-color: $bluetitle;
+  border-radius: 48px;
+  padding: 8px 40px;
+  color: $white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.btn.btn-secondary:hover, .btn.btn-secondary:active, .btn.btn-secondary:focus {
+  background-color: $blue-hover!important;
+  border-color: $blue-hover!important;
+  box-shadow: none!important;
+}
+
 .strong {
   font-weight: 700;
 }
