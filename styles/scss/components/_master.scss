@@ -95,6 +95,7 @@ section#b-header:after {
 @media (max-width: 992px) {
   #b-header{
     background-image: url(../../assets/images/header/header-mobile.jpg);
+    background-position: center;
   }
   section {
     position: relative;

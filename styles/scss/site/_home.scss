@@ -22,7 +22,8 @@
     }
   }
   &_logo-munich{
-    width: 40%;
+    width: 100%;
+    max-width: 300px;
     margin-bottom: 34px;
   }
   p{
@@ -1175,19 +1176,25 @@
       background-image: url(../../assets/images/unidades/fondo-umobile.png);
     }
     .wunits{
-      padding-top: 80px;
+      padding-top: 8%;
       position: relative;
-      padding-bottom: 200px;
+      padding-bottom: 18%;
+        #unitsI{
+          img.uright {
+          bottom: -60%;
+        }
+  }
     }
-    .col-lg-7 {
+    .ptext {
       padding-left: calc(70px - 30px);
+      width: 100%;
     }
-    .col-lg-5 {
-      padding: 0;
-      padding-top: 0%;
-      margin-left: 10%;
-      transform: scale(0.8);
-    }
+    // .col-lg-5 {
+    //   padding: 0;
+    //   padding-top: 0%;
+    //   margin-left: 10%;
+    //   transform: scale(0.8);
+    // }
   }
   #unitsGallery {
     width: 100%;
@@ -1223,10 +1230,30 @@
       width: 100%;
     }
   }
-
 }
-@media (max-width: 1023px) {
-
+@media (max-width: 1024px) {
+  #advance {
+    #lightgallery {
+      .swiper-pagination {
+        display: block;
+      }
+    }
+  }
+  #unitsI{
+    padding-bottom: 35%;
+    .uright {
+      top: 55%;
+    }
+  }
+  #unitII {
+    padding-top: 0;
+  }
+  #amenitiesI{
+    img.aright {
+      width: 600px;
+      top: 200px;
+    }
+  }
 }
 @media (max-width: 992px) {
   #dwallaper{
@@ -1238,6 +1265,12 @@
   #location {
     margin-bottom: 90%;
     padding-top: 0;
+    .display-6 {
+      margin-bottom: 27px;
+    }
+    .ptext{
+      text-align: center;
+    }
     .ulist {
       margin-top: 45px;
       .list img {
@@ -1257,6 +1290,18 @@
         font-size: calc(0.4vw + 0.35rem);
       }
     }
+  }
+  #unitsI{
+    .wunits {
+      padding-top: 12%;
+      padding-bottom: 25%;
+    }
+    .uright {
+      top: 60%;
+    }
+  }
+  #unitII{
+    text-align: center;
   }
   #mtypology{
     background-image: url(../../assets/images/tipologias/monoambiente.jpg);
@@ -1369,39 +1414,19 @@
   #stext {
     padding-top: 300px;
   }
-  .unitII{
-    padding-top: 380px;
-  }
   #contact .formCol2 {
     margin-top: 20px;
   }
 }
 
-@media (max-width: 1024px) {
-  #advance {
-    #lightgallery {
-      .swiper-pagination {
-        display: block;
-      }
-    }
-  }
+
+@media (max-width: 768px) {
   #unitsI{
     img.uright {
-      width: 88vw;
-      top: 280px;
+      top: 70%;
+      max-width: 400px;
     }
   }
-  #unitII {
-    padding-top: 350px;
-  }
-  #amenitiesI{
-    img.aright {
-      width: 600px;
-      top: 200px;
-    }
-  }
-}
-@media (max-width: 768px) {
   #unitsGallery {
     padding: 8vh 0;
     .container .col-12 {
@@ -1451,7 +1476,6 @@
     }
   }
   #unitII {
-    padding-top: 350px;
     .footer {
       .unitf {
         flex-direction: column;
@@ -1478,26 +1502,23 @@
 }
 @media (max-width: 576px) {
   #amenitiesI {
-    img.aright {
+    .aright {
       width: 400px;
       top: 350px;
     }
   }
   #unitsI {
-    img.uright {
-      right: 0;
-      width: 88vw;
-      z-index: 0;
-      top: 340px;
+    .wunits{
+      padding-top: 15%;
+      padding-bottom: 25%;
     }
   }
+  #unitII{
+    padding-top: 15%;
+  }
   #advance {
-    .aline {
-      .item {
-        h5 {
-          font-size: .8rem;
-        }
-      }
+    h5 {
+      font-size: .8rem;
     }
   }
   #projectUs{
