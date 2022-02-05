@@ -77,7 +77,7 @@
 }
 /*-----------------------Ubicación-----------------------*/
 #location{
-  margin-bottom: 100px;
+  margin-bottom: 0;
   .container {
     position: relative;
     z-index: 2;
@@ -93,7 +93,7 @@
   .titleII{
     font-weight: 700;
   }
-  h3, h5{
+  h3, h5, .mybtn{
     color: $text-black;
     font-weight: 400;
   }
@@ -103,7 +103,6 @@
   .mybtn{
     font-weight: 700;
     font-size: 1.25rem;
-    color: $text-black;
     background-color: white;
     border: none;
   }
@@ -121,6 +120,11 @@
       align-items: center;
       margin-bottom: 25px;
       cursor: pointer;
+      &.selector{
+        h5{
+          color:$black;
+        }
+      }
       h4{
         color: #000000;
       }
@@ -641,7 +645,7 @@
         width: 100%;
       }
       h5{
-        color: &black;
+        color: $black;
         font-weight: 400;
         text-align: center;
         margin-top: 32px;
@@ -653,8 +657,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 15px;
-    margin-top: 40px;
-    margin-bottom: 70px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     text-align: center;
     .fancyBox{
 
@@ -694,6 +698,8 @@
 /*----------------------------ADVANCE------------------------------*/
 #advance{
   background-color: #F7F7F7;
+  padding-top: 110px;
+  padding-bottom: 80px;
   .title{
     text-align: center;
     margin-bottom: 55px;
@@ -1148,11 +1154,19 @@
   }
   #unitsI {
     margin: 0;
+    padding: 0;
     .wunits:after {
       width: 100vw;
       background-size: cover;
-      height: 450px;
+      background-position: bottom;
+      height: 100%;
+      max-height: 500px;
       background-image: url(../../assets/images/unidades/fondo-umobile.png);
+    }
+    .wunits{
+      padding-top: 80px;
+      position: relative;
+      padding-bottom: 200px;
     }
     .col-lg-7 {
       padding-left: calc(70px - 30px);
@@ -1169,10 +1183,12 @@
   }
   #amenitiesI{
     margin: 0;
+    padding: 0;
     .camenit:after {
       width: 100vw;
       background-size: cover;
-      height: 450px;
+      height: 100%;
+      max-height: 450px;
       background-image: url(../../assets/images/amenities/fa-m.png);
     }
     .col-right {
@@ -1188,7 +1204,8 @@
     }
   }
   #stext {
-    padding-top: 40vh;
+    padding-top: 450px;
+    padding-bottom: 70px;
     .atext {
       margin-left: initial;
       width: 100%;
@@ -1337,7 +1354,7 @@
     }
   }
   #stext {
-    padding-top: 500px;
+    padding-top: 450px;
   }
 }
 
@@ -1356,12 +1373,12 @@
     }
   }
   #unitII {
-    padding-top: 650px;
+    padding-top: 450px;
   }
   #amenitiesI{
     img.aright {
       width: 600px;
-      top: 230px;
+      top: 200px;
     }
   }
 }

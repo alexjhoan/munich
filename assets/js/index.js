@@ -117,7 +117,7 @@ $("#lightgallery .swiper-wrapper").lightGallery();
 // ------------------------------Hover, Active Location-----------------------------
 $(".ulist .list").hover(function(){
   let type = $(this).data("type")
-  $(`.${type}`).css("opacity", "1");
+  $(`.${type}`).css("opacity", "1")
   }, function(){
   let type = $(this).data("type")
   $(`.${type}`).css("opacity", "0");
@@ -126,9 +126,10 @@ $(".ulist .list").hover(function(){
 $(".ulist .list").click(function(){
   let type = $(this).data("type")
   $(`.${type}`).addClass("active").siblings().removeClass("active")
+  $(this).addClass("selector")
   });
 
 $(".mybtn").click(function(){
-  $(".mlocation div").addClass("active")
+  $(".mlocation div").addClass("active").siblings().removeClass("selector")
 });
 
