@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="assets/lib/svg-inject.min.js"></script>
   <link rel="preload" href="assets/lib/bootstrap/bootstrap.min.css" as="style">
   <link rel="preload" href="assets/lib/animate.min.css" as="style">
   <link rel="preload" href="styles/css/fonts.css" as="style"/>
@@ -14,7 +15,7 @@
   <link rel="stylesheet" href="assets/js/owl-carousel/owl-theme.default.min.css">
   <link rel="stylesheet" href="assets/lib/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="assets/lib/animate.min.css">
-  <link rel="stylesheet" href="assets/js/fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
+  <link rel="stylesheet" href="assets/js/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="styles/css/fonts.css" />
   <link rel="stylesheet" href="styles/css/bundle.min.css" />
   <title>Torre Munich</title>
@@ -79,7 +80,7 @@
   <section id="b-header">
     <div class="container">
       <div class="row">
-        <div class="col-12 wow fadeInLeft">
+        <div class="col-12 wow fadeInUp">
           <h1 class="display-5">Más espacio para <br class="d-md-block d-none">lo que te hace bien.</h1>
           <a href="" class="btn btn-primary">Consultar</a>
         </div>
@@ -145,57 +146,75 @@
         <div class="col-12">
           <h2 class="display-6">Muy cerca de todo lo que te interesa</h2>
         </div>
-        <div class="col-lg-9 col-12">
+        <div class="col-lg-9 col-12 wow fadeInUp">
           <h3 class="titleII">CORDÓN | MERCEDES Y MAGALLANES</h3>
           <h5 class="text">Zona altamente demandada y al alcance de todo: facultades, zonas <br class="d-xl-block d-none">comerciales, hospitales. Excelente locomoción a toda la ciudad.</h5>
         </div>
         <div class="col-lg-4 col-12">
           <div class="ulist wow fadeInLeft">
-            <div class="list">
+            <div class="list" data-type="university">
               <img src="assets/images/ubicacion/pin-universidades.png" alt="Torre Munich">
               <h5>UNIVERSIDADES</h5>
             </div>
-            <div class="list">
+            <div class="list" data-type="sites-public">
               <img src="assets/images/ubicacion/pin-parques.png" alt="Torre Munich">
               <h5>PARQUES Y GRANDES CENTROS PÚLICOS</h5>
             </div>
-            <div class="list">
+            <div class="list" data-type="clubs">
               <img src="assets/images/ubicacion/pin-clubes.png" alt="Torre Munich">
               <h5>CLUBES SOCIALES Y DEPORTIVOS</h5>
             </div>
-            <div class="list">
+            <div class="list" data-type="banks">
               <img src="assets/images/ubicacion/pin-bancos.png" alt="Torre Munich">
               <h5>SEDES BANCARIAS</h5>
             </div>
           </div>
-          <a href="#">VER TODO</a>
-        </div>
-        <div class="col-lg-8 col-12 wrap_map">
-          <div class="mhlocation">
-            <img src="assets/images/ubicacion/mapa-referencias.png" alt="Torre Munich" class="hmapa">
-          </div>
-          <div class="mlocation">
-            <img src="assets/images/ubicacion/mapa.png" alt="Torre Munich" class="lmapa img-fluid">
-            <img src="assets/images/ubicacion/pin-munich.png" alt="Torre Munich" class="tmunich">
-          </div>
+          <button class="mybtn">VER TODO</button>
         </div>
       </div>
     </div>
-
+    <div class="mlocation">
+      <img src="assets/images/ubicacion/mapa.jpg" alt="Torre Munich">
+      <div class="university">
+        <span>ORT</span>
+        <span>LICEO N°32</span>
+        <span>FACULTAD DE HUMANIDADES</span>
+        <span>COLEGIO JOSÉ PEDRO VARELA</span>
+        <span>FACULTAD DE CIENCIAS SOCIALES</span>
+        <span>FACULTAD DE PSICOLOGIA</span>
+        <span style="max-width: 80px">INSTITUTO JUAN XXIII</span>
+        <span>FACULTAD DE DERECHO</span>
+      </div>
+      <div class="sites-public">
+        <span style="text-align: start">PLAZA CAGANCHA</span>
+        <span>SMI</span>
+        <span>IMM</span>
+        <span style="max-width: 110px">PLAZA DE LOS 33</span>
+        <span>CÍRCULO CATÓLICO</span>
+        <span>BIBLIOTECA NACIONAL</span>
+      </div>
+      <div class="clubs">
+        <span style="max-width: 70px">PALACIO PEÑAROL</span>
+        <span style="max-height: 130PX">CLUB ATLÉTICO CORDÓN</span>
+      </div>
+      <div class="banks">
+        <span style="max-width: 75px">SANTANDER</span>
+        <span>BROU</span>
+        <span>BPS</span>
+      </div>
+    </div>
   </section>
   <section id="unitsI">
     <div class="wunits">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-12">
+        <div class="col-lg-8 col-12 wow fadeInUp">
           <h2 class="display-6">Todas las unidades al frente y con terraza</h2>
-          <p class="h4">La ubicación de las unidades logra una eficiente distribución para que cada usuario disfrute de su unidad al frente y con terraza propia. El proyecto cuenta con 57 unidades más un local comercial, con tipologías Monoambiente, 1 y 2 dormitorios.</p>
-        </div>
-        <div class="col-lg-4 col-12">
-          <img src="assets/images/unidades/foto-unidades.png" alt="Torre Munich" class="uright">
+          <p class="h5">La ubicación de las unidades logra una eficiente distribución para que cada usuario disfrute de su unidad al frente y con terraza propia. El proyecto cuenta con 57 unidades más un local comercial, con tipologías Monoambiente, 1 y 2 dormitorios.</p>
         </div>
       </div>
     </div>
+    <img src="assets/images/unidades/foto-unidades.png" alt="Torre Munich" class="uright">
     </div>
   </section>
   <section id="unitII">
@@ -208,21 +227,26 @@
       </div>
       <div class="row mt-4">
         <div class="col-md-5 col-12 wow fadeInLeft">
-          <!--<img src="assets/images/unidades/edificio/subsuelo.svg" alt="Torre Munich" onload="SVGInject(this)">-->
-          <img src="assets/images/unidades/edificio/subsuelo.svg" alt="Torre Munich">
+          <img src="assets/images/unidades/edificio/edificio-01.svg"  onload="SVGInject(this)" alt="Torre Munich">
         </div>
         <div class="col-md-7 col-12 wow fadeInRight">
-          <img src="assets/images/unidades/plantas/subsuelo.jpg" alt="Torre Munich" id="changeImg"/>
+          <a class="edfLevelUrl" href="assets/images/unidades/plantas/subsuelo.jpg">
+            <img src="assets/images/unidades/plantas/subsuelo.jpg" alt="zoom" class="edfImgLevel">
+          </a>
           <div class="download">
-            <a href="#" target="_blank"><img src="assets/images/unidades/descargar.svg" alt="download" class="down">Descargar planos</a>
-            <a id="changeImgUrl" href="assets/images/plantas/pb.png" target="_blank"><img src="assets/images/unidades/lupa.svg" alt="zoom" class="zoom">
+            <a href="assets/Torre Munich.pdf" target="_blank">
+              <img src="assets/images/unidades/descargar.svg" alt="download" class="down">
+              Descargar planos
+            </a>
+            <a class="edfLevelUrl" href="assets/images/unidades/plantas/subsuelo.jpg" >
+              <img src="assets/images/unidades/lupa.svg" alt="zoom" class="zoom">
             </a>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-12 footer">
-          <div class="unitf wow fadeInUp">
+        <div class="col-12 footer wow fadeInUp">
+          <div class="unitf">
             <div class="unitp">
               <img src="assets/images/unidades/porcentaje.svg" alt="Torre Munich" class="porcentage">
               <h4 class="titleFoo">25%<br />VENDIDO</h4>
@@ -237,12 +261,11 @@
       </div>
     </div>
   </section>
-  <section id="mtypology" class="d-lg-none d-block">
-  </section>
+  <section id="mtypology" class="d-lg-none d-block"></section>
   <section id="typology">
     <div class="container">
       <div class="row">
-        <div class="col-12 wow FadeInDown" data-wow-duration="2s">
+        <div class="col-12 wow fadeInDown">
             <h2 class="display-5">Apartamentos</h2>
             <p class="display-2">Monoambientes</p>
             <button id="myBtn" class="btn btn-primary" data-toggle="modal">Ver tipologías</button>
@@ -474,22 +497,23 @@
     </div>
   </section>
   <section id="amenitiesI">
-    <img src="assets/images/amenities/fa-m.png" alt="Torre Munich" class="aMleft">
-    <img src="assets/images/amenities/fa-d.png" alt="Torre Munich" class="aleft">
-    <img src="assets/images/amenities/foto-a.png" alt="" class="aright">
-    <div class="container camenit">
+    <div class="camenit">
+    <div class="container">
       <div class="row pe-5 p-xl-5">
-        <div class="col-lg-7 col-12 col-right">
+        <div class="col-lg-7 col-12 col-right wow fadeInUp">
           <h2 class="display-6">Un piso completo de amenities</h2>
-          <h4>El piso número 10 del edificio está dedicado completamente a las amenities. Un espacio para socializar, hacer ejercicio, ver películas, jugar un partido de ping pong, o simplemente disfrutar de una cerveza con amigos.</h4>
+          <p class="h5">El piso número 10 del edificio está dedicado completamente a las amenities. Un espacio para socializar, hacer ejercicio, ver películas, jugar un partido de ping pong, o simplemente disfrutar de una cerveza con amigos.</h5>
         </div>
       </div>
     </div>
+    <img src="assets/images/amenities/foto-a.png" alt="" class="aright">
+    </div>
+
   </section>
   <section id="stext">
     <div class="container">
       <div class="row ramenit">
-         <div class="atext col-7">
+         <div class="atext col-7 wow fadeInUp">
             <h5>La realidad cotidiana nos atrapa en una dinámica acelerada, y nos quita espacio para las actividades físicas y de esparcimiento, fundamentales para una vida plena. Pensado para ofrecer más libertades a sus propietarios, este proyecto logra incorporar diferentes propuestas en un mismo espacio, convirtiéndolo en una solución integral para sus habitantes.</h5>
         </div>
       </div>
@@ -499,7 +523,7 @@
   <section id="amenitiesIII">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-am wow FadeInDown" data-wow-duration="1s">
+        <div class="col-12 col-am wow fadeInUp">
           <div class="am">
             <img src="assets/images/amenities/beer-garden.png" alt="Torre Munich">
             <h5>Beer Garden</h5>
@@ -535,7 +559,7 @@
        </div>
       </div>
       <div class="row">
-          <div class="col-12 wow FadeInUp" data-wow-duration="1s">
+          <div class="col-12 wow fadeInUp">
             <div class="fancyImgBox">
               <div class="fancyBox">
                 <a href="assets/images/amenities/beergarden.jpg" target="_blank" data-fancybox="gallery">
@@ -578,7 +602,7 @@
   <section id="advance">
     <div class="container">
       <div class="row">
-        <div class="col-12 wow FadeInDown" data-wow-duration="1s">
+        <div class="col-12 wow fadeInUp">
           <p class="title">Avance de Obra</p>
           <div class="tline">
             <img src="assets/images/avance/linea-tiempo.svg" alt="Torre Munich">
@@ -627,7 +651,7 @@
   <section id="project">
     <div class="container">
       <div class="row">
-        <div class="col-12 wow FadeInDown" data-wow-duration="1s">
+        <div class="col-12 wow fadeInDown">
           <div class="ititle">
             <img src="assets/images/tecnologia/energia.svg" alt="Torre Munich">
             <h2 class="title">Proyecto con tecnologías renovables</h2>
@@ -643,13 +667,15 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <p class="title wow FadeInUp" data-wow-duration="1s">La tecnología al servicio de los buenos negocios <br class="d-none d-lg-block">Desarrollado con Big Data</p>
-          <div class="logo">
-            <p>Powered by</p>
-            <img src="assets/images/bigdata/logo-infocasas.svg" alt="Torre Munich">
+          <div class="text-l wow fadeInUp">
+            <p class="title">La tecnología al servicio de los buenos negocios <br class="d-none d-lg-block">Desarrollado con Big Data</p>
+            <div class="logo">
+              <p>Powered by</p>
+              <img src="assets/images/bigdata/logo-infocasas.svg" alt="Torre Munich">
+            </div>
           </div>
-          <p>Tomando como base el análisis de datos del <a href="https://www.infocasas.com.uy/" target="_blank"><u>Portal InfoCasas</u></a>, el proyecto fue concebido en cada uno de sus detalles según la demanda del <br class="d-none d-lg-block">mercado, abarcando desde la selección del terreno, hasta la composición de unidades y amenities, <span class="strong">para lograr un proyecto innovador, con alta <br class="d-none d-lg-block">rentabilidad y atractivo tanto al público inversor como residencial.</span></p>
-          <div class="footer">
+          <p class=" wow fadeInUp">Tomando como base el análisis de datos del <a href="https://www.infocasas.com.uy/" target="_blank"><u>Portal InfoCasas</u></a>, el proyecto fue concebido en cada uno de sus detalles según la demanda del <br class="d-none d-lg-block">mercado, abarcando desde la selección del terreno, hasta la composición de unidades y amenities, <span class="strong">para lograr un proyecto innovador, con alta <br class="d-none d-lg-block">rentabilidad y atractivo tanto al público inversor como residencial.</span></p>
+          <div class="footer wow fadeInUp">
             <p><span>10 años</span><br />de datos de <br />mercado analizados</p>
             <p><span>+200.000</span><br />operaciones <br />analizadas por año</p>
             <p><span>+150.000</span><br />propiedades <br />procesadas por año</p>
@@ -661,7 +687,7 @@
   <section id="contact">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-6 wow fadeInLeft">
           <h1 class="title">Solicitá más información</h1>
           <form id="contactForm" class="needs-validation" action="javascript:void(0);" novalidate>
             <div class="form-floating">
@@ -697,10 +723,10 @@
             <p class="h3 strong">¡Error en el envio de su consulta.<br />Por favor intentar mas tarde!</p>
           </div>
         </div>
-        <div class="col-12 col-lg-5 formCol2 animate__animated aniRi">
+        <div class="col-12 col-lg-5 formCol2 wow fadeInRight">
           <h5>Oficinas para trato personalizado en Argentina, Uruguay y Paraguay</h5>
           <h5 class="strong fw-bold">Coordiná una reunión virtual</h5>
-          <a href="#" class="whatsapp strong" target="_blank"><img src="assets/icons/whatsapp.png">+598 96 207 460</a>
+          <a href="#" class="whatsapp strong" target="_blank"><img src="assets/icons/whastapp.svg">+598 96 207 460</a>
           <a href="#" class="whatsapp strong" target="_blank"><img src="assets/icons/instagram.svg">@continentsred</a>
         </div>
       </div>
@@ -737,7 +763,6 @@
 <script type="text/javascript" src="assets/lib/bootstrap/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="assets/lib/wow.min.js"></script>
 <script type="text/javascript" src="assets/js/swiper/swiper-bundle.min.js"></script>
-<script type="text/javascript" src="assets/js/fancybox/source/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="assets/js/fancybox/source/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="assets/js/owl-carousel/owl-carousel.min.js"></script>
 <script type="text/javascript" src="assets/lib/lightgallery/js/lightgallery.min.js"></script>
