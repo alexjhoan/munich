@@ -307,15 +307,6 @@
   p {
     font-weight: 400;
   }
-  img.uright {
-    position: absolute;
-    right: 0;
-    width: 100%;
-    max-width: 520px;
-    z-index: 0;
-    bottom: -53%;
-  }
-
 }
 /*-----------------------Unidades II-----------------------*/
 #unitII {
@@ -1239,16 +1230,19 @@
       background-position: bottom;
       height: 100%;
       max-height: 500px;
+      top: 25%;
       background-image: url(../../assets/images/unidades/fondo-umobile.png);
     }
     .wunits{
       padding-top: 8%;
       position: relative;
-      padding-bottom: 18%;
-        #unitsI{
-          img.uright {
-            bottom: -60%;
-          }
+      padding-bottom: 10%;
+        img.uright {
+          margin-left: auto;
+          width: 100%;
+          max-width: 650px;
+          z-index: 0;
+          margin-top: -5%;
         }
     }
     .ptext {
@@ -1258,8 +1252,9 @@
   }
   #unitII{
     text-align: center;
-    padding-top: 300px;
+    padding-top: 2%;
   }
+
   #amenitiesI{
     margin: 0;
     padding: 0;
@@ -1287,8 +1282,9 @@
   }
   #typology{
     background-image: url(../../assets/images/tipologias/ft-mobile.png);
-    height: 35vh;
+    height: auto;
     width: 100%;
+    background-position: left center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -1332,6 +1328,9 @@
       grid-template-columns: 1fr;
       grid-row-gap: 70px;
     }
+  }
+  #advance{
+    padding: 50px 0;
   }
   #project {
     img.psolare {
@@ -1402,9 +1401,12 @@
     }
   }
   #unitsGallery {
-    padding: 8vh 0;
-    .container .col-12 {
-      padding: 0;
+    padding: 20px 0;
+    .container {
+      max-width: 100%;
+      .col-12 {
+        padding: 0;
+      }
     }
     .gallery-thumbs {
       display: none;
@@ -1427,6 +1429,7 @@
     }
   }
   #advance {
+
     h1.title {
       margin-bottom: 30px;
     }
@@ -1455,11 +1458,15 @@
         flex-direction: column;
         .unitp {
           margin-bottom: 15px;
+          margin-left: auto;
+          margin-right: auto;
           canvas#myChar {
             display: none;
           }
         }
         .unitText {
+          text-align: center;
+          margin: 0 auto;
           h3, p {
           text-align: center;
           }
@@ -1478,15 +1485,6 @@
     img.aright {
       margin-top: -30%;
     }
-  }
-  #unitsI {
-    .wunits{
-      padding-top: 15%;
-      padding-bottom: 25%;
-    }
-  }
-  #unitII{
-    padding-top: 50%;
   }
   #advance {
     h5 {
