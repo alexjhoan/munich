@@ -15,7 +15,6 @@
     background: #fff;
     position: relative;
     z-index: 1;
-    box-shadow: 2px 5px 10px rgb(0 0 0 / 15%);
     &-inner {
       position: relative;
       z-index: 2;
@@ -47,8 +46,8 @@
     }
   }
   .btn.btn-primary {
-    background-color: #005170;
-    border-color: #005170;
+    background-color: $bluetitle;
+    border-color: $bluetitle;
     border-radius: 48px;
     padding: 8px 40px;
     color: $white;
@@ -69,7 +68,11 @@
     margin-top: 40px;
     .text{
       font-size: 1rem;
-      color:$black;
+      color: $black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
       img {
         width: 80%;
@@ -90,7 +93,7 @@
     z-index: 2;
   }
   h2, .display-6, .titleII {
-    color:#005170;
+    color: $bluetitle;
   }
   .display-6{
     font-weight: 900;
@@ -315,16 +318,16 @@
 
 }
 /*-----------------------Unidades II-----------------------*/
-#unitII{
+#unitII {
   background-color: #F7F7F7;
   padding-top: 250px;
   h5{
     color: $text-black;
     font-weight: 400;
   }
-  .display-5{
+  h3{
     font-weight: 700;
-    color: #005170;
+    color: $bluetitle;
   }
   .download {
     display: flex;
@@ -348,19 +351,17 @@
     }
   }
   .footer{
-    text-align: center;
     .unitf {
       display: flex;
-      flex-direction: row;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
       column-gap: 50px;
       margin-top: 90px;
       margin-bottom: 30px;
       .unitp{
         display: flex;
-        flex-direction: row;
         align-items: center;
+        margin-top: 2px;
         canvas#myChart {
           width: 170px!important;
           height: auto!important;
@@ -373,28 +374,20 @@
         .titleFoo {
           margin-bottom: 0;
           font-weight: 700;
-          text-align: start;
+          line-height: 1;
         }
       }
       .unitText{
+        position: relative;
+        text-align: left;
         h3{
           color: $text-black;
           font-style: italic;
-          text-align: start;
         }
         h5{
-          font-weight: 700;
-          text-align: start;
+          margin-bottom: 20px;
         }
       }
-    }
-    .btn.btn-primary {
-      background-color: #005170;
-      border-color: #005170;
-    }
-    .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
-      background-color: #022938 !important;
-      border-color: #022938 !important;
     }
   }
 }
@@ -461,7 +454,7 @@
           column-gap: 25px;
           .mcol-left{
             h4, .display-6{
-              color: #005170;
+              color: $bluetitle;
             }
             .display-6{
               font-weight: 900;
@@ -536,7 +529,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            color: #005170 !important;
+            color: $bluetitle !important;
           }
           .owl-nav [class*=owl-]:hover {
             background:none;
@@ -585,8 +578,7 @@
 #amenitiesI{
   .camenit{
     position: relative;
-    padding-top: 80px;
-    padding-bottom: 200px;
+    padding-top: 120px;
   }
   .camenit:after{
     content: "";
@@ -596,18 +588,10 @@
     top: 50%;
     transform: translateY(-50%);
     z-index: -1;
-    background-image: url(../../assets/images/amenities/fa-d.png);
+    background-image: url(../../assets/images/amenities/fa-d2.png);
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 100%;
-  }
-  .aright {
-    position: absolute;
-    z-index: 0;
-    top: -7%;
-    left: 0;
-    width: 100%;
-    max-width: 500px;
   }
   .col-right {
     margin-left: auto;
@@ -620,6 +604,13 @@
     p{
       font-weight: 400;
     }
+  }
+  .aright {
+    width: 80%;
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-top: -25%;
   }
 }
 /*----------------------Amenities-I (text-inferior)--------------------------------*/
@@ -694,8 +685,8 @@
           margin-bottom: 30px;
         }
         .btn.btn-primary {
-          background-color: #005170;
-          border-color: #005170;
+          background-color: $bluetitle;
+          border-color: $bluetitle;
         }
         .btn.btn-primary:hover, #unitII .footer .btn.btn-primary:active, #unitII .footer .btn.btn-primary:focus {
           background-color: #022938 !important;
@@ -772,7 +763,7 @@
       position: absolute;
       z-index: 2;
       color: #fff;
-      background: #005170;
+      background: $bluetitle;
       padding: 5px 24px;
       border-radius: 30px;
       box-shadow: 0 3px 6px #00000030;
@@ -802,7 +793,7 @@
           position: absolute;
           z-index: 2;
           color: #fff;
-          background: #005170;
+          background: $bluetitle;
           padding: 5px 24px;
           border-radius: 30px;
           box-shadow: 0 3px 6px #00000030;
@@ -939,8 +930,8 @@
         margin-bottom: 12px;
       }
       .btn.btn-primary {
-        background-color: #005170;
-        border-color: #005170;
+        background-color: $bluetitle;
+        border-color: $bluetitle;
       }
       .btn.btn-primary:hover, #unitII .footer .btn.btn-primary:active, #unitII .footer .btn.btn-primary:focus {
         background-color: #022938 !important;
@@ -1030,6 +1021,27 @@
     margin-top: 0;
   }
 }
+
+@media (min-width:992px) {
+  #amenitiesI{
+    .container {
+      transform: translateY(-70px);
+    }
+    .aright {
+      display: none
+    }
+  }
+}
+@media (min-width:992px) and (max-width:1199px) {
+  #amenitiesI{
+    .camenit {
+      &:after {
+        background-size: 150%;
+        background-position: 25% center;
+      }
+    }
+  }
+}
 @media (min-width:1200px) {
   .dwallpaper {
     &_image {
@@ -1043,6 +1055,7 @@
     }
     &_text {
       padding: 30px 0px 30px 135px;
+      box-shadow: 2px 5px 10px rgba(0,0,0,.15);
       &:before {
         content: '';
         position: absolute;
@@ -1055,13 +1068,18 @@
       }
     }
   }
-  #amenitiesI{
-    .aright {
-      position: absolute;
-      z-index: 0;
-      top: 0%;
-      left: 0;
-      width: 30%;
+  #unitII {
+    .footer {
+      .unitText {
+        &:before {
+          content: '';
+          position: absolute;
+          left: -20px;
+          height: calc(100% - 62px);
+          width: 1px;
+          background: #B7B1A6;
+        }
+      }
     }
   }
 }
@@ -1120,11 +1138,8 @@
       }
     }
   }
-  #amenitiesI img.aright {
-    top: -18px;
-    width: 37%;
-    left: 0;
-    max-width: 100%;
+  section#amenitiesI {
+    padding: 14vh 0 8vh;
   }
 }
 @media (max-width: 1399.98px) {
@@ -1161,46 +1176,11 @@
     }
     .l-text {
       justify-content: space-evenly;
-    }
-    .logos {
-      justify-content: space-evenly;
       margin-bottom: 0;
     }
   }
-
   #unitsGallery {
     width: 100%;
-  }
-  #amenitiesI{
-    margin: 0;
-    padding: 0;
-    .camenit:after {
-      width: 100vw;
-      background-size: cover;
-      height: 100%;
-      max-height: 450px;
-      background-image: url(../../assets/images/amenities/fa-m.png);
-      background-position: bottom;
-    }
-    .col-right {
-      margin-left: initial;
-      width: 100%;
-    }
-    img.aright {
-      position: absolute;
-      top: 70%;
-      left: auto;
-      right: 0;
-      width: 50%;
-    }
-  }
-  #stext {
-    padding-top: 450px;
-    padding-bottom: 70px;
-    .atext {
-      margin-left: initial;
-      width: 100%;
-    }
   }
 }
 @media (max-width: 1024px) {
@@ -1221,7 +1201,7 @@
     }
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
   #dwallaper{
     padding-bottom: 0;
     .logos{
@@ -1285,6 +1265,24 @@
   }
   #unitII{
     text-align: center;
+  }
+  #amenitiesI{
+    margin: 0;
+    padding: 0;
+    .camenit {
+      padding-top: 60px;
+      padding-bottom: 250px;
+      &:after {
+        width: 100vw;
+        background-size: cover;
+        height: 100%;
+        max-height: 450px;
+        background-image: url(../../assets/images/amenities/fa-m.png);
+        background-position: bottom;
+        top: 0;
+        transform: none;
+      }
+    }
   }
   #mtypology{
     background-image: url(../../assets/images/tipologias/monoambiente.jpg);
@@ -1395,7 +1393,7 @@
     }
   }
   #stext {
-    padding-top: 300px;
+    padding-top: 60px;
   }
   #contact .formCol2 {
     margin-top: 20px;
@@ -1410,6 +1408,11 @@
       max-width: 400px;
     }
   }
+  #unitII {
+    padding-top: 350px;
+  }
+}
+@media (max-width: 768px) {
   #unitsGallery {
     padding: 8vh 0;
     .container .col-12 {
@@ -1477,17 +1480,15 @@
     }
   }
   #amenitiesI {
-    img.aright {
-      width: 500px;
-      top: 230px;
+    .camenit {
+      padding-bottom: 150px;
     }
   }
 }
 @media (max-width: 576px) {
   #amenitiesI {
-    .aright {
-      width: 400px;
-      top: 350px;
+    img.aright {
+      margin-top: -30%;
     }
   }
   #unitsI {
@@ -1506,6 +1507,17 @@
   }
   #projectUs{
     font-size: 1.5rem;
+  }
+  .dwallpaper {
+    .l-text {
+      .text {
+        font-size: .6rem;
+      }
+    }
+  }
+  .dwallpaper_table {
+    width: calc(100% + 30px);
+    margin-left: -15px;
   }
 }
 
