@@ -25,10 +25,6 @@ $(".edfLevelUrl").fancybox({
 });
 
 // ------------------------------img-edf-units----------------------------
-$('#exampleModalCenter').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
-
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -56,13 +52,11 @@ window.onclick = function(event) {
 }
 // ------------------------------owl-carousel--------------------------------
 $('.owl-carousel').owlCarousel({
-    loop:true,
     items:1,
     margin:10,
     nav:true,
 })
 // ------------------------------Carousel-----------------------------
-
 const galleryThumbs = new Swiper('.gallery-thumbs', {
   spaceBetween: 20,
   slidesPerView: 6,
@@ -110,14 +104,12 @@ $('[data-fancybox="gallery"]').fancybox({
 })
 
 
-//$("#lightgallery a").fancybox();
-
 $("#lightgallery .swiper-wrapper").lightGallery();
 
-// ------------------------------Hover Location-----------------------------
+// ------------------------------Hover, Active Location-----------------------------
 $(".ulist .list").hover(function(){
   let type = $(this).data("type")
-  $(`.${type}`).css("opacity", "1");
+  $(`.${type}`).css("opacity", "1")
   }, function(){
   let type = $(this).data("type")
   $(`.${type}`).css("opacity", "0");
@@ -126,4 +118,10 @@ $(".ulist .list").hover(function(){
 $(".ulist .list").click(function(){
   let type = $(this).data("type")
   $(`.${type}`).addClass("active").siblings().removeClass("active")
+  $(this).addClass("selector")
   });
+
+$(".mybtn").click(function(){
+  $(".mlocation div").addClass("active").siblings().removeClass("selector")
+});
+

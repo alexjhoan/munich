@@ -3,7 +3,7 @@
 }
 
 body {
-  overflow-x: hidden;
+  // overflow-x: hidden;
   opacity: 0;
 }
 
@@ -17,6 +17,9 @@ a,p,div,input,button,textarea{
   color: $text-secondary;
 }
 a{
+  text-decoration: none;
+}
+a:hover{
   text-decoration: none;
 }
 img {
@@ -44,13 +47,25 @@ section {
   box-shadow: none!important;
 }
 
+.btn.btn-secondary {
+  background-color: $bluetitle;
+  border-color: $bluetitle;
+  border-radius: 48px;
+  padding: 8px 40px;
+  color: $white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.btn.btn-secondary:hover, .btn.btn-secondary:active, .btn.btn-secondary:focus {
+  background-color: $blue-hover!important;
+  border-color: $blue-hover!important;
+  box-shadow: none!important;
+}
+
 .strong {
   font-weight: 700;
 }
-// :root {
-//   --animate-duration: 1s;
-//   --animate-delay: 1s;
-// }
 
 /*---------------HEADER---------------*/
 #b-header{
@@ -92,6 +107,7 @@ section#b-header:after {
 @media (max-width: 992px) {
   #b-header{
     background-image: url(../../assets/images/header/header-mobile.jpg);
+    background-position: center;
   }
   section {
     position: relative;
