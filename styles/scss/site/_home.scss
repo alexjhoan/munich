@@ -22,7 +22,7 @@
   }
   &_logo-munich{
     width: 100%;
-    max-width: 300px;
+    max-width: 200px;
     margin-bottom: 34px;
   }
   p{
@@ -165,7 +165,7 @@
       line-height: 1.25;
       display: inline-block;
       text-align: end;
-      padding: 4px 10px 1px 5px;
+      padding: 4px 5px 1px 5px;
       font-weight: 700;
       font-size: 0.7rem;
       position: absolute;
@@ -216,7 +216,7 @@
   .sites-public{
     span{
       background-color: #04a9cc;
-      max-width: 90px;
+      max-width: 70px;
       &:first-child{
         bottom: 16%;
         left: 7%;
@@ -390,10 +390,12 @@
   height: 90vh;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  .col-12{
+    z-index: 2;
+  }
   .display-5{
     font-weight: 500;
     color: $white;
@@ -420,7 +422,6 @@
       margin: auto;
       padding: 20px;
       border: 1px solid #888;
-      width: 60%;
       border-radius: 50px;
       .close {
         color: $white;
@@ -534,7 +535,7 @@
   background-image: url(../../assets/images/tipologias/ft-desktop.png);
   width: 32%;
   height: 100%;
-  z-index: -1;
+  z-index: 1;
   left: 0;
   top: 0;
   background-size: cover;
@@ -547,6 +548,9 @@
   margin-right: auto;
   padding-top: 12vh;
   padding-bottom: 10vh;
+  .swiper-container{
+    z-index: 0;
+  }
   .gallery-thumbs {
     margin-top: 30px;
     .swiper-slide:hover {
@@ -632,12 +636,12 @@
       img {
         max-width: 80px;
         width: 100%;
+        margin-bottom: 32px;
       }
-      h5{
+      p{
         color: $black;
         font-weight: 400;
         text-align: center;
-        margin-top: 32px;
       }
     }
   }
@@ -1323,6 +1327,8 @@
       .am{
         img {
           width: 50%;
+          margin-bottom: 20px;
+          margin-top: 15px;
         }
       }
     }
@@ -1394,8 +1400,14 @@
     .title {
       font-size: 1.5rem;
     }
-    .footer span {
-      font-size: 2rem;
+    p{
+      font-size: 0.8rem,
+    }
+
+    .footer {
+      span {
+        font-size: 1.5rem;
+      }
     }
   }
   #contact .formCol2 {
