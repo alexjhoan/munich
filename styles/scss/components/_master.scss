@@ -60,8 +60,8 @@ section {
 }
 
 .btn.btn-secondary:hover, .btn.btn-secondary:active, .btn.btn-secondary:focus {
-  background-color: $blue-hover!important;
-  border-color: $blue-hover!important;
+  background-color: $blueuniversity!important;
+  border-color: $blueuniversity!important;
   box-shadow: none!important;
 }
 
@@ -98,7 +98,7 @@ section#b-header:after {
 
 /*---------------Swipper---------------*/
 .swiper-pagination-bullet, .swiper-pagination-bullet-active {
-  background: #7C7C7C;
+  background: $swipergrey;
 }
 /*----------------------------Queries-------------------------------*/
 

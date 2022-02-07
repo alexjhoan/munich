@@ -1,10 +1,12 @@
 header {
   background-color: $white;
-  border-bottom: 5px solid #B29263;
+  border-bottom: 5px solid $golden;
   height: 70px;
   position: fixed;
-  z-index: 1000;
+  z-index: 100;
   width: 100%;
+  top: 0;
+  box-shadow: 0px 5px 19px rgb(0 0 0 / 29%);
   .navbar-brand img{
     width: 60%;
   }
@@ -29,7 +31,7 @@ header {
     }
    .navbar-collapse {
       justify-content: end;
-      background-color: white;
+      background-color: $white;
       .navbar-nav{
         .nav-item{
           a.nav-link{

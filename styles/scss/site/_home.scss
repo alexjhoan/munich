@@ -12,7 +12,7 @@
   }
   &_text {
     padding: 30px 25px;
-    background: #fff;
+    background: $white;
     position: relative;
     z-index: 1;
     &-inner {
@@ -39,7 +39,7 @@
     flex-direction: row;
     column-gap: 60px;
     .line{
-      background-color: #d6d6d6;
+      background-color: $linegrey;
       height: 1px;
       width: 110%;
       margin-bottom: 1rem;
@@ -55,11 +55,10 @@
     font-weight: 700;
   }
   .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
-    background-color: #002938!important;
-    border-color: #002938!important;
+    background-color: $blueuniversity!important;
+    border-color: $blueuniversity!important;
     box-shadow: none!important;
   }
-
   .l-text{
     display: flex;
     flex-direction: row;
@@ -115,12 +114,12 @@
   .mybtn{
     font-weight: 700;
     font-size: 1.25rem;
-    background-color: white;
+    background-color: $white;
     border: none;
   }
   .mybtn:hover, .mybtn:active, .mybtn:focus{
     text-decoration: none;
-    color: black;
+    color: $black;
     border: none;
     outline: none;
   }
@@ -138,7 +137,7 @@
         }
       }
       h4{
-        color: #000000;
+        color: $black;
       }
       img {
         max-width: 45px;
@@ -163,7 +162,7 @@
       width: 100%;
     }
     span{
-      color: white;
+      color: $white;
       line-height: 1.25;
       display: inline-block;
       text-align: end;
@@ -179,7 +178,7 @@
 
   .university{
     span{
-      background-color: #005270;
+      background-color: $blueuniversity;
       max-width: 120px;
       &:first-child{
         bottom: 38%;
@@ -217,7 +216,7 @@
   }
   .sites-public{
     span{
-      background-color: #04a9cc;
+      background-color: $aquamarine;
       max-width: 70px;
       &:first-child{
         bottom: 16%;
@@ -247,7 +246,7 @@
   }
   .clubs{
     span{
-      background-color: #007a96;
+      background-color: $blueaqua;
       &:first-child{
         top: 13%;
         right: 45%;
@@ -260,7 +259,7 @@
   }
   .banks{
     span{
-      background-color: #a3dfe9;
+      background-color: $bluesky;
       max-width: 50px;
       &:first-child{
         bottom: 23%;
@@ -314,7 +313,7 @@
 }
 /*-----------------------Unidades II-----------------------*/
 #unitII {
-  background-color: #F7F7F7;
+  background-color: $whiteunit;
   padding-top: 250px;
   h5{
     color: $text-black;
@@ -424,7 +423,7 @@
         display: none;
       }
       .close:hover, .close:focus {
-          color: #000;
+          color: $black;
           text-decoration: none;
           cursor: pointer;
       }
@@ -446,7 +445,7 @@
             }
             .line{
               border-bottom: 1px solid;
-              color: #B7B1A5;
+              color: $linegrey;
               width: 100%;
               margin: 10px 0;
             }
@@ -649,7 +648,7 @@
       }
       .information {
         .titleFancyBox{
-          color: #000000;
+          color: $black;
           font-weight: 400;
           margin-bottom: 30px;
         }
@@ -658,8 +657,8 @@
           border-color: $bluetitle;
         }
         .btn.btn-primary:hover, #unitII .footer .btn.btn-primary:active, #unitII .footer .btn.btn-primary:focus {
-          background-color: #022938 !important;
-          border-color: #022938 !important;
+          background-color: $blueuniversity !important;
+          border-color: $blueuniversity !important;
         }
       }
     }
@@ -668,7 +667,7 @@
 
 /*----------------------------ADVANCE------------------------------*/
 #advance{
-  background-color: #F7F7F7;
+  background-color: $whiteunit;
   padding: 70px 0;
   .title{
     font-family: 'Raleway';
@@ -693,7 +692,7 @@
     .item{
       text-align: center;
       h5{
-        color: #4D4D4D;
+        color: $lightergrey;
       }
       img{
         width: 100%;
@@ -761,7 +760,7 @@
           top: 15px;
           position: absolute;
           z-index: 2;
-          color: #fff;
+          color: $white;
           background: $bluetitle;
           padding: 5px 24px;
           border-radius: 30px;
@@ -780,7 +779,7 @@
         bottom: 50px !important;
       }
       .swiper-pagination-bullet-active {
-        background: #7C7C7C !important;
+        background: $swipergrey!important;
       }
     }
   }
@@ -800,7 +799,7 @@
     margin-bottom: 35px;
     .title{
       font-family: 'Raleway';
-      color: #000000C9;
+      color: $blackgrey;
       font-weight: 700;
     }
     img{
@@ -906,8 +905,8 @@
         border-color: $bluetitle;
       }
       .btn.btn-primary:hover, #unitII .footer .btn.btn-primary:active, #unitII .footer .btn.btn-primary:focus {
-        background-color: #022938 !important;
-        border-color: #022938 !important;
+        background-color: $blueuniversity !important;
+        border-color: $blueuniversity !important;
       }
     }
     .formCol2{
@@ -961,7 +960,7 @@
   }
 }
 #aboutUsv{
-  background-color: #F7F7F7;
+  background-color: $whiteunit;
   img.logo {
     width: 80%;
   }
@@ -1037,7 +1036,7 @@
         content: '';
         position: absolute;
         height: 100%;
-        background: #fff;
+        background: $white;
         z-index: 1;
         width: 135%;
         left: -20%;
@@ -1054,7 +1053,7 @@
           left: -20px;
           height: calc(100% - 62px);
           width: 1px;
-          background: #B7B1A6;
+          background: $linegrey;
         }
       }
     }
@@ -1139,11 +1138,10 @@
       display: flex;
       flex-direction: column;
       padding-top: 9px;
-      background-color: #F7F7F7;
+      background-color: $whiteunit;
       padding-bottom: 10px;
       text-align: center;
       .line {
-        background-color: #d6d6d6;
         width: 100%;
       }
       .uline{
@@ -1532,8 +1530,4 @@
     width: calc(100% + 30px);
     margin-left: -15px;
   }
-}
-
-@media (max-width: 376px) {
-
 }
