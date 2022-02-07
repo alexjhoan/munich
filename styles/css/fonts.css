@@ -1,4 +1,28 @@
 @font-face {
+  font-family: Raleway;
+  src: url(../fonts/raleway/static/Raleway-Medium.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: Raleway;
+  src: url(../fonts/raleway/static/Raleway-SemiBold.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: Raleway;
+  src: url(../fonts/raleway/static/Raleway-Bold.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: Raleway;
+  src: url(../fonts/raleway/static/Raleway-ExtraBold.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
   font-family: Roboto;
   src: url(../fonts/roboto/Roboto-Thin.ttf) format('truetype');
   font-style: normal;
