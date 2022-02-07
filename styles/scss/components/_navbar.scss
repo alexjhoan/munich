@@ -1,6 +1,6 @@
 header {
   background-color: $white;
-  border-bottom: 5px solid $golden;
+  border-bottom: 7px solid $golden;
   height: 70px;
   position: fixed;
   z-index: 100;
@@ -59,16 +59,14 @@ header {
         background-color: white;
         margin: 0;
         position: fixed;
-        top: 60px;
+        top: 68px;
         left: 0;
         width: 100%;
         .navbar-nav {
-          align-items: center;
           padding-top: 20px;
           li.nav-item:not(:last-child){
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid $linegrey;
             width: 100%;
-            text-align: center;
           }
         }
       }
