@@ -358,7 +358,7 @@
         align-items: center;
         margin-top: 2px;
         canvas#myChart {
-          width: 170px!important;
+          width: 140px!important;
           height: auto!important;
           margin-right: -25px;
         }
@@ -434,12 +434,12 @@
           column-gap: 25px;
           .mcol-left{
             .display-6{
+              font-family: 'Raleway';
               color: $bluetitle;
-            }
-            .display-6{
-              font-weight: 900;
+              font-weight: 800;
             }
             h4{
+              font-family: 'Raleway';
               font-weight: 700;
               margin-bottom: 15px;
             }

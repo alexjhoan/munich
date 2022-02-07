@@ -125,3 +125,30 @@ $(".mybtn").click(function(){
   $(".mlocation div").addClass("active").siblings().removeClass("selector")
 });
 
+//----------------------------------------My-Chart-----------------------------
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'doughnut',
+
+    // The data for our dataset
+    data: {
+        labels: ['Vendido', 'No Vendido'],
+        datasets: [{
+            label: ['12%','88%'],
+            backgroundColor: ['#569894','#cecece'],
+            borderColor: '#cecece',
+            borderWidth: 0,
+            data: [12,88],
+        }]
+    },
+
+    // Configuration options go here
+    options: {
+      cutoutPercentage: 65,
+      tooltips: false,
+        legend: {
+            display: false,
+        }
+    }
+});
