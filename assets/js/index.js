@@ -25,10 +25,6 @@ $(".edfLevelUrl").fancybox({
 });
 
 // ------------------------------img-edf-units----------------------------
-// $('#exampleModalCenter').on('shown.bs.modal', function () {
-//   $('#myInput').trigger('focus')
-// })
-
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -56,13 +52,11 @@ window.onclick = function(event) {
 }
 // ------------------------------owl-carousel--------------------------------
 $('.owl-carousel').owlCarousel({
-    loop:true,
     items:1,
     margin:10,
     nav:true,
 })
 // ------------------------------Carousel-----------------------------
-
 const galleryThumbs = new Swiper('.gallery-thumbs', {
   spaceBetween: 20,
   slidesPerView: 6,
