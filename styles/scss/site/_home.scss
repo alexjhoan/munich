@@ -139,8 +139,9 @@
         color: #000000;
       }
       img {
-        width: 45px;
+        max-width: 45px;
         padding-right: 20px;
+        width: 100%;
       }
     }
   }
@@ -402,21 +403,18 @@
     font-weight: 900;
     margin-bottom: 20px;
   }
-  /* The Modal (background) */
   .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 80px; /* Location of the box */
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 80px;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-
-    /* Modal Content */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
     .modal-content {
       background-color: #fefefe;
       margin: auto;
@@ -424,7 +422,6 @@
       border: 1px solid #888;
       width: 60%;
       border-radius: 50px;
-      /* The Close Button */
       .close {
         color: $white;
         float: right;
@@ -444,7 +441,7 @@
           grid-template-columns: 40% auto;
           column-gap: 25px;
           .mcol-left{
-            h4, .display-6{
+            .display-6{
               color: $bluetitle;
             }
             .display-6{
@@ -456,12 +453,12 @@
             }
             .line{
               border-bottom: 1px solid;
-              color: #e0dadc;
+              color: #B7B1A5;
               width: 70%;
               margin: 10px 0;
             }
             p{
-              color: $text-black;
+              color: #494846;
               margin-bottom: 10px;
             }
             img.pref {
@@ -617,11 +614,9 @@
 }
 /*----------------------Amenities-II (imagen)--------------------------------*/
 #bamenities{
-  background-image: url(../../assets/images/galeria/gal2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+  img{
+    width: 100%
+  }
 }
 
 #amenitiesIII{
@@ -1301,6 +1296,14 @@
           .owl-carousel {
             display: block;
             padding: 0 35px;
+            .owl-item img {
+              width: 100%;
+              max-width: 300px;
+              left: 0;
+              right: 0;
+              margin-left: auto;
+              margin-right: auto;
+            }
           }
         }
       }
@@ -1387,6 +1390,14 @@
   #stext {
     padding-top: 60px;
   }
+  #projectUs{
+    .title {
+      font-size: 1.5rem;
+    }
+    .footer span {
+      font-size: 2rem;
+    }
+  }
   #contact .formCol2 {
     margin-top: 20px;
   }
@@ -1415,7 +1426,7 @@
     padding: 45px 0;
     .logo {
       margin-top: 15px;
-      margin-bottom: 15px;
+      margin-bottom: 25px;
     }
     .footer {
       margin-top: 45px;
