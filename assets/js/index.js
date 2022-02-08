@@ -2,10 +2,12 @@ $(window).on('load', function () {
   $('body').css('opacity', '1');
 
   $(".edf-mark").click(function () {
-    const level = $(this).data("level")
+    const nameLevel = $(this).data("level")
+    const imgurl = nameLevel.replaceAll(" ", "")
     $(this).addClass('active').siblings().removeClass("active")
-    $(".edfImgLevel").attr("src",`assets/images/unidades/plantas/${level}.jpg`)
-    $(".edfLevelUrl").attr("href",`assets/images/unidades/plantas/${level}.jpg`)
+    $(".edfImgLevel").attr("src",`assets/images/unidades/plantas/${imgurl}.png`)
+    $(".edfLevelUrl").attr("href",`assets/images/unidades/plantas/${imgurl}.png`)
+    $("#nameLevel span").text(nameLevel)
   })
 });
 

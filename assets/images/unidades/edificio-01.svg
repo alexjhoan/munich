@@ -915,7 +915,7 @@
 		<polygon class="st39" points="139.8,383.9 139.8,408.1 362.3,464.2 456,431.8 456,405.2 362.9,437.8 		"/>
 	</g>
 </g>
-<g id="planta_baja" data-level="planta-baja" class="edf-mark">
+<g id="planta_baja" data-level="planta baja" class="edf-mark">
 	<g id="Planta_Baja">
 		<g id="Grupo_1808-4">
 			<g id="Grupo_1807-4">
@@ -934,7 +934,7 @@
 		<polygon class="st39" points="139.8,355.3 139.8,383.9 362.9,437.8 456.7,405.2 456.7,373.7 364.7,401 		"/>
 	</g>
 </g>
-<g id="nivel_1" data-level="nivel1" class="edf-mark">
+<g id="nivel_1" data-level="nivel 1" class="edf-mark">
 	<g id="Nivel_1">
 		<g id="Grupo_1808-2">
 			<g id="Grupo_1807-2">
@@ -950,7 +950,7 @@
 		<text transform="matrix(0.99 0 0 1 65.02 347.7402)" class="st36 st37 st38">NIVEL 1</text>
 	</g>
 </g>
-<g id="nivel_2" data-level="nivel2" class="edf-mark">
+<g id="nivel_2" data-level="nivel 2" class="edf-mark">
 	<g id="Nivel_2">
 		<path class="st39" d="M135.7,329.8l193.2,31.4l8.1-1.9l36.5,5.5L428,352v-3.6l28.2-6.1v-28.8l-32.5,5.7l-2.1-0.2l-26.1,4.7
 			l-20.3,3.6l-2.1,0.4l-35.4-4.5v2.3l-8.9,1.7L140,304.6v12.8l-2.8,0.9v9.5C137.1,327.9,135.7,327.4,135.7,329.8z"/>
@@ -966,7 +966,7 @@
 		</g>
 	</g>
 </g>
-<g id="nivel_3_al_8" data-level="nivel3-8" class="edf-mark">
+<g id="nivel_3_al_8" data-level="nivel 3-8" class="edf-mark">
 	<g id="Nivel_3_al_8">
 		<polygon class="st39" points="136,303.7 328.9,327.4 337.7,325.9 337.7,323.4 373.1,327.2 428,318.1 428,318.1 456.4,313.5
 			456.4,136.2 427.9,131.2 428.2,130.2 423.1,129.7 421.1,128.9 372.7,121.3 337.7,125.3 337.7,127 328.3,126.5 135.7,146.6
@@ -984,7 +984,7 @@
 		</g>
 	</g>
 </g>
-<g id="nivel_9" data-level="nivel9" class="edf-mark">
+<g id="nivel_9" data-level="nivel 9" class="edf-mark">
 	<g id="Nivel_9">
 		<rect id="Rectángulo_41-6" x="55.8" y="124.5" class="st35" width="54.9" height="19.8"/>
 		<path class="st39" d="M456.3,103.9c-1.7-0.3-28.9-6.5-28.9-6.5l0.6,1.1l-53.5-10.4l-2-0.8l-35.9,5.9l-7.9-1.7l-193.1,29.9V149
@@ -1000,7 +1000,7 @@
 		</g>
 	</g>
 </g>
-<g id="nivel_10" data-level="nivel10" class="edf-mark">
+<g id="nivel_10" data-level="nivel 10" class="edf-mark">
 	<g id="Nivel_10">
 		<polygon class="st39" points="451.8,103.2 451.8,97.8 428.4,92.4 428.4,87 428.4,79.9 416.2,76.8 416.2,72.8 428.7,70.5
 			428.7,66.8 375.8,52 375.8,31.2 353.1,23.9 298.1,36.5 298.1,65.9 140.7,95.1 140.7,119.2 138.2,119.4 138.2,121.1 329.7,91.8

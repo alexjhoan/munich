@@ -287,6 +287,18 @@
 /*-----------------------Unidades II-----------------------*/
 #unitII {
   background-color: $whiteunit;
+  #nameLevel{
+    color: $bluetitle;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    text-transform: capitalize;
+    img{
+      width: 22px;
+      height: auto;
+    }
+  }
   h5{
     color: $text-black;
     font-weight: 400;
