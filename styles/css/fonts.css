@@ -1,24 +1,24 @@
 @font-face {
   font-family: Raleway;
-  src: url(../fonts/raleway/static/Raleway-Medium.ttf) format('truetype');
+  src: url(../fonts/raleway/Raleway-Medium.ttf) format('truetype');
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: Raleway;
-  src: url(../fonts/raleway/static/Raleway-SemiBold.ttf) format('truetype');
+  src: url(../fonts/raleway/Raleway-SemiBold.ttf) format('truetype');
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
   font-family: Raleway;
-  src: url(../fonts/raleway/static/Raleway-Bold.ttf) format('truetype');
+  src: url(../fonts/raleway/Raleway-Bold.ttf) format('truetype');
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: Raleway;
-  src: url(../fonts/raleway/static/Raleway-ExtraBold.ttf) format('truetype');
+  src: url(../fonts/raleway/Raleway-ExtraBold.ttf) format('truetype');
   font-style: normal;
   font-weight: 800;
 }
