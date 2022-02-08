@@ -1,7 +1,7 @@
 /*-----------------------Descripcion-----------------------*/
 .dwallpaper {
   background-image: url(../../assets/images/fondo-d.png);
-  padding: 12% 10%;
+  padding: 11% 10% 6% 14%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -45,20 +45,6 @@
       margin-bottom: 1rem;
     }
   }
-  .btn.btn-primary {
-    background-color: $bluetitle;
-    border-color: $bluetitle;
-    border-radius: 48px;
-    padding: 8px 40px;
-    color: $white;
-    font-size: 1rem;
-    font-weight: 700;
-  }
-  .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
-    background-color: $blueuniversity!important;
-    border-color: $blueuniversity!important;
-    box-shadow: none!important;
-  }
   .l-text{
     display: flex;
     flex-direction: row;
@@ -66,8 +52,7 @@
     margin-bottom: 50px;
     margin-top: 40px;
     .text{
-      font-size: 1rem;
-      color: $black;
+      font-size: 0.75rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -91,29 +76,17 @@
     position: relative;
     z-index: 2;
   }
-  h2, .display-6, .titleII {
-    color: $bluetitle;
-  }
-  .display-6{
-    font-family: 'Raleway';
-    font-weight: 800;
+  p.h1{
     text-align: center;
-    margin-bottom: 90px;
+    margin-bottom: 65px;
   }
-  .titleII{
-    font-family: 'Raleway';
-    font-weight: 700;
-  }
-  h3, h5, .mybtn{
-    color: $text-black;
-    font-weight: 400;
-  }
-  h5{
-    margin-top: 15px;
+  p.h5{
+    margin-bottom: 10px;
   }
   .mybtn{
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 1rem;
+    color: $text-black;
     background-color: $white;
     border: none;
   }
@@ -131,13 +104,15 @@
       align-items: center;
       margin-bottom: 25px;
       cursor: pointer;
-      &.selector{
-        h5{
-          color:$black;
-        }
+      p{
+        color:$black;
+        margin-bottom: 0;
       }
-      h4{
-        color: $black;
+      &.selector{
+        p{
+          color:$blackgrey;
+          margin-bottom: 0;
+        }
       }
       img {
         max-width: 45px;
@@ -175,7 +150,6 @@
       opacity: 0;
     }
   }
-
   .university{
     span{
       background-color: $blueuniversity;
@@ -300,14 +274,11 @@
     background-position: left center;
     background-size: 100%;
   }
-  h2, p{
+  p.h5, p.h3{
     color: $white;
   }
-  h2 {
-    font-family: 'Raleway';
-    font-weight: 700;
-  }
-  p {
+  p.h5 {
+    margin-top: 15px;
     font-weight: 400;
   }
 }
@@ -342,46 +313,47 @@
       text-decoration: none;
       font-size: 1rem;
       font-weight: 500;
-      color: #0E436F;
+      color: $bluetitle;
     }
   }
-  .footer{
-    .unitf {
+  .footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 50px;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    .unitp{
       display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      column-gap: 50px;
-      margin-top: 90px;
-      margin-bottom: 30px;
-      .unitp{
-        display: flex;
-        align-items: center;
-        margin-top: 2px;
-        canvas#myChart {
-          width: 140px!important;
-          height: auto!important;
-          margin-right: -25px;
-        }
-        img.porcentage{
-          width: 80px;
-          padding-right: 20px;
-        }
-        .titleFoo {
-          margin-bottom: 0;
-          font-weight: 700;
-          line-height: 1;
+      align-items: center;
+      margin-top: 2px;
+      canvas#myChart {
+        width: 110px!important;
+        height: auto!important;
+        margin-right: -25px;
+      }
+      img.porcentage{
+        width: 80px;
+        padding-right: 20px;
+      }
+      .titleFoo {
+        color: $bluetitle;
+        margin-bottom: 0;
+        font-weight: 700;
+        line-height: 0.8;
+        span{
+          font-size: 0.75rem;
         }
       }
-      .unitText{
-        position: relative;
-        text-align: left;
-        h3{
-          color: $text-black;
-          font-style: italic;
-        }
-        h5{
-          margin-bottom: 20px;
-        }
+    }
+    .unitText{
+      position: relative;
+      text-align: left;
+      h5{
+        font-style: italic;
+      }
+      p{
+        margin-bottom: 20px;
       }
     }
   }
@@ -401,14 +373,13 @@
   .col-12{
     z-index: 2;
   }
-  .display-5, .display-2{
-    font-family: 'Raleway';
+  h2.display-5, .display-2{
     color: $white;
   }
-  .display-5{
+  h2.display-5{
     font-weight: 500;
   }
-  .display-2{
+  p.display-2{
     font-weight: 800;
     margin-bottom: 20px;
   }
@@ -433,14 +404,10 @@
           grid-template-columns: 40% auto;
           column-gap: 25px;
           .mcol-left{
-            .display-6{
-              font-family: 'Raleway';
-              color: $bluetitle;
+            .display-5{
               font-weight: 800;
             }
-            h4{
-              font-family: 'Raleway';
-              font-weight: 700;
+            h3{
               margin-bottom: 15px;
             }
             .line{
@@ -450,7 +417,6 @@
               margin: 10px 0;
             }
             p{
-              color: #494846;
               margin-bottom: 10px;
             }
             img.pref {
@@ -545,6 +511,7 @@
 
 /*----------------------Amenities-I--------------------------------*/
 #amenitiesI{
+  padding-bottom: 0;
   .camenit{
     position: relative;
     padding-top: 120px;
@@ -564,14 +531,10 @@
   }
   .col-right {
     margin-left: auto;
-    p, .display-6{
+    p{
       color: $white;
     }
-    .display-6{
-      font-family: 'Raleway';
-      font-weight: 700;
-    }
-    p{
+    p.h5{
       font-weight: 400;
     }
   }
@@ -585,27 +548,25 @@
 }
 /*----------------------Amenities-I (text-inferior)--------------------------------*/
 #stext{
-  padding-top: 0;
+  padding: 0;
   .atext{
     margin-left: auto;
-    h5 {
-      color: $text-black;
-    }
   }
-
 }
 /*----------------------Amenities-II (imagen)--------------------------------*/
 #bamenities{
+  padding-bottom: 40px;
   img{
     width: 100%
   }
 }
-
+/*----------------------Amenities-III --------------------------------*/
 #amenitiesIII{
+  padding-bottom: 60px;
   .col-am{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     .am{
       display: flex;
       flex-direction: column;
@@ -617,19 +578,15 @@
         margin-bottom: 32px;
       }
       p{
-        color: $black;
-        font-weight: 400;
         text-align: center;
       }
     }
   }
-
   .fancyImgBox {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 15px;
     margin-top: 10px;
-    margin-bottom: 20px;
     text-align: center;
     .fancyBox{
       .fancyImgItem{
@@ -650,32 +607,21 @@
         .titleFancyBox{
           color: $black;
           font-weight: 400;
-          margin-bottom: 30px;
-        }
-        .btn.btn-primary {
-          background-color: $bluetitle;
-          border-color: $bluetitle;
-        }
-        .btn.btn-primary:hover, #unitII .footer .btn.btn-primary:active, #unitII .footer .btn.btn-primary:focus {
-          background-color: $blueuniversity !important;
-          border-color: $blueuniversity !important;
+          margin-bottom: 27px;
         }
       }
     }
   }
 }
-
 /*----------------------------ADVANCE------------------------------*/
 #advance{
   background-color: $whiteunit;
-  padding: 70px 0;
+  padding-bottom: 27px;
+  padding-top: 50px;
   .title{
-    font-family: 'Raleway';
     text-align: center;
     margin-bottom: 55px;
     color: $text-black;
-    font-weight: 700;
-    font-size: 2.5rem;
   }
   .tline{
     text-align: center;
@@ -690,16 +636,12 @@
     margin-left: auto;
     margin-right: auto;
     .item{
-      text-align: center;
-      h5{
-        color: $lightergrey;
-      }
       img{
         width: 100%;
         height: 100px;
-        margin-top: 25px;
-        margin-bottom: 10px;
-        max-width: 80px;
+        margin-top: 10px;
+        margin-bottom: 0;
+        max-width: 65px;
       }
     }
     .item.finish {
@@ -716,7 +658,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 1%;
-    margin-top: 90px;
+    margin-top: 35px;
     a{
       overflow: hidden;
       position: relative;
@@ -730,7 +672,7 @@
       top: 15px;
       position: absolute;
       z-index: 2;
-      color: #fff;
+      color: $white;
       background: $bluetitle;
       padding: 5px 24px;
       border-radius: 30px;
@@ -783,12 +725,12 @@
       }
     }
   }
-
 }
 /*----------------------------------Project-----------------------------*/
 #project{
   text-align: center;
-  .text{
+  padding-bottom: 60px;
+  p{
     color: #000000C9;
   }
   .ititle{
@@ -797,10 +739,8 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 35px;
-    .title{
-      font-family: 'Raleway';
+    h3{
       color: $blackgrey;
-      font-weight: 700;
     }
     img{
       width: 6%;
@@ -809,18 +749,18 @@
   }
   img.logo-ventus {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 52px;
     max-width: 220px;
   }
   img.psolare {
-    width: 30%;
+    width: 100%;
+    max-width: 350px;
     position: absolute;
     right: 0;
     bottom: -40px;
     z-index: -1;
   }
 }
-
 /*---------------------------ProjectUs-----------------------------*/
 #projectUs {
   background-image: url(../../assets/images/bigdata/fbigdata.png);
@@ -828,23 +768,18 @@
   background-position: center;
   background-size: cover;
   text-align: center;
-  p, u{
+  p, p.h3, u{
     color: $white;
   }
   .title{
-    font-family: 'Raleway';
-    font-weight: 800;
     margin-bottom: 30px;
-    color: $white;
-    font-size: 2rem;
   }
-
   .logo {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
-    margin-bottom: 60px;
+    margin-bottom: 54px;
     p {
       margin-bottom: 0;
       margin-right: 10px;
@@ -859,37 +794,25 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 123px;
+    margin-top: 50px;
     p {
       margin: 0;
       line-height: 1.5rem;
     }
     span{
         font-weight: 700;
-        font-size: 2.5rem;
+        font-size: 2rem;
       }
   }
 }
 /*---------------------------Contact----------------------------*/
  #contact {
     padding: 45px 0;
-    .title{
-      font-weight: 700;
+    p.h5{
       margin-bottom: 43px;
     }
-    img.imgbg {
+    .imgbg {
       display: none;
-    }
-    p.h1 {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-end;
-      font-size: 1.7rem;
-      margin-bottom: 30px;
-      img {
-        width: 38px;
-        margin-right: 15px;
-      }
     }
     p.h3 {
       margin-bottom: 10px;
@@ -899,14 +822,6 @@
       width: 90%;
       .form-floating {
         margin-bottom: 12px;
-      }
-      .btn.btn-primary {
-        background-color: $bluetitle;
-        border-color: $bluetitle;
-      }
-      .btn.btn-primary:hover, #unitII .footer .btn.btn-primary:active, #unitII .footer .btn.btn-primary:focus {
-        background-color: $blueuniversity !important;
-        border-color: $blueuniversity !important;
       }
     }
     .formCol2{
@@ -924,15 +839,17 @@
         margin-bottom: 37px;
       }
       a img {
-        width: 45px;
-        margin-right: 20px;
+        width: 100%;
+        max-width: 35px;
+        margin-right: 18px;
       }
       .whatsapp {
-        font-size: 28px;
+        font-size: 20px;
         display: flex;
         flex-direction: initial;
         align-items: center;
         margin-bottom: 20px;
+        color: $bluetitle;
       }
     }
   }
@@ -1123,7 +1040,7 @@
 }
 @media (max-width: 1399.98px) {
   #unitsGallery {
-    width: 55%;
+    width: 70%;
   }
 }
 @media (max-width: 1199px){
@@ -1478,22 +1395,20 @@
   }
   #unitII {
     .footer {
-      .unitf {
-        flex-direction: column;
-        .unitp {
-          margin-bottom: 15px;
-          margin-left: auto;
-          margin-right: auto;
-          canvas#myChar {
-            display: none;
-          }
+      flex-direction: column;
+      .unitp {
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        canvas#myChar {
+          display: none;
         }
-        .unitText {
+      }
+      .unitText {
+        text-align: center;
+        margin: 0 auto;
+        h3, p {
           text-align: center;
-          margin: 0 auto;
-          h3, p {
-          text-align: center;
-          }
         }
       }
     }

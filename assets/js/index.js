@@ -136,7 +136,7 @@ var chart = new Chart(ctx, {
         labels: ['Vendido', 'No Vendido'],
         datasets: [{
             label: ['12%','88%'],
-            backgroundColor: ['#569894','#cecece'],
+            backgroundColor: ['#005170','#cecece'],
             borderColor: '#cecece',
             borderWidth: 0,
             data: [12,88],
