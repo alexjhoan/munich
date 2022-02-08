@@ -122,18 +122,13 @@
     }
   }
   .mlocation{
-    margin-bottom: auto;
-    position: absolute;
-    right: 0;
-    transition: all .2s ease;
-    top: 22%;
     max-width: 900px;
-    width: 65%;
+    width: 100%;
+    margin-left: auto;
     .active{
       opacity: 1 !important;
     }
     img {
-      right: 0;
       width: 100%;
     }
     span{
@@ -254,11 +249,18 @@
 #unitsI{
   background: linear-gradient(to bottom, rgba(250,250,250,0.1) 0%, rgba(248,248,248,0.1) 51%, rgba(248,248,248,1) 53%, rgba(247,247,247,1) 100%);
   z-index: 1;
-  margin-top: 200px;
   .wunits{
     position: relative;
     .ptext{
-      padding-bottom: 50px;
+      top: 0;
+      bottom: 0;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    img.uright {
+      max-width: 395px;
+      width: 100%;
+      margin-top: 15px;
     }
   }
   .wunits:after{
@@ -269,7 +271,7 @@
     top: 50%;
     transform: translateY(-50%);
     z-index: -1;
-    background-image: url(../../assets/images/unidades/fondo-udesktopb.png);
+    background-image: url(../../assets/images/unidades/fondo-udesktop.png);
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 100%;
@@ -285,7 +287,6 @@
 /*-----------------------Unidades II-----------------------*/
 #unitII {
   background-color: $whiteunit;
-  padding-top: 250px;
   h5{
     color: $text-black;
     font-weight: 400;
@@ -373,10 +374,10 @@
   .col-12{
     z-index: 2;
   }
-  h2.display-5, .display-2{
+  h2, .display-2{
     color: $white;
   }
-  h2.display-5{
+  h2{
     font-weight: 500;
   }
   p.display-2{
@@ -741,9 +742,11 @@
     margin-bottom: 35px;
     h3{
       color: $blackgrey;
+      margin-bottom: 0;
     }
     img{
-      width: 6%;
+      width: 100%;
+      max-width: 60px;
       padding-right: 20px;
     }
   }
@@ -1032,7 +1035,10 @@
     }
   }
   #unitsI{
-    margin-top: 300px;
+    .wunits img.uright {
+      max-width: 700px;
+      width: 550px;
+    }
   }
   #amenitiesI {
     padding: 14vh 0 8vh;
@@ -1104,8 +1110,6 @@
     }
   }
   #location {
-    margin-bottom: 90%;
-    padding-top: 0;
     .display-6 {
       margin-bottom: 27px;
     }
@@ -1116,21 +1120,13 @@
       margin-top: 45px;
     }
     .mlocation {
-      margin-bottom: auto;
-      position: absolute;
-      right: 0;
-      transition: all .2s ease;
-      top: 100%;
-      max-width: 990px;
-      width: 100%;
       span{
         font-size: calc(0.4vw + 0.35rem);
       }
     }
   }
   #unitsI {
-    margin: 0;
-    padding: 0;
+    margin-top: 20px;
     .wunits:after {
       width: 100vw;
       background-size: cover;
@@ -1141,15 +1137,17 @@
       background-image: url(../../assets/images/unidades/fondo-umobile.png);
     }
     .wunits{
-      padding-top: 8%;
+      padding-top: 0;
       position: relative;
-      padding-bottom: 10%;
+      padding-bottom: 50%;
         img.uright {
+          position: absolute;
           margin-left: auto;
           width: 100%;
+          right: 0;
           max-width: 650px;
           z-index: 0;
-          margin-top: -5%;
+          top: 40%;
         }
     }
     .ptext {
@@ -1159,7 +1157,7 @@
   }
   #unitII{
     text-align: center;
-    padding-top: 2%;
+    padding-top: 30%;
   }
 
   #amenitiesI{
@@ -1336,9 +1334,19 @@
 
 @media (max-width: 768px) {
   #unitsI{
-    img.uright {
-      top: 70%;
-      max-width: 400px;
+    .wunits{
+      img.uright {
+        top: 40%;
+        max-width: 550px;
+      }
+    }
+  }
+  #typology{
+    .modal {
+     .modal-content .modal-body .item .mcol-right img.gref {
+        width: 100%;
+        max-width: 250px;
+      }
     }
   }
   #unitsGallery {
@@ -1351,6 +1359,14 @@
     }
     .gallery-thumbs {
       display: none;
+    }
+  }
+  #project{
+    .ititle {
+      flex-direction: column;
+      img {
+        margin-bottom: 20px;
+      }
     }
   }
   #projectUs {
@@ -1370,7 +1386,6 @@
     }
   }
   #advance {
-
     h1.title {
       margin-bottom: 30px;
     }
@@ -1394,6 +1409,7 @@
     }
   }
   #unitII {
+
     .footer {
       flex-direction: column;
       .unitp {
@@ -1420,6 +1436,18 @@
   }
 }
 @media (max-width: 576px) {
+  #unitsI {
+    .wunits {
+      padding-bottom: 100%;
+      img.uright {
+        top: 50%;
+        max-width: 550px;
+      }
+    }
+  }
+  #unitII{
+     padding-top:40%;
+  }
   #amenitiesI {
     img.aright {
       margin-top: -30%;
@@ -1443,5 +1471,10 @@
   .dwallpaper_table {
     width: calc(100% + 30px);
     margin-left: -15px;
+  }
+}
+@media (max-width: 425px){
+  #unitII {
+     padding-top: 10%;
   }
 }
