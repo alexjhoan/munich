@@ -129,20 +129,11 @@ const galleryTop = new Swiper('.gallery-top', {
     swiper: galleryThumbs
   }
 });
-// const gallerytm = new Swiper('.gallery-tm', {
-//   spaceBetween: 1,
-//   slidesPerView: 1,
-//   freeMode: true,
-// });
 var stypology = new Swiper(".swiper-typ", {
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
-   }
+  },
 });
 var swiper = new Swiper(".advanced-gallery", {
   slidesPerView: 1,
