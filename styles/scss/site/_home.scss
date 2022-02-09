@@ -127,6 +127,9 @@
     margin-left: auto;
     position: relative;
     .active{
+      span:hover *{
+        opacity: 1;
+      }
       span::after{
         opacity: 1 !important;
       }
@@ -137,15 +140,15 @@
     span{
       b{
         padding: 4px 5px 1px 5px;
-
+        line-height: 1.25;
+        display: inline-block;
       }
       color: $white;
-      line-height: 1.25;
-      display: inline-block;
-      text-align: end;
+      text-align: right;
       font-weight: 600;
       font-size: 0.6rem;
       position: absolute;
+      cursor: pointer;
       &::after {
         opacity: 0;
         position: absolute;
@@ -158,12 +161,7 @@
         background-size: contain;
         background-position: center;
       }
-
     }
-
-    // div{
-    //   opacity: 0;
-    // }
   }
   .university{
     span{
@@ -1389,20 +1387,6 @@
   #stext {
     padding-top: 30px;
   }
-  #projectUs{
-    // .title {
-    //   font-size: 1.5rem;
-    // }
-    // p{
-    //   font-size: 0.8rem,
-    // }
-
-    // .footer {
-    //   span {
-    //     font-size: 1.5rem;
-    //   }
-    // }
-  }
   #contact .formCol2 {
     margin-top: 20px;
   }
@@ -1446,11 +1430,6 @@
     }
   }
   #projectUs {
-    // padding: 45px 0;
-    .logo {
-      // margin-top: 15px;
-      // margin-bottom: 25px;
-    }
     .footer {
       margin-top: 45px;
       flex-direction: column;
@@ -1533,9 +1512,6 @@
     h5 {
       font-size: .8rem;
     }
-  }
-  #projectUs{
-    // font-size: 1.5rem;
   }
   .dwallpaper {
     .l-text {
