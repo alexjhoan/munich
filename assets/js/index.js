@@ -48,7 +48,6 @@ function titleTypology() {
   } else (
     $(".titleTypology").css("position", "absolute")
   )
-
 }
 
 function TypologyBg(section, text) {
