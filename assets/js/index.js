@@ -13,9 +13,8 @@ $(window).on('load', function () {
 
 $(window).scroll(function () {
   titleTypology()
-  TypologyBg("#typology .bg1", "alexxxx1")
-  TypologyBg("#typology .bg2", "alexxxx2")
-  TypologyBg("#typology .bg3", "alexxxx3")
+  TypologyBg("#typology .bg1", "Monoambiente")
+  TypologyBg("#typology .bg2", "1 Dormitorio")
 })
 
 let offset
@@ -68,11 +67,15 @@ function TypologyBg(section, text) {
       "background-position-y": 0,
     })
   }
-  // if ((scroll > heightTop) && (scroll < (heightElem + heightTop))) {
-  //   $("#typology .display-2").fadeOut().promise().done(function () {
-  //     $("#typology .display-2").text(text).show()
-  //   })
-  // }
+  if ((scroll > (heightTop - (heightElem / 2))) && (scroll < (heightTop + (heightElem / 2)))) {
+    if ($("#typology .display-2").text() != text) {
+      $("#typology .display-2").fadeOut().promise().done(function () {
+        setTimeout(() => {
+          $("#typology .display-2").text(text).show()
+        }, 50);
+      })
+    }
+  }
 }
 
 // ------------------------------img-edf-units----------------------------

@@ -375,10 +375,15 @@
 #typology{
   padding: 0;
   .bg{
-    background-image: linear-gradient(90deg, #00000096 0%, #00000000 60%, #00000000 100%), url(../../assets/images/tipologias/1dormitorio.jpg);
     background-size: cover;
     height: 100vh;
     width: 100%;
+    &.bg1{
+      background-image: linear-gradient(90deg, #00000096 0%, #00000000 60%, #00000000 100%), url(../../assets/images/tipologias/monoambiente.jpg);
+    }
+    &.bg2{
+      background-image: linear-gradient(90deg, #00000096 0%, #00000000 60%, #00000000 100%), url(../../assets/images/tipologias/1dormitorio.jpg);
+    }
   }
   .titleTypology{
     display: flex;
@@ -403,6 +408,11 @@
       background-repeat: no-repeat;
     }
   }
+  .titleTextTypology{
+    height: 86px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
 
   .col-12{
     z-index: 2;
@@ -413,9 +423,8 @@
   h2{
     font-weight: 500;
   }
-  p.display-2{
+  .display-2{
     font-weight: 800;
-    margin-bottom: 20px;
   }
   .btn.btn-primary {
     padding: 6px 15px;
