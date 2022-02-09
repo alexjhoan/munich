@@ -11,6 +11,13 @@ $(window).on('load', function () {
   })
 });
 
+$(window).scroll(function () {
+  titleTypology()
+  TypologyBg("#typology .bg1", "alexxxx1")
+  TypologyBg("#typology .bg2", "alexxxx2")
+  TypologyBg("#typology .bg3", "alexxxx3")
+})
+
 let offset
 if (screen.width > 768){
   offset = 200
@@ -18,13 +25,55 @@ if (screen.width > 768){
   offset = 0
 }
 
-new WOW({offset:offset, scrollContainer: null}).init()
+new WOW({offset:offset, scrollContainer: null,}).init()
 
 $(".edfLevelUrl").fancybox({
   overlay : {
     closeClick : true,
   }
 });
+
+function titleTypology() {
+  const container = $("#typology");
+  const heightWindow = window.innerHeight;
+  const heightTop = $(container).offset().top;
+  let scroll = $(window).scrollTop();
+  let heightElem = container.height();
+  if ((scroll > heightTop) && (scroll < heightElem + (heightTop - heightWindow))) {
+    $(".titleTypology").css("position", "fixed")
+    if (scroll > heightTop + (heightElem / 3)) {
+      $(".titleTypology").css({"top": "auto", "bottom": "0" })
+    } else {
+      $(".titleTypology").css({"top": "0", "bottom": "auto" })
+    }
+  } else (
+    $(".titleTypology").css("position", "absolute")
+  )
+}
+
+function TypologyBg(section, text) {
+  const container = $(section);
+  const heightTop = $(container).offset().top;
+  let scroll = $(window).scrollTop();
+  let heightElem = container.height();
+  const move = heightTop - scroll
+  if ((scroll > heightTop) && (scroll < (heightElem + heightTop))) {
+    $(section).css({
+        "background-attachment": "fixed",
+        "background-position-y": move * .15,
+      })
+  } else {
+    $(section).css({
+      "background-attachment": "unset",
+      "background-position-y": 0,
+    })
+  }
+  // if ((scroll > heightTop) && (scroll < (heightElem + heightTop))) {
+  //   $("#typology .display-2").fadeOut().promise().done(function () {
+  //     $("#typology .display-2").text(text).show()
+  //   })
+  // }
+}
 
 // ------------------------------img-edf-units----------------------------
 // Get the modal
