@@ -129,7 +129,7 @@
     .active{
       span:hover *{
         opacity: 1;
-        transition: 1s ease;
+        transition: 0.8s ease;
       }
       span::after{
         opacity: 1 !important;
@@ -149,14 +149,13 @@
       font-weight: 600;
       font-size: 0.6rem;
       position: absolute;
-      cursor: pointer;
       &::after {
         opacity: 0;
         position: absolute;
         content: "";
         width: 20px;
         height: 20px;
-        right: -28px;
+        right: -22px;
         top: 0;
         background-repeat: no-repeat;
         background-size: contain;
@@ -226,10 +225,10 @@
       max-width: 70px;
       &:first-child{
         &::after{
-          right: 88px;
+          right: 82px;
         }
         bottom: 15%;
-        left: 9%;
+        left: 8%;
       }
       &:nth-child(2){
         bottom: 39%;
