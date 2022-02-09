@@ -2,12 +2,20 @@ $(window).on('load', function () {
   $('body').css('opacity', '1');
 
   $(".edf-mark").click(function () {
-    const level = $(this).data("level")
+    const nameLevel = $(this).data("level")
+    const imgurl = nameLevel.replaceAll(" ", "")
     $(this).addClass('active').siblings().removeClass("active")
-    $(".edfImgLevel").attr("src",`assets/images/unidades/plantas/${level}.jpg`)
-    $(".edfLevelUrl").attr("href",`assets/images/unidades/plantas/${level}.jpg`)
+    $(".edfImgLevel").attr("src",`assets/images/unidades/plantas/${imgurl}.png`)
+    $(".edfLevelUrl").attr("href",`assets/images/unidades/plantas/${imgurl}.png`)
+    $("#nameLevel span").text(nameLevel)
   })
 });
+
+$(window).scroll(function () {
+  titleTypology()
+  TypologyBg("#typology .bg1", "Monoambiente")
+  TypologyBg("#typology .bg2", "1 Dormitorio")
+})
 
 let offset
 if (screen.width > 768){
@@ -16,13 +24,59 @@ if (screen.width > 768){
   offset = 0
 }
 
-new WOW({offset:offset, scrollContainer: null}).init()
+new WOW({offset:offset, scrollContainer: null,}).init()
 
 $(".edfLevelUrl").fancybox({
   overlay : {
     closeClick : true,
   }
 });
+
+function titleTypology() {
+  const container = $("#typology");
+  const heightWindow = window.innerHeight;
+  const heightTop = $(container).offset().top;
+  let scroll = $(window).scrollTop();
+  let heightElem = container.height();
+  if ((scroll > heightTop) && (scroll < heightElem + (heightTop - heightWindow))) {
+    $(".titleTypology").css("position", "fixed")
+    if (scroll > heightTop + (heightElem / 3)) {
+      $(".titleTypology").css({"top": "auto", "bottom": "0" })
+    } else {
+      $(".titleTypology").css({"top": "0", "bottom": "auto" })
+    }
+  } else (
+    $(".titleTypology").css("position", "absolute")
+  )
+}
+
+function TypologyBg(section, text) {
+  const container = $(section);
+  const heightTop = $(container).offset().top;
+  let scroll = $(window).scrollTop();
+  let heightElem = container.height();
+  const move = heightTop - scroll
+  if ((scroll > heightTop) && (scroll < (heightElem + heightTop))) {
+    $(section).css({
+        "background-attachment": "fixed",
+        "background-position-y": move * .15,
+      })
+  } else {
+    $(section).css({
+      "background-attachment": "unset",
+      "background-position-y": 0,
+    })
+  }
+  if ((scroll > (heightTop - (heightElem / 2))) && (scroll < (heightTop + (heightElem / 2)))) {
+    if ($("#typology .display-2").text() != text) {
+      $("#typology .display-2").fadeOut().promise().done(function () {
+        setTimeout(() => {
+          $("#typology .display-2").text(text).show()
+        }, 50);
+      })
+    }
+  }
+}
 
 // ------------------------------img-edf-units----------------------------
 // Get the modal
