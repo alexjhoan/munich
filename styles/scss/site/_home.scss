@@ -127,22 +127,27 @@
     margin-left: auto;
     position: relative;
     .active{
-      opacity: 1 !important;
+      span::after{
+        opacity: 1 !important;
+      }
     }
     img {
       width: 100%;
     }
     span{
+      b{
+        padding: 4px 5px 1px 5px;
+
+      }
       color: $white;
       line-height: 1.25;
       display: inline-block;
       text-align: end;
-      padding: 4px 5px 1px 5px;
       font-weight: 600;
       font-size: 0.6rem;
       position: absolute;
       &::after {
-        opacity:0;
+        opacity: 0;
         position: absolute;
         content: "";
         width: 20px;
@@ -153,20 +158,22 @@
         background-size: contain;
         background-position: center;
       }
+
     }
-    b{
-      opacity: 0;
-    }
-    div{
-      opacity: 0;
-    }
+
+    // div{
+    //   opacity: 0;
+    // }
   }
   .university{
     span{
       &::after {
         background-image: url(../../assets/images/ubicacion/pin-universidades.png);
       }
-      background-color: $blueuniversity;
+      b{
+        opacity: 0;
+        background-color: $blueuniversity;
+      }
       max-width: 80px;
       &:first-child{
         bottom: 38%;
@@ -210,7 +217,10 @@
       &::after {
         background-image: url(../../assets/images/ubicacion/pin-parques.png);
       }
-      background-color: $aquamarine;
+      b{
+        opacity: 0;
+        background-color: $aquamarine;
+      }
       max-width: 70px;
       &:first-child{
         &::after{
@@ -246,7 +256,10 @@
       &::after {
         background-image: url(../../assets/images/ubicacion/pin-clubes.png);
       }
-      background-color: $blueaqua;
+      b{
+        opacity: 0;
+        background-color: $blueaqua;
+      }
       &:first-child{
         top: 14%;
         right: 46.5%;
@@ -262,7 +275,10 @@
       &::after {
         background-image: url(../../assets/images/ubicacion/pin-bancos.png);
       }
-      background-color: $bluesky;
+      b{
+        opacity: 0;
+        background-color: $bluesky;
+      }
       max-width: 50px;
       &:first-child{
         bottom: 23%;
