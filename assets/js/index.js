@@ -48,6 +48,7 @@ function titleTypology() {
   } else (
     $(".titleTypology").css("position", "absolute")
   )
+
 }
 
 function TypologyBg(section, text) {
@@ -128,6 +129,21 @@ const galleryTop = new Swiper('.gallery-top', {
     swiper: galleryThumbs
   }
 });
+// const gallerytm = new Swiper('.gallery-tm', {
+//   spaceBetween: 1,
+//   slidesPerView: 1,
+//   freeMode: true,
+// });
+var stypology = new Swiper(".swiper-typ", {
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+   }
+});
 var swiper = new Swiper(".advanced-gallery", {
   slidesPerView: 1,
   spaceBetween: 25,
@@ -157,18 +173,9 @@ $('[data-fancybox="gallery"]').fancybox({
   buttons: ["zoom", "close"]
 })
 
-
 $("#lightgallery .swiper-wrapper").lightGallery();
 
 // ------------------------------Hover, Active Location-----------------------------
-// $(".ulist .list").hover(function(){
-//   let type = $(this).data("type")
-//   $(`.${type}`).css("opacity", "1")
-//   }, function(){
-//   let type = $(this).data("type")
-//   $(`.${type}`).css("opacity", "0");
-// });
-
 $(".ulist .list").click(function(){
   let type = $(this).data("type")
   $(`.${type}`).addClass("active").siblings().removeClass("active")

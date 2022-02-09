@@ -1257,23 +1257,35 @@
       }
     }
   }
-  #mtypology{
-    background-image: url(../../assets/images/tipologias/monoambiente.jpg);
-    background-size: cover;
-    height: 70vh;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
   #typology{
-    background-image: url(../../assets/images/tipologias/ft-mobile.png);
-    height: auto;
-    width: 100%;
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    .mbg{
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      &.mbg1{
+        background-image: linear-gradient(90deg, #00000096 0%, #00000000 60%, #00000000 100%), url(../../assets/images/tipologias/monoambiente.jpg);
+      }
+      &.mbg2{
+        background-image: linear-gradient(90deg, #00000096 0%, #00000000 60%, #00000000 100%), url(../../assets/images/tipologias/1dormitorio.jpg);
+      }
+    }
+    .swiper {
+      width: 100%;
+      height: 100%;
+      .swiper-slide{
+        flex-direction: column;
+      }
+      .swiper-button-prev {
+        top: 90%;
+        left: 70%;
+      }
+      .swiper-button-next {
+        top: 90%;
+        right: 5%;
+      }
+    }
     .modal {
       .modal-content {
         .modal-body {
@@ -1298,10 +1310,19 @@
         }
       }
     }
+    .mTypology{
+      background-image: url(../../assets/images/tipologias/ft-mobile.png);
+      height: 40vh;
+      width: 100%;
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
-  #typology:after{
-    content: none;
-  }
+
   #unitsGallery {
     padding-top: 8vh;
     padding-bottom: 8vh;
