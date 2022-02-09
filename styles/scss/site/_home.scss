@@ -129,6 +129,7 @@
     .active{
       span:hover *{
         opacity: 1;
+        transition: 1s ease;
       }
       span::after{
         opacity: 1 !important;
@@ -160,6 +161,9 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
+      }
+      &:hover::after{
+        transform: translateY(-3px);
       }
     }
   }
