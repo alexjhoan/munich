@@ -142,6 +142,7 @@
       font-size: 0.6rem;
       position: absolute;
       &::after {
+        opacity:0;
         position: absolute;
         content: "";
         width: 20px;
@@ -153,12 +154,15 @@
         background-position: center;
       }
     }
+    b{
+      opacity: 0;
+    }
     div{
       opacity: 0;
     }
   }
   .university{
-       span{
+    span{
       &::after {
         background-image: url(../../assets/images/ubicacion/pin-universidades.png);
       }
@@ -202,7 +206,6 @@
     }
   }
   .sites-public{
-    opacity: 1;
     span{
       &::after {
         background-image: url(../../assets/images/ubicacion/pin-parques.png);
@@ -239,7 +242,6 @@
     }
   }
   .clubs{
-    opacity: 0;
     span{
       &::after {
         background-image: url(../../assets/images/ubicacion/pin-clubes.png);
@@ -256,7 +258,6 @@
     }
   }
   .banks{
-    opacity: 0;
     span{
       &::after {
         background-image: url(../../assets/images/ubicacion/pin-bancos.png);
