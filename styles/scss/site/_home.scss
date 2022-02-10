@@ -648,6 +648,7 @@
 /*----------------------Amenities-I (text-inferior)--------------------------------*/
 #stext{
   padding: 0;
+  margin-top: -100px;
   .atext{
     margin-left: auto;
   }
@@ -721,7 +722,6 @@
       }
       .information {
         .titleFancyBox{
-          color: $black;
           font-weight: 400;
           margin-bottom: 27px;
         }
@@ -1378,8 +1378,7 @@
   }
 
   #unitsGallery {
-    padding-top: 8vh;
-    padding-bottom: 8vh;
+    padding: 10px 0;
     .swiper-container {
       .swiper-button-prev {
         &::after{
@@ -1510,7 +1509,6 @@
     }
   }
   #unitsGallery {
-    padding: 20px 0;
     .container {
       max-width: 100%;
       .col-12 {
