@@ -109,6 +109,7 @@ $('.owl-carousel').owlCarousel({
     items:1,
     margin:10,
     nav:true,
+    loop: true,
 })
 // ------------------------------Carousel-----------------------------
 const galleryThumbs = new Swiper('.gallery-thumbs', {
@@ -117,9 +118,11 @@ const galleryThumbs = new Swiper('.gallery-thumbs', {
   freeMode: true,
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
+  loop: true,
 });
 const galleryTop = new Swiper('.gallery-top', {
   spaceBetween: 10,
+  loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -129,12 +132,14 @@ const galleryTop = new Swiper('.gallery-top', {
   }
 });
 var stypology = new Swiper('.swiper-typ', {
+  loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
 });
 var bamenities = new Swiper('.swiper-amenities', {
+  loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -143,6 +148,7 @@ var bamenities = new Swiper('.swiper-amenities', {
 var swiper = new Swiper(".advanced-gallery", {
   slidesPerView: 1,
   spaceBetween: 25,
+  loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
