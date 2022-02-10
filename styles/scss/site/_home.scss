@@ -1272,8 +1272,8 @@
       }
     }
     .swiper {
-      width: 100%;
-      height: 100%;
+      // width: 100%;
+      // height: 100%;
       .swiper-slide {
         flex-direction: column;
       }
@@ -1310,11 +1310,11 @@
         }
       }
     }
-    .mTypology{
+    .mtypology{
       background-image: url(../../assets/images/tipologias/ft-mobile.png);
       height: 40vh;
       width: 100%;
-      background-position: left center;
+      background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       display: flex;

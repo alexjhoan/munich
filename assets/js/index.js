@@ -128,7 +128,7 @@ const galleryTop = new Swiper('.gallery-top', {
     swiper: galleryThumbs
   }
 });
-var stypology = new Swiper(".swiper-typ", {
+var stypology = new Swiper('.swiper-typ', {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
