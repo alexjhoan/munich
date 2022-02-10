@@ -4,12 +4,12 @@
 
 body {
   opacity: 0;
-  overflow: hidden;
+  // overflow: hidden;
 }
 p{
   font-weight: 400;
 }
-p.h1, h1, p.h2, h2, p.h3, h3, p.h5, p.display2, p.display-5, p.display-6{
+p.h1, h1, p.h2, h2, p.h3, h3, p.h5, p.display-2, .display-2, p.display-5, .display-5, p.display-6, .display-6{
   font-family: 'Raleway';
   color: $bluetitle;
   font-weight: 700;

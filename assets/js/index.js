@@ -16,7 +16,7 @@ $(window).on('load', function () {
 
 $(window).scroll(function () {
   titleTypology()
-  TypologyBg("#typology .bg1", "Monoambiente")
+  TypologyBg("#typology .bg1", "Monoambientes")
   TypologyBg("#typology .bg2", "1 Dormitorio")
 })
 
@@ -71,10 +71,10 @@ function TypologyBg(section, text) {
     })
   }
   if ((scroll > (heightTop - (heightElem / 2))) && (scroll < (heightTop + (heightElem / 2)))) {
-    if ($(".titleTextTypology .display-2").text() != text) {
-      $(".titleTextTypology .display-2").fadeOut().promise().done(function () {
+    if ($(".titleTextTypology .display-4").text() != text) {
+      $(".titleTextTypology .display-4").fadeOut().promise().done(function () {
         setTimeout(() => {
-          $(".titleTextTypology .display-2").text(text).show()
+          $(".titleTextTypology .display-4").text(text).show()
         }, 50);
       })
     }
