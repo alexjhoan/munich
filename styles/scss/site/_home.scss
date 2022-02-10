@@ -1265,7 +1265,7 @@
   #typology{
     .mbg{
       background-size: cover;
-      height: 100vh;
+      height: 45vh;
       width: 100%;
       background-position: center;
       background-repeat: no-repeat;
@@ -1276,10 +1276,8 @@
         background-image: linear-gradient(90deg, #00000096 0%, #00000000 60%, #00000000 100%), url(../../assets/images/tipologias/1dormitorio.jpg);
       }
     }
-    .swiper {
-      width: 100%;
-      height: 100%;
-      .swiper-slide{
+    .swiper-container {
+      .swiper-slide {
         flex-direction: column;
       }
       .swiper-button-prev {
@@ -1290,6 +1288,11 @@
         top: 90%;
         right: 5%;
       }
+    }
+    .btn.btn-primary {
+      padding: 10px 40px;
+      font-size: 1.25rem;
+      font-weight: 400;
     }
     .modal {
       .modal-content {
@@ -1315,16 +1318,17 @@
         }
       }
     }
-    .mTypology{
+    .mtypology{
       background-image: url(../../assets/images/tipologias/ft-mobile.png);
-      height: 40vh;
+      height: auto;
       width: 100%;
-      background-position: left center;
+      background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      padding: 45px 0;
     }
   }
 
