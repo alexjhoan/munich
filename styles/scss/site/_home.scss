@@ -104,6 +104,7 @@
       align-items: center;
       margin-bottom: 25px;
       cursor: pointer;
+      text-align: left;
       p{
         color:$black;
         margin-bottom: 0;
@@ -143,6 +144,8 @@
         padding: 4px 5px 1px 5px;
         line-height: 1.25;
         display: inline-block;
+        position: relative;
+        z-index: 10;
       }
       color: $white;
       text-align: right;
@@ -160,6 +163,7 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
+        z-index: 2;
       }
       &:hover::after{
         transform: translateY(-3px);
@@ -1187,7 +1191,7 @@
     .display-6 {
       margin-bottom: 27px;
     }
-    .ptext{
+    .ptext:not(button){
       text-align: center;
     }
     .ulist {
@@ -1195,12 +1199,13 @@
     }
     .mlocation {
       span{
-        font-size: calc(0.4vw + 0.35rem);
+        font-size: calc(0.3vw + 0.6rem);
       }
     }
   }
   #unitsI {
     margin-top: 20px;
+    overflow: hidden;
     .wunits:after {
       width: 100vw;
       background-size: cover;
@@ -1486,6 +1491,10 @@
       }
     }
   }
+  #projectUs {
+    background-image: none;
+    background-color: $golden;
+  }
   #unitII {
 
     .footer {
@@ -1548,6 +1557,16 @@
   .dwallpaper_table {
     width: calc(100% + 30px);
     margin-left: -15px;
+  }
+  #location .ulist .list{
+    margin-bottom: 15px;
+    img{
+      width: 30px;
+      padding-right: 10px;
+    }
+    p {
+      font-size: 14px;
+    }
   }
 }
 @media (max-width: 425px){
