@@ -104,6 +104,7 @@
       align-items: center;
       margin-bottom: 25px;
       cursor: pointer;
+      text-align: left;
       p{
         color:$black;
         margin-bottom: 0;
@@ -143,6 +144,8 @@
         padding: 4px 5px 1px 5px;
         line-height: 1.25;
         display: inline-block;
+        position: relative;
+        z-index: 10;
       }
       color: $white;
       text-align: right;
@@ -160,6 +163,7 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
+        z-index: 2;
       }
       &:hover::after{
         transform: translateY(-3px);
@@ -484,87 +488,87 @@
   .btn.btn-primary {
     padding: 6px 15px;
   }
-  .modal {
-    .modal-content {
-      padding: 20px 0;
-      border-radius: 50px;
-      .close {
-        display: none;
-      }
-      .close:hover, .close:focus {
-          color: $black;
-          text-decoration: none;
-          cursor: pointer;
-      }
-      .modal-body{
-        .item{
-          display: grid;
-          grid-template-columns: 40% auto;
-          column-gap: 25px;
-          .mcol-left{
-            .display-5{
-              font-weight: 800;
-            }
-            h3{
-              margin-bottom: 15px;
-            }
-            .line{
-              border-bottom: 1px solid;
-              color: $linegrey;
-              width: 100%;
-              margin: 10px 0;
-            }
-            p{
-              margin-bottom: 10px;
-            }
-            img.pref {
-              margin-top: 20px;
-              width: 100%;
-              max-width: 320px;
-              margin-left: auto;
-              margin-right: auto;
-            }
+}
+#myModal {
+  .modal-content {
+    padding: 20px 0;
+    border-radius: 50px;
+    .close {
+      display: none;
+    }
+    .close:hover, .close:focus {
+        color: $black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .modal-body{
+      .item{
+        display: grid;
+        grid-template-columns: 40% auto;
+        column-gap: 25px;
+        .mcol-left{
+          .display-5{
+            font-weight: 800;
           }
-          .mcol-right{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            img.gref {
-              width: 100%;
-              max-width: 450px;
-            }
+          h3{
+            margin-bottom: 15px;
+          }
+          .line{
+            border-bottom: 1px solid;
+            color: $linegrey;
+            width: 100%;
+            margin: 10px 0;
+          }
+          p{
+            margin-bottom: 10px;
+          }
+          img.pref {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 320px;
+            margin-left: auto;
+            margin-right: auto;
           }
         }
-        .owl-carousel {
-          display: block;
-          padding: 0 62px;
-          .owl-dots {
-            display: none;
+        .mcol-right{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          img.gref {
+            width: 100%;
+            max-width: 450px;
           }
-          button:focus {
-            outline: none;
-          }
-          .owl-prev {
-            position: absolute;
-            left: 1%;
-          }
-          .owl-next {
-            position: absolute;
-            right: 1%;
-          }
-          .owl-nav [class*=owl-] {
-            font-size: 60px !important;
-            top: 0;
-            bottom: 0;
-            margin-bottom: auto;
-            margin-top: auto;
-            color: $bluetitle !important;
-          }
-          .owl-nav [class*=owl-]:hover {
-            background: none;
-            text-decoration: none;
-          }
+        }
+      }
+      .owl-carousel {
+        display: block;
+        padding: 0 62px;
+        .owl-dots {
+          display: none;
+        }
+        button:focus {
+          outline: none;
+        }
+        .owl-prev {
+          position: absolute;
+          left: 1%;
+        }
+        .owl-next {
+          position: absolute;
+          right: 1%;
+        }
+        .owl-nav [class*=owl-] {
+          font-size: 60px !important;
+          top: 0;
+          bottom: 0;
+          margin-bottom: auto;
+          margin-top: auto;
+          color: $bluetitle !important;
+        }
+        .owl-nav [class*=owl-]:hover {
+          background: none;
+          text-decoration: none;
         }
       }
     }
@@ -1207,7 +1211,7 @@
     .display-6 {
       margin-bottom: 27px;
     }
-    .ptext{
+    .ptext:not(button){
       text-align: center;
     }
     .ulist {
@@ -1215,12 +1219,13 @@
     }
     .mlocation {
       span{
-        font-size: calc(0.4vw + 0.35rem);
+        font-size: calc(0.3vw + 0.6rem);
       }
     }
   }
   #unitsI {
     margin-top: 20px;
+    overflow: hidden;
     .wunits:after {
       width: 100vw;
       background-size: cover;
@@ -1297,41 +1302,23 @@
       }
       .swiper-button-prev {
         top: 90%;
-        left: 70%;
+        left: auto;
+        right: 90px;
+        &::after{
+          font-size: 20px;
+        }
       }
       .swiper-button-next {
         top: 90%;
-        right: 5%;
+        right: 30px;
+        &::after{
+          font-size: 20px;
+        }
       }
     }
     .btn.btn-primary {
-      padding: 10px 40px;
-      font-size: 1.25rem;
+      padding: 5px 20px;
       font-weight: 400;
-    }
-    .modal {
-      .modal-content {
-        .modal-body {
-          .item {
-            display: grid;
-            grid-template-columns: auto;
-            column-gap: 0;
-            row-gap: 20px;
-          }
-          .owl-carousel {
-            display: block;
-            padding: 0 35px;
-            .owl-item img {
-              width: 100%;
-              max-width: 300px;
-              left: 0;
-              right: 0;
-              margin-left: auto;
-              margin-right: auto;
-            }
-          }
-        }
-      }
     }
     .mtypology{
       background-image: url(../../assets/images/tipologias/ft-mobile.png);
@@ -1346,10 +1333,46 @@
       padding: 45px 0;
     }
   }
+  #myModal {
+    .modal-content {
+      .modal-body {
+        .item {
+          display: grid;
+          grid-template-columns: auto;
+          column-gap: 0;
+          row-gap: 20px;
+        }
+        .owl-carousel {
+          display: block;
+          padding: 0 15px;
+          .owl-item img {
+            width: 100%;
+            max-width: 300px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+      }
+    }
+  }
 
   #unitsGallery {
     padding-top: 8vh;
     padding-bottom: 8vh;
+    .swiper-container {
+      .swiper-button-prev {
+        &::after{
+          font-size: 20px;
+        }
+      }
+      .swiper-button-next {
+        &::after{
+          font-size: 20px;
+        }
+      }
+    }
   }
   #amenitiesIII{
     .col-am{
@@ -1454,12 +1477,21 @@
       }
     }
   }
-  #typology{
-    .modal {
-     .modal-content .modal-body .item .mcol-right img.gref {
-        width: 100%;
-        max-width: 250px;
+  #myModal {
+    .modal-content .modal-body .item .mcol-right img.gref {
+      width: 100%;
+      max-width: 250px;
+    }
+    .modal-content .modal-body .owl-carousel{
+      .owl-prev{
+        left: -15px;
       }
+      .owl-next{
+        right: -15px;
+      }
+    }
+    .mcol-left p.mt-3{
+      font-size: 12px;
     }
   }
   #unitsGallery {
@@ -1514,6 +1546,10 @@
       }
     }
   }
+  #projectUs {
+    background-image: none;
+    background-color: $golden;
+  }
   #unitII {
 
     .footer {
@@ -1565,6 +1601,10 @@
     h5 {
       font-size: .8rem;
     }
+    .item p{
+      font-size: 12px;
+      line-height: 14px;
+    }
   }
   .dwallpaper {
     .l-text {
@@ -1576,6 +1616,16 @@
   .dwallpaper_table {
     width: calc(100% + 30px);
     margin-left: -15px;
+  }
+  #location .ulist .list{
+    margin-bottom: 15px;
+    img{
+      width: 30px;
+      padding-right: 10px;
+    }
+    p {
+      font-size: 14px;
+    }
   }
 }
 @media (max-width: 425px){

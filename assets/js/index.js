@@ -9,6 +9,9 @@ $(window).on('load', function () {
     $(".edfLevelUrl").attr("href",`assets/images/unidades/plantas/${imgurl}.png`)
     $("#nameLevel span").text(nameLevel)
   })
+  $("header .nav-link").click(function () {
+    $("header .collapse.show").removeClass("show")
+  })
 });
 
 $(window).scroll(function () {
