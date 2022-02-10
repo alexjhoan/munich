@@ -17,7 +17,6 @@ p, p.h4, h4, h5, p.h6, h6 {
   font-family: 'Roboto';
   color: $text-black;
 }
-
 a,div,input,button,textarea{
   font-family:'Roboto';
   color: $text-secondary;
@@ -31,12 +30,10 @@ a:hover, a:active, a:focus{
 img {
   max-width: 100%;
 }
-
 section {
   position: relative;
   padding: 8vh 0;
 }
-
 .btn{
   border-radius: 48px;
   padding: 8px 40px;
