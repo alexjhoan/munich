@@ -134,6 +134,12 @@ var stypology = new Swiper('.swiper-typ', {
     prevEl: ".swiper-button-prev",
   },
 });
+var bamenities = new Swiper('.swiper-amenities', {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 var swiper = new Swiper(".advanced-gallery", {
   slidesPerView: 1,
   spaceBetween: 25,
