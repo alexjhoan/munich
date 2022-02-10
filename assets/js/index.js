@@ -1,7 +1,7 @@
 $(window).on('load', function () {
   $('body').css('opacity', '1');
 
-  $(".edf-mark").click(function () {
+  $(".edf-mark").on("click touchstart" ,function () {
     const nameLevel = $(this).data("level")
     const imgurl = nameLevel.replaceAll(" ", "")
     $(this).addClass('active').siblings().removeClass("active")

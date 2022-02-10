@@ -42,12 +42,12 @@
 	.st36{fill:#FFFFFF;}
 	.st37{font-family:'Roboto-Bold';}
 	.st38{font-size:10.97px;}
-	.st39{opacity:0.78;fill:#B19160;enable-background:new    ;}
+	.st39{opacity:0.78;fill:#B19160;enable-background:new;}
 	.st40{font-size:10.94px;}
   .edf-mark{opacity:0;cursor:pointer}
   .edf-mark:hover{opacity:1;}
   .edf-mark.active{opacity:1}
-  .edf-mark:hover .st39{stroke: #B19160;stroke-width: 5px;fill: #0000;}
+  .edf-mark:not(.active):hover .st39{stroke: #B19160;stroke-width: 5px;fill: #0000;}
 </style>
 <g id="edificio_1_">
 	<g id="edificio_background">
