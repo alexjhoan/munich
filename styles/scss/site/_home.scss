@@ -743,11 +743,13 @@
     text-align: center;
     img{
       width: 60%;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
   .aline{
     display: grid;
-    grid-template-columns: 20% 30% 50%;
+    grid-template-columns: 25% 20% 52%;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
@@ -759,6 +761,17 @@
         margin-bottom: 0;
         max-width: 65px;
       }
+    }
+    .item.inic {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .item.process {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
     .item.finish {
       display: flex;
@@ -846,9 +859,6 @@
 #project{
   text-align: center;
   padding-bottom: 60px;
-  p{
-    color: #000000C9;
-  }
   .ititle{
     display: flex;
     flex-direction: row;
@@ -856,7 +866,6 @@
     justify-content: center;
     margin-bottom: 35px;
     h3{
-      color: $blackgrey;
       margin-bottom: 0;
     }
     img{
@@ -974,68 +983,7 @@
       }
     }
   }
-/*-----------------------------About-Us----------------------------*/
-#aboutUs {
-  .divider {
-    width: 100%;
-    margin: 40px auto 70px;
-  }
-  img.logo {
-    width: 80%;
-  }
-  #building{
-    .twoImages{
-      background-image: url(../../assets/images/nosotros/continents-nosotros.jpg);
-      height: 400px;
-      width: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  }
-  #continents{
-    margin-top: 50px;
-  }
-}
-#aboutUsv{
-  background-color: $whiteunit;
-  img.logo {
-    width: 80%;
-  }
-  #ventus{
-    div.twoImages img:not(.logo) {
-      width: 100%;
-      margin-bottom: 30px;
-    }
-    .footer{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      margin: 30px 0;
-      column-gap: 15px;
-    }
-    .seeMore {
-      display: flex;
-      flex-direction: row;
-      .red {
-        margin-left: auto;
-        img {
-          max-width: 60px;
-          width: 100%;
-          padding-left: 20px;
-        }
-      }
-   }
-  }
-}
-#aboutUsc{
-  img.logo {
-    width: 80%;
-  }
-  #cesio{
-    margin-top: 50px;
-  }
-}
+
 @media (min-width:992px) {
   #amenitiesI{
     .container {
@@ -1410,9 +1358,26 @@
     }
   }
   #advance{
-    padding: 50px 0;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    .tline{
+      img{
+        width: 90%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
     .aline {
-      grid-template-columns: 30% 40% 30%;
+      grid-template-columns: 25% 45% 30%;
+      text-align: center;
+      width: 100%;
+      .item.inic {
+        width: 80%;
+      }
+    }
+    #lightgallery {
+      margin-top: 10px;
     }
   }
   #project {
@@ -1420,64 +1385,7 @@
       display: none;
     }
   }
-  #aboutUs{
-    #continents{
-      img.logo {
-        width: 50%;
-        margin-bottom: 50px;
-      }
-      .col-12.col-lg-4 {
-        text-align: center;
-      }
-      .seeMore {
-        text-align: center;
-      }
-    }
-  }
-  #aboutUsv{
-    #ventus{
-      .footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        margin: 30px 0;
-      }
-      img.logo {
-        width: 50%;
-        margin-bottom: 50px;
-      }
-      .col-12.col-lg-4 {
-        text-align: center;
-      }
-      .seeMore {
-        text-align: center;
-        display: block;
-        .red {
-          margin-left: auto;
-          margin-top: 40px;
-          img {
-            max-width: 80px;
-            padding-right: 10px;
-            padding-left: 10px;
-          }
-        }
-      }
-    }
-  }
-  #aboutUsc{
-    #cesio{
-      img.logo {
-        width: 50%;
-        margin-bottom: 50px;
-      }
-      .col-12.col-lg-4 {
-        text-align: center;
-      }
-      .seeMore {
-        text-align: center;
-      }
-    }
-  }
+
   #stext {
     padding-top: 30px;
   }
@@ -1540,20 +1448,16 @@
     h1.title {
       margin-bottom: 30px;
     }
-    #lightgallery {
-      margin-top: 30px;
-    }
     .tline {
       img {
-        width: 90%;
+        width: 80%;
       }
     }
     .aline {
-      width: 100%;
       .item {
         img {
           width: auto;
-          height: 38px;
+          height: 35px;
           margin: 20px auto 10px;
         }
       }

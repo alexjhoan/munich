@@ -129,7 +129,7 @@ var bamenities = new Swiper('.swiper-amenities', {
 });
 var swiper = new Swiper(".advanced-gallery", {
   slidesPerView: 1,
-  spaceBetween: 25,
+  spaceBetween: 4,
   loop: true,
   pagination: {
     el: ".swiper-pagination",

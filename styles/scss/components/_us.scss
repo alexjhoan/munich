@@ -1,0 +1,128 @@
+/*-----------------------------About-Us----------------------------*/
+#aboutUs {
+  .divider {
+    width: 100%;
+    margin: 40px auto 70px;
+  }
+  img.logo {
+    width: 100%;
+    max-width: 250px;
+  }
+  #building{
+    .twoImages{
+      background-image: url(../../assets/images/nosotros/continents-nosotros.jpg);
+      height: 400px;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  #continents{
+    margin-top: 50px;
+  }
+}
+#aboutUsv{
+  background-color: $whiteunit;
+  img.logo {
+    width: 100%;
+    max-width: 250px;
+  }
+  #ventus{
+    div.twoImages img:not(.logo) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .footer{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 30px 0;
+      column-gap: 15px;
+    }
+    .seeMore {
+      display: flex;
+      flex-direction: row;
+      .red {
+        margin-left: auto;
+        img {
+          max-width: 60px;
+          width: 100%;
+          padding-left: 20px;
+        }
+      }
+   }
+  }
+}
+#aboutUsc{
+  img.logo {
+    width: 100%;
+    max-width: 250px;
+  }
+  #cesio{
+    margin-top: 50px;
+  }
+}
+/*----------------------------Queries-------------------------------*/
+
+@media (max-width: 991.98px) {
+   #aboutUs{
+    #continents{
+      img.logo {
+        width: 50%;
+        margin-bottom: 50px;
+      }
+      .col-12.col-lg-4 {
+        text-align: center;
+      }
+      .seeMore {
+        text-align: center;
+      }
+    }
+  }
+  #aboutUsv{
+    #ventus{
+      .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        margin: 30px 0;
+      }
+      img.logo {
+        width: 50%;
+        margin-bottom: 50px;
+      }
+      .col-12.col-lg-4 {
+        text-align: center;
+      }
+      .seeMore {
+        text-align: center;
+        display: block;
+        .red {
+          margin-left: auto;
+          margin-top: 40px;
+          img {
+            max-width: 80px;
+            padding-right: 10px;
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+  }
+  #aboutUsc{
+    #cesio{
+      img.logo {
+        width: 50%;
+        margin-bottom: 50px;
+      }
+      .col-12.col-lg-4 {
+        text-align: center;
+      }
+      .seeMore {
+        text-align: center;
+      }
+    }
+  }
+}
+

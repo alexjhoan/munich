@@ -82,6 +82,9 @@ footer {
           .subitem1:not(:first-child) p {
             margin-bottom: 10px;
           }
+          .subitem1:last-child p {
+            margin-bottom: 2px;
+          }
         }
         .item2 {
           margin-top: 10px;
