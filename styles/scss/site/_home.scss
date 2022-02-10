@@ -84,7 +84,7 @@
     margin-bottom: 10px;
   }
   .mybtn{
-    font-weight: 700;
+    font-weight: 400;
     font-size: 1rem;
     color: $text-black;
     background-color: $white;
@@ -92,7 +92,7 @@
   }
   .mybtn:hover, .mybtn:active, .mybtn:focus{
     text-decoration: none;
-    color: $black;
+    font-weight: 700;
     border: none;
     outline: none;
   }

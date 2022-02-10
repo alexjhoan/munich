@@ -163,7 +163,7 @@ $("#lightgallery .swiper-wrapper").lightGallery();
 $(".ulist .list").click(function(){
   let type = $(this).data("type")
   $(`.${type}`).addClass("active").siblings().removeClass("active")
-  $(this).addClass("selector")
+  $(this).addClass("selector").siblings().removeClass("selector")
   });
 
 $(".mybtn").click(function(){
