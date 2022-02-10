@@ -113,7 +113,9 @@
         p{
           color:$blackgrey;
           margin-bottom: 0;
+          font-weight: 700;
         }
+
       }
       img {
         max-width: 45px;
@@ -341,6 +343,7 @@
   p.h5 {
     margin-top: 15px;
     font-weight: 400;
+    font-family: 'Roboto';
   }
 }
 /*-----------------------Unidades II-----------------------*/
@@ -627,6 +630,7 @@
     }
     p.h5{
       font-weight: 400;
+      font-family: 'Roboto';
     }
   }
   .aright {
@@ -649,10 +653,10 @@
   }
   .swiper-container{
     .swiper-button-next {
-      right: 90px;
+      right: 30px;
     }
     .swiper-button-prev {
-      left: 90px;
+      left: 30px;
     }
   }
   .swiper-container:after {
@@ -1252,6 +1256,7 @@
     .ptext {
       padding-left: calc(70px - 30px);
       width: 100%;
+      text-align: center;
     }
   }
   #unitII{
@@ -1279,6 +1284,10 @@
         width: 100%;
         max-width: 600px;
         margin-left: auto;
+        margin-top: 40px;
+      }
+      .col-right{
+        text-align: center;
       }
     }
   }
@@ -1341,6 +1350,9 @@
           grid-template-columns: auto;
           column-gap: 0;
           row-gap: 20px;
+          .mcol-left img.pref{
+            display: none;
+          }
         }
         .owl-carousel {
           display: block;
@@ -1478,10 +1490,6 @@
     }
   }
   #myModal {
-    .modal-content .modal-body .item .mcol-right img.gref {
-      width: 100%;
-      max-width: 250px;
-    }
     .modal-content .modal-body .owl-carousel{
       .owl-prev{
         left: -15px;

@@ -4,11 +4,12 @@
 
 body {
   opacity: 0;
+  overflow: hidden;
 }
 p{
   font-weight: 400;
 }
-p.h1, h1, p.h2, h2, p.h3, h3, p.h5, p.display-5, p.display-6{
+p.h1, h1, p.h2, h2, p.h3, h3, p.h5, p.display2, p.display-5, p.display-6{
   font-family: 'Raleway';
   color: $bluetitle;
   font-weight: 700;
@@ -69,7 +70,7 @@ section {
 
 /*---------------HEADER---------------*/
 #b-header{
-  background-image: url(../../assets/images/header/header-desktop.jpg);
+  background-image: linear-gradient(90deg, #000000cc 0%, #00000042 80%, #00000000 100%),url(../../assets/images/header/header-desktop.jpg);
   background-size: cover;
   height: 100vh;
   background-position: center;
@@ -85,14 +86,6 @@ section {
     position: relative;
   }
 }
-section#b-header:after {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    content: "";
-    background-color: rgba(0, 0, 0, 0.3);
-    top: 0;
-}
 
 /*---------------Swipper---------------*/
 .swiper-pagination-bullet, .swiper-pagination-bullet-active {
@@ -106,7 +99,7 @@ section#b-header:after {
 
 @media (max-width: 992px) {
   #b-header{
-    background-image: url(../../assets/images/header/header-mobile.jpg);
+    background-image: linear-gradient(90deg, #000000cc 0%, #00000042 80%, #00000000 100%),url(../../assets/images/header/header-mobile.jpg);
     background-position: center;
   }
   section {
