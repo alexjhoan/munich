@@ -9,8 +9,14 @@ $(window).on('load', function () {
     $(".edfLevelUrl").attr("href",`assets/images/unidades/plantas/${imgurl}.png`)
     $("#nameLevel span").text(nameLevel)
   })
-  $("header .nav-link").click(function () {
+  $("header .nav-link").click(function (e) {
     $("header .collapse.show").removeClass("show")
+    const url = $(this).attr("href");
+    if (!url.includes("html") && !url.includes("/")) {
+      e.preventDefault()
+      const section = $(url).offset().top;
+      window.scrollTo({top: section - 65,behavior: "smooth"});
+    }
   })
 });
 
