@@ -203,22 +203,6 @@ $(".mybtn").click(function(){
 });
 
 //----------------------------------------My-Chart-----------------------------
-$(window).on("scroll", function () {
-  description()
-  location()
-  unitsI()
-  unitII()
-  typology()
-  unitsGallery()
-  amenitiesI()
-  bamenities()
-  amenitiesIII()
-  advance()
-  project()
-  projectUs()
-  contact()
-});
-
 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
     // The type of chart we want to create
