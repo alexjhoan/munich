@@ -1,8 +1,8 @@
 header{
   div#whatsappBtn {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 0;
+    right: 15px;
     width: auto;
     padding: 0;
     z-index: 10;
@@ -40,9 +40,9 @@ header{
       }
       span {
         background: #DAD7D0;
-        padding: 4px 10px;
+        padding: 6px 10px;
         font-size: 14px;
-        margin-top: -3px;
+        margin-top: -6px;
       }
     }
      button:focus {

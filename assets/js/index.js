@@ -81,6 +81,16 @@ function TypologyBg(section, text) {
   }
 }
 
+// -------------------------------navbar------------------------------
+
+function link(linkTo) {
+ event.preventDefault()
+ $(`.navbar-collapse.collapse.show`).removeClass("show");
+ let container = $(`#${linkTo}`).offset().top;
+ let heightNavBar = $(`#navbar`).height();
+ let to = container - heightNavBar
+ window.scrollTo(0, to);
+}
 // ------------------------------img-edf-units----------------------------
 $('#myModal').on('shown.bs.modal', function () {
   $('#myInput').trigger('focus')
@@ -96,7 +106,7 @@ $('.owl-carousel').owlCarousel({
 // ------------------------------Carousel-----------------------------
 const galleryThumbs = new Swiper('.gallery-thumbs', {
   spaceBetween: 20,
-  slidesPerView: 6,
+  slidesPerView: 7,
   freeMode: true,
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
@@ -171,6 +181,22 @@ $(".mybtn").click(function(){
 });
 
 //----------------------------------------My-Chart-----------------------------
+$(window).on("scroll", function () {
+  description()
+  location()
+  unitsI()
+  unitII()
+  typology()
+  unitsGallery()
+  amenitiesI()
+  bamenities()
+  amenitiesIII()
+  advance()
+  project()
+  projectUs()
+  contact()
+});
+
 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
     // The type of chart we want to create
