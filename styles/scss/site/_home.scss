@@ -1679,6 +1679,68 @@
     }
   }
 }
+@media (max-width: 500px){
+  #location{
+    .mlocation{
+      span{
+        font-size: 0.6rem;
+      }
+    }
+    .university{
+      span:first-child {
+        left: 0%;
+      }
+      span:nth-child(5) {
+        bottom: 10%;
+        right: 47%;
+      }
+      span:nth-child(6) {
+        top: 17%;
+      }
+      span:nth-child(7) {
+        top: 26%;
+        right: 3%;
+      }
+     }
+    .sites-public {
+      span:first-child {
+        bottom: 14%;
+        left: 9%;
+      }
+      span:nth-child(2) {
+        bottom: 41%;
+        left: 13%;
+      }
+      span:nth-child(3) {
+        left: 26%;
+      }
+       span:nth-child(4) {
+        bottom: 44%;
+        right: 32%;
+      }
+      span:last-child {
+        &::after{
+          right: -20px;
+        }
+      }
+    }
+    .clubs{
+      span:first-child {
+        top: 10%;
+      }
+    }
+    .banks{
+      span:first-child {
+        bottom: 25%;
+      }
+      span:last-child{
+        &::after{
+          right: 29px;
+        }
+      }
+    }
+  }
+}
 @media (max-width: 425px){
   #unitsI{
     .wunits {
