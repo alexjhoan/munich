@@ -143,26 +143,42 @@ var bamenities = new Swiper('.swiper-amenities', {
     prevEl: ".swiper-button-prev",
   },
 });
-var swiper = new Swiper(".advanced-gallery", {
-  slidesPerView: 1,
-  spaceBetween: 4,
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 2,
-    },
-    768: {
-      slidesPerView: 3,
-    },
-    1025: {
-      slidesPerView: 4,
-    },
-  },
-})
+//---------------------------------Gallery-Advance----------------------------------
+
+if (screen.width > 768){
+  $("#lightgallery").lightGallery();
+  const items =  $('#lightgallery a').length;
+  const imgInit = 8
+  const ImgMore = 4
+  $('#lightgallery a:lt('+imgInit+')').show();
+  if(imgInit >= items) {
+    $('.btnMore').hide()
+  }
+  function seeMore() {
+    let visibleItems = $('#lightgallery a:visible').length + ImgMore
+    $('#lightgallery a:lt('+visibleItems+')').fadeIn(800);
+    if(visibleItems >= items) {
+      $('.btnMore').hide();
+    }
+  }
+}  else {
+  $("#lightgallery").addClass("owl-carousel owl-theme")
+  $("#lightgallery").lightGallery();
+  $('#gallery .owl-carousel').owlCarousel({
+    loop:false,
+    margin:15,
+    nav:false,
+    dots: true,
+    responsive:{
+      0:{
+        items:1
+      },
+      575:{
+        items:2
+      },
+    }
+  })
+}
 
 //-------------------------------- fancyBox----------------------------------
 
