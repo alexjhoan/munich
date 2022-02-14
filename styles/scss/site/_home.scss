@@ -196,15 +196,15 @@
       }
       &:nth-child(3){
         top: 31.5%;
-        right: 41%;
+        right: 44%;
       }
       &:nth-child(4){
         bottom: 44.2%;
         right: 40.4%;
       }
       &:nth-child(5){
-        bottom: 16%;
-        right: 38.6%;
+        bottom: 13%;
+        right: 47%;
       }
       &:nth-child(6){
         top: 19.8%;
@@ -1180,6 +1180,10 @@
         }
         right: 48%;
       }
+      span:nth-child(5) {
+        bottom: 9%;
+        right: 46%;
+      }
       span:nth-child(6) {
         &::after{
           right: -25px;
@@ -1451,6 +1455,29 @@
 }
 
 @media (max-width: 768px) {
+  #location {
+    .university{
+      span:first-child {
+        bottom: 38%;
+        left: 0%;
+      }
+      span:nth-child(5) {
+        bottom: 8%;
+        right: 45%;
+      }
+    }
+    .sites-public {
+      span:nth-child(4) {
+        bottom: 44%;
+      }
+    }
+    .banks {
+      span:last-child {
+        top: 29.5%;
+        right: -2%;
+      }
+    }
+  }
   #unitsI{
     .wunits{
       img.uright {
