@@ -2,13 +2,17 @@
 #aboutUs {
   padding-top:5vh;
   margin-top: 0;
+  padding-bottom:45px;
   .divider {
     width: 100%;
     margin: 40px auto 70px;
   }
   img.logo {
     width: 100%;
-    max-width: 250px;
+    max-width: 270px;
+  }
+  .seeMore{
+    margin-top: 40px;
   }
   #building{
     .twoImages{
@@ -26,11 +30,13 @@
 }
 #aboutUsv{
   background-color: $whiteunit;
+  padding-bottom:45px;
   img.logo {
     width: 100%;
     max-width: 250px;
   }
   #ventus{
+    margin-top: 50px;
     div.twoImages img:not(.logo) {
       width: 100%;
       margin-bottom: 30px;
@@ -39,30 +45,36 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
-      margin: 30px 0;
+      margin-top: 30px;
       column-gap: 15px;
     }
     .seeMore {
       display: flex;
       flex-direction: row;
+      align-items:center;
+      margin-top: 40px;
       .red {
         margin-left: auto;
         img {
-          max-width: 60px;
+          max-width: 40px;
           width: 100%;
-          padding-left: 20px;
+
         }
       }
    }
   }
 }
 #aboutUsc{
+  padding-bottom:45px;
   img.logo {
     width: 100%;
-    max-width: 250px;
+    max-width: 270px;
   }
   #cesio{
     margin-top: 50px;
+  }
+  .seeMore{
+    margin-top: 40px;
   }
 }
 /*----------------------------Queries-------------------------------*/
@@ -85,10 +97,8 @@
   #aboutUsv{
     #ventus{
       .footer{
-        display: flex;
         flex-direction: column;
-        justify-content: end;
-        margin: 30px 0;
+        row-gap:18px;
       }
       img.logo {
         width: 50%;
@@ -102,12 +112,7 @@
         display: block;
         .red {
           margin-left: auto;
-          margin-top: 40px;
-          img {
-            max-width: 80px;
-            padding-right: 10px;
-            padding-left: 10px;
-          }
+          margin-top: 36px;
         }
       }
     }

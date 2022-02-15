@@ -594,8 +594,8 @@
   width: 65%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 12vh;
-  padding-bottom: 10vh;
+  // padding-top: 12vh;
+  // padding-bottom: 10vh;
   .swiper-container{
     z-index: 0;
   }
@@ -605,13 +605,13 @@
       cursor: pointer;
     }
   }
-  .gallery-top{
-    .swiper-slide{
-      img{
-        width: 100%;
-      }
-    }
-  }
+  // .gallery-top{
+  //   .swiper-slide{
+  //     img{
+  //       width: 100%;
+  //     }
+  //   }
+  // }
 }
 
 /*----------------------Amenities-I--------------------------------*/
@@ -734,7 +734,7 @@
 /*----------------------------ADVANCE------------------------------*/
 #advance{
   background-color: $whiteunit;
-  padding-bottom: 27px;
+  padding-bottom: 10px;
   padding-top: 50px;
   .title{
     text-align: center;
@@ -760,7 +760,7 @@
       img{
         width: 100%;
         height: 100px;
-        margin-top: 10px;
+        margin-top: 0;
         margin-bottom: 0;
         max-width: 65px;
       }
@@ -788,11 +788,15 @@
     }
   }
 }
-#lightgallery {
+#gallery{
+  background-color: $whiteunit;
+  padding-bottom: 27px;
+  padding-top: 0;
+  #lightgallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 1%;
-    margin-top: 35px;
+    padding-top: 20px;
     a{
       overflow: hidden;
       position: relative;
@@ -817,7 +821,9 @@
      a:hover img {
       transform: scale(1.07);
     }
+  }
 }
+
 /*----------------------------------Project-----------------------------*/
 #project{
   text-align: center;
@@ -946,6 +952,25 @@
         color: $bluetitle;
       }
     }
+    #formSending p.strong {
+      span{
+        background: $white;
+        height: 6px;
+        width: 6px;
+        border-radius: 100%;
+        margin: 0 3px;
+        animation: sending 1s infinite;
+      }
+      span:first-child {
+        margin-left: 6px;
+      }
+      span:nth-child(2) {
+        animation-delay: 200ms;
+      }
+      span:last-child {
+        animation-delay: 300ms;
+      }
+    }
   }
 
 @media (min-width:992px) {
@@ -1037,7 +1062,12 @@
     }
   }
 }
-
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1600px;
+    width: 90%;
+  }
+}
 @media (min-width:1440px) {
   .dwallpaper {
     &_image {
@@ -1080,7 +1110,7 @@
     }
   }
 }
-@media (max-width: 1199px){
+@media (max-width: 1199.98px){
   .dwallpaper {
     background-image: none;
     background-color: white;
@@ -1216,7 +1246,7 @@
   }
   #unitsI {
     margin-top: 20px;
-    padding-bottom:120px;
+    padding-bottom:0;
     overflow: hidden;
     .wunits:after {
       width: 100vw;
@@ -1228,17 +1258,13 @@
       background-image: url(../../assets/images/unidades/fondo-umobile.png);
     }
     .wunits{
-      padding-top: 0;
       position: relative;
-      padding-bottom: 50%;
         img.uright {
-          position: absolute;
           margin-left: auto;
           width: 100%;
           right: 0;
           max-width: 650px;
           z-index: 0;
-          top: 40%;
         }
     }
     .ptext {
@@ -1248,7 +1274,7 @@
   }
   #unitII{
     text-align: center;
-    padding-top: 100px;
+    padding-top: 50px;
   }
 
   #amenitiesI{
@@ -1271,7 +1297,7 @@
         width: 100%;
         max-width: 600px;
         margin-left: auto;
-        margin-top: 40px;
+        margin-top: 20px;
       }
       .col-right{
         text-align: center;
@@ -1472,6 +1498,9 @@
       }
     }
     .banks {
+      span:first-child {
+        left: 10%;
+      }
       span:last-child {
         top: 29.5%;
         right: -2%;
@@ -1481,10 +1510,12 @@
   #unitsI{
     .wunits{
       img.uright {
-        top: 40%;
         max-width: 550px;
       }
     }
+  }
+  #unitII {
+    padding-top: 40px;
   }
   #myModal {
     .modal-content {
@@ -1615,17 +1646,12 @@
 }
 @media (max-width: 576px) {
   #unitsI {
-    padding-bottom: 50px;
+    padding-bottom: 0px;
     .wunits {
-      padding-bottom: 80%;
       img.uright {
-        top: 220px;
-        max-width: 450px;
+        max-width: 400px;
       }
     }
-  }
-  #unitII{
-    padding-top: 0;
   }
   #myModal {
     .modal-content {
@@ -1730,6 +1756,7 @@
     .banks{
       span:first-child {
         bottom: 25%;
+        left: 0%;
       }
       span:last-child{
         &::after{
@@ -1741,10 +1768,29 @@
 }
 @media (max-width: 425px){
   #unitsI{
+    padding-bottom: 10px;
     .wunits {
       img.uright {
-      top: 290px;
-      max-width: 350px;
+      max-width: 330px;
+      }
+    }
+  }
+  #unitII {
+     padding-top: 10%;
+  }
+  #amenitiesI{
+    .camenit {
+      img.aright {
+        max-width: 300px;
+      }
+    }
+  }
+}
+@media (max-width: 375px){
+  #unitsI{
+    .wunits {
+      img.uright {
+      max-width: 300px;
       }
     }
   }
