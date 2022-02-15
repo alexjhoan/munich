@@ -180,6 +180,7 @@ if (screen.width > 768){
   })
 }
 
+
 //-------------------------------- fancyBox----------------------------------
 
 $('[data-fancybox="gallery"]').fancybox({
