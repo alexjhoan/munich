@@ -36,7 +36,7 @@
     max-width: 250px;
   }
   #ventus{
-    margin-top: 50px;
+
     div.twoImages img:not(.logo) {
       width: 100%;
       margin-bottom: 30px;
@@ -70,9 +70,7 @@
     width: 100%;
     max-width: 270px;
   }
-  #cesio{
-    margin-top: 50px;
-  }
+
   .seeMore{
     margin-top: 40px;
   }
@@ -96,6 +94,7 @@
   }
   #aboutUsv{
     #ventus{
+      margin-top: 30px;
       .footer{
         flex-direction: column;
         row-gap:18px;
@@ -119,6 +118,7 @@
   }
   #aboutUsc{
     #cesio{
+      margin-top: 25px;
       img.logo {
         width: 50%;
         margin-bottom: 50px;
