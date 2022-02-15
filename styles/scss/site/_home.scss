@@ -596,6 +596,9 @@
   margin-right: auto;
   // padding-top: 12vh;
   // padding-bottom: 10vh;
+  .container{
+    max-width: 1000px;
+  }
   .swiper-container{
     z-index: 0;
   }
@@ -605,13 +608,6 @@
       cursor: pointer;
     }
   }
-  // .gallery-top{
-  //   .swiper-slide{
-  //     img{
-  //       width: 100%;
-  //     }
-  //   }
-  // }
 }
 
 /*----------------------Amenities-I--------------------------------*/
@@ -781,6 +777,7 @@
       display: flex;
       flex-direction: column;
       margin-left: auto;
+      width: 30%;
       img.finish {
         margin-left: auto;
         margin-right: auto;
@@ -805,7 +802,7 @@
       transition: all .5s ease;
       width: 100%;
     }
-    a span {
+    a p {
       left: 15px;
       top: 15px;
       position: absolute;
@@ -1062,12 +1059,12 @@
     }
   }
 }
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1600px;
-    width: 90%;
-  }
-}
+// @media (min-width: 1400px) {
+//   .container {
+//     max-width: 1600px;
+//     width: 90%;
+//   }
+// }
 @media (min-width:1440px) {
   .dwallpaper {
     &_image {
@@ -1095,6 +1092,13 @@
     &_text{
       padding: 30px 30px 30px 0;
     }
+  }
+  #advance{
+   .aline {
+     .item.finish {
+        // width: 30%;
+      }
+   }
   }
 
 }
