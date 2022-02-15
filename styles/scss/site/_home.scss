@@ -792,7 +792,7 @@
   #lightgallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 1%;
+    grid-column-gap: 0.5%;
     padding-top: 20px;
     a{
       overflow: hidden;
@@ -1059,12 +1059,6 @@
     }
   }
 }
-// @media (min-width: 1400px) {
-//   .container {
-//     max-width: 1600px;
-//     width: 90%;
-//   }
-// }
 @media (min-width:1440px) {
   .dwallpaper {
     &_image {
@@ -1152,13 +1146,6 @@
 @media (max-width: 1024px) {
   #unitsI{
     margin-top: 0;
-  }
-  #advance {
-    #lightgallery {
-      .swiper-pagination {
-        display: block;
-      }
-    }
   }
   #unitII {
     padding-top: 0;
@@ -1467,9 +1454,11 @@
       }
     }
   }
-  #lightgallery {
-    grid-template-columns: repeat(4, 1fr);
-    margin-top: 10px;
+  #gallery{
+    #lightgallery {
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 10px;
+    }
   }
   #project {
     img.psolare {
@@ -1607,15 +1596,14 @@
       }
     }
   }
-  #lightgallery{
-    display: block;
-    width: 100%;
-    padding-bottom: 0;
-    a{
+  #gallery{
+    #lightgallery{
       display: block;
-    }
-    .btnMore{
-      display: none;
+      width: 100%;
+      padding-bottom: 0;
+      a{
+        display: block;
+      }
     }
   }
   #projectUs {
