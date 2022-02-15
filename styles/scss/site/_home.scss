@@ -792,7 +792,7 @@
   #lightgallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 0.5%;
+    grid-column-gap: 4px;
     padding-top: 20px;
     a{
       overflow: hidden;
