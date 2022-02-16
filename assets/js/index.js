@@ -231,6 +231,17 @@ var chart = new Chart(ctx, {
     }
 });
 //---------------------------------Form-------------------------------
+// function contact() {
+//   let container = $("#contact");
+//   let heightTop = container.position().top;
+//   let scroll = $(window).scrollTop();
+//   let heightWindow = $(window).height() / 1.7;
+//   if (scroll > (heightTop - heightWindow)) {
+//     $("#contact .aniLe").addClass("animate__fadeInLeft")
+//     $("#contact .aniRi").addClass("animate__fadeInRight")
+//   }
+// }
+//---------------------------------Form-------------------------------
 function dataSubmited(data) {
   const requestOptions = {
     method: 'POST',
