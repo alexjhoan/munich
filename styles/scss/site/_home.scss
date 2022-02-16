@@ -948,6 +948,11 @@
         margin-bottom: 20px;
         color: $bluetitle;
       }
+      .red-socials {
+        display: flex;
+        flex-direction: row;
+        column-gap: 30px;
+      }
     }
     #formSending p.strong {
       span{
