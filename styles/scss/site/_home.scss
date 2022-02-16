@@ -948,10 +948,18 @@
         margin-bottom: 20px;
         color: $bluetitle;
       }
+      .red-socials {
+        display: flex;
+        flex-direction: row;
+        column-gap: 30px;
+      }
     }
     #formSending p.strong {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
       span{
-        background: $white;
+        background: $bluetitle;
         height: 6px;
         width: 6px;
         border-radius: 100%;
@@ -969,6 +977,14 @@
       }
     }
   }
+  @keyframes sending {
+  50% {
+    opacity: 0.5
+  }
+  100% {
+    opacity: 1
+  }
+}
 
 @media (min-width:992px) {
   #amenitiesI{
