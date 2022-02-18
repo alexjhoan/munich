@@ -206,10 +206,7 @@ $(".mybtn").click(function(){
 //----------------------------------------My-Chart-----------------------------
 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
-    // The type of chart we want to create
     type: 'doughnut',
-
-    // The data for our dataset
     data: {
         labels: ['Vendido', 'No Vendido'],
         datasets: [{
@@ -220,8 +217,6 @@ var chart = new Chart(ctx, {
             data: [21,79],
         }]
     },
-
-    // Configuration options go here
     options: {
       cutoutPercentage: 65,
       tooltips: false,
