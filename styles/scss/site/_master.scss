@@ -82,7 +82,17 @@ section {
   .display-5{
     font-weight: 700;
     color: $white;
-    margin-bottom: 19px;
+    margin-bottom: 20px;
+  }
+  p{
+    color: $white;
+    margin: 0;
+    &.textBorder{
+      width: fit-content;
+      border-top: solid 1px #fff;
+      padding-top: 20px;
+      margin-bottom: 20px;
+    }
   }
   .container {
     z-index: 5;
@@ -113,4 +123,10 @@ section {
 
 @media (max-width: 767.98px) {}
 
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+  #b-header{
+    p.textBorder{
+        max-width: 142px;
+      }
+    }
+}
