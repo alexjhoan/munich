@@ -1,6 +1,6 @@
 /*-----------------------------About-Us----------------------------*/
 #aboutUs {
-  padding-top:5vh;
+  padding-top:69px;
   margin-top: 0;
   padding-bottom:45px;
   .divider {
@@ -14,8 +14,7 @@
   .seeMore{
     margin-top: 40px;
   }
-  #building{
-    .twoImages{
+  &_twoImages{
       background-image: url(../../assets/images/nosotros/continents-nosotros.jpg);
       height: 430px;
       width: 100%;
@@ -23,7 +22,6 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
-  }
   #continents{
     margin-top: 50px;
   }
