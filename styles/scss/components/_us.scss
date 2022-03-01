@@ -27,8 +27,11 @@
   }
 }
 #aboutUsv{
-  background-color: $whiteunit;
-  padding-bottom:45px;
+  padding-top: 0;
+  & > .container{
+    padding-top: 8vh;
+    border-top: solid 1px #B7B1A6;
+  }
   img.logo {
     width: 100%;
     max-width: 250px;
@@ -63,7 +66,11 @@
   }
 }
 #aboutUsc{
-  padding-bottom:45px;
+  padding-top: 0;
+  & > .container{
+    padding-top: 8vh;
+    border-top: solid 1px #B7B1A6;
+  }
   img.logo {
     width: 100%;
     max-width: 270px;
