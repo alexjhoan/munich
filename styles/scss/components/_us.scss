@@ -14,7 +14,7 @@
   .seeMore{
     margin-top: 40px;
   }
-  &_twoImages{
+  .twoImages{
       background-image: url(../../assets/images/nosotros/continents-nosotros.jpg);
       height: 430px;
       width: 100%;
@@ -27,14 +27,16 @@
   }
 }
 #aboutUsv{
-  background-color: $whiteunit;
-  padding-bottom:45px;
+  padding-top: 0;
+  & > .container{
+    padding-top: 8vh;
+    border-top: solid 1px #B7B1A6;
+  }
   img.logo {
     width: 100%;
     max-width: 250px;
   }
   #ventus{
-
     div.twoImages img:not(.logo) {
       width: 100%;
       margin-bottom: 30px;
@@ -63,7 +65,11 @@
   }
 }
 #aboutUsc{
-  padding-bottom:45px;
+  padding-top: 0;
+  & > .container{
+    padding-top: 8vh;
+    border-top: solid 1px #B7B1A6;
+  }
   img.logo {
     width: 100%;
     max-width: 270px;
