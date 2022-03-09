@@ -18,6 +18,12 @@
     &-inner {
       position: relative;
       z-index: 2;
+      h1{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 1rem;
+        color: $text-black;
+      }
     }
   }
   &_logo-munich{
