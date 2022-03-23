@@ -9,6 +9,10 @@
   &_image {
     position: relative;
     z-index: 2;
+    img.imgleft {
+      max-width: 510px;
+      width: 100%;
+    }
   }
   &_text {
     padding: 30px 25px;
