@@ -381,6 +381,11 @@
     font-weight: 700;
     color: $bluetitle;
   }
+  .edf-mark{
+    &.active{
+      pointer-events: none;
+    }
+  }
   .download {
     display: flex;
     flex-direction: row;
