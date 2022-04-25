@@ -489,8 +489,14 @@
   #stext {
     padding-top: 80px;
   }
-  #contact .formCol2 {
-    margin-top: 20px;
+  #contact{
+    form#contactForm {
+      width: 100%;
+    }
+    .formCol2 {
+      margin-top: 20px;
+    }
+
   }
 }
 

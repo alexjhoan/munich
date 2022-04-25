@@ -3,13 +3,14 @@ footer {
   padding: 50px 0;
   .col-12 {
     align-items: center;
-    .icons {
-      display: grid;
-      grid-template-rows: 40% 30%;
-      grid-row-gap: 0;
       .item1 {
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        column-gap: 130px;
+        margin-bottom: 45px;
+
         .subitem1 {
           display: flex;
           flex-direction: column;
@@ -25,17 +26,12 @@ footer {
         }
       }
       .item2 {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 30px;
         text-align: center;
         p {
-          font-size: 0.8rem;
+          font-size: 1rem;
           margin-top: 15px;
         }
       }
-    }
   }
 }
 
@@ -61,23 +57,19 @@ footer {
     padding: 45px 0;
     .col-12 {
       justify-content: center;
-      .icons {
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-row-gap: 0;
         .item1 {
-          display: block;
+          flex-direction: column;
+          justify-content: center;
+          row-gap: 20px;
+          margin-bottom: 20px;
           .subitem1{
             img {
-              width: 120px;
+              width: calc(100% - 10px);
             }
              p {
               font-size: 0.75rem;
               margin-bottom: 5px;
             }
-          }
-          .subitem1:not(:last-child) {
-            margin-bottom: 25px;
           }
           .subitem1:not(:first-child) p {
             margin-bottom: 10px;
@@ -94,7 +86,6 @@ footer {
             font-size: 0.8rem;
           }
         }
-      }
     }
   }
 
