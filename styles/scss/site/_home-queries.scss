@@ -103,6 +103,9 @@
       }
     }
   }
+  #stext .atext {
+    margin-top: -50px;
+  }
 }
 @media (min-width:1600px) {
   .dwallpaper {
@@ -115,6 +118,9 @@
     &_text{
       padding: 30px 30px 30px 0;
     }
+  }
+  #stext .atext {
+    margin-top: -20px;
   }
 }
 @media (max-width: 1399.98px){
@@ -159,6 +165,9 @@
       justify-content: space-evenly;
       margin-bottom: 0;
     }
+  }
+  #stext {
+    margin-top: -50px;
   }
   #unitsGallery {
     width: 100%;
